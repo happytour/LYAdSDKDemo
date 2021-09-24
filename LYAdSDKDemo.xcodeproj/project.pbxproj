@@ -47,7 +47,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		74D1BF9D3466FBC181FAF922 /* Pods-LYAdSDKDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYAdSDKDemo.release.xcconfig"; path = "Target Support Files/Pods-LYAdSDKDemo/Pods-LYAdSDKDemo.release.xcconfig"; sourceTree = "<group>"; };
+		06700CB598BBD761FCB282EF /* Pods-LYAdSDKDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYAdSDKDemo.release.xcconfig"; path = "Target Support Files/Pods-LYAdSDKDemo/Pods-LYAdSDKDemo.release.xcconfig"; sourceTree = "<group>"; };
+		151DB725319F71EE2AC510B2 /* Pods-LYAdSDKDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYAdSDKDemo.debug.xcconfig"; path = "Target Support Files/Pods-LYAdSDKDemo/Pods-LYAdSDKDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		B1C0F15271BF14C2CAE7244E /* libPods-LYAdSDKDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LYAdSDKDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E412367C26EE319F002213FB /* LYUnionTypeTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYUnionTypeTool.h; sourceTree = "<group>"; };
 		E412367D26EE319F002213FB /* LYUnionTypeTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYUnionTypeTool.m; sourceTree = "<group>"; };
@@ -114,7 +115,6 @@
 		E4B21B6B2637ED4E004908D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E4B21B6C2637ED4E004908D8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E4B21B7C2637F1E8004908D8 /* LYAdSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LYAdSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EF6ADBCBFA306B7FB3C1BBF7 /* Pods-LYAdSDKDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYAdSDKDemo.debug.xcconfig"; path = "Target Support Files/Pods-LYAdSDKDemo/Pods-LYAdSDKDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,14 +153,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		2FFB6F25729B73650EA9BABB /* Pods */ = {
+		1A4DD55851CE224461BEB09B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				EF6ADBCBFA306B7FB3C1BBF7 /* Pods-LYAdSDKDemo.debug.xcconfig */,
-				74D1BF9D3466FBC181FAF922 /* Pods-LYAdSDKDemo.release.xcconfig */,
+				151DB725319F71EE2AC510B2 /* Pods-LYAdSDKDemo.debug.xcconfig */,
+				06700CB598BBD761FCB282EF /* Pods-LYAdSDKDemo.release.xcconfig */,
 			);
 			name = Pods;
-			path = ../Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		E4235628264C32A700DEBE0C /* splash */ = {
@@ -295,8 +295,8 @@
 			children = (
 				E4B21B592637ED4D004908D8 /* LYAdSDKDemo */,
 				E4B21B582637ED4D004908D8 /* Products */,
-				2FFB6F25729B73650EA9BABB /* Pods */,
 				17EBC24C48EFFE30157A33BD /* Frameworks */,
+				1A4DD55851CE224461BEB09B /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -636,7 +636,7 @@
 		};
 		E4B21B712637ED4E004908D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EF6ADBCBFA306B7FB3C1BBF7 /* Pods-LYAdSDKDemo.debug.xcconfig */;
+			baseConfigurationReference = 151DB725319F71EE2AC510B2 /* Pods-LYAdSDKDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -659,7 +659,7 @@
 		};
 		E4B21B722637ED4E004908D8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 74D1BF9D3466FBC181FAF922 /* Pods-LYAdSDKDemo.release.xcconfig */;
+			baseConfigurationReference = 06700CB598BBD761FCB282EF /* Pods-LYAdSDKDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
