@@ -1,0 +1,26 @@
+/* 
+  Localizable.strings
+  LYAdSDKDemo
+
+  Created by laole918 on 2021/9/15.
+  
+*/
+"Config" = "Config";
+"fakeBundleId" = "fakeBundleId";
+"Save and Exit" = "Save and Exit";
+"Splash" = "Splash";
+"Interstitial" = "Interstitial";
+"RewardVideo" = "RewardVideo";
+"Native" = "Native";
+"NativeExpress" = "NativeExpress";
+"Banner" = "Banner";
+"Notice" = "Notice";
+"FullScreenVideo" = "FullScreenVideo";
+"DrawVideo" = "DrawVideo";
+"Close" = "Close";
+"draw_video_tips" = "The test occupancy slides down is an advertisement";
+"ContentPage" = "ContentPage";
+"EntryElement" = "EntryElement";
+
+"loadAd" = "loadAd";
+

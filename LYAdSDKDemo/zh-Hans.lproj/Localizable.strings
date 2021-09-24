@@ -1,0 +1,26 @@
+/* 
+  Localizable.strings
+  LYAdSDKDemo
+
+  Created by laole918 on 2021/9/15.
+  
+*/
+"Config" = "设置";
+"fakeBundleId" = "模拟包名";
+"Save and Exit" = "保存并重启应用";
+"Splash" = "开屏";
+"Interstitial" = "插屏";
+"RewardVideo" = "激励视频";
+"Native" = "信息流自渲染";
+"NativeExpress" = "信息流模版";
+"Banner" = "BANNER（横幅）";
+"Notice" = "通知";
+"FullScreenVideo" = "全屏视频";
+"DrawVideo" = "Draw视频（模版视频）";
+"Close" = "关闭";
+"draw_video_tips" = "测试占位往下滑是广告";
+"ContentPage" = "内容页（视频内容）";
+"EntryElement" = "入口组件（视频内容）";
+
+"loadAd" = "加载广告";
+

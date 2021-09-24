@@ -1,0 +1,707 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3FB4B88D0661A635A0100249 /* libPods-LYAdSDKDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B1C0F15271BF14C2CAE7244E /* libPods-LYAdSDKDemo.a */; };
+		E412367E26EE319F002213FB /* LYUnionTypeTool.m in Sources */ = {isa = PBXBuildFile; fileRef = E412367D26EE319F002213FB /* LYUnionTypeTool.m */; };
+		E412368826F1E959002213FB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E412368A26F1E959002213FB /* Localizable.strings */; };
+		E412369026F49EA1002213FB /* LYAdSDKAdapterForBD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E412368F26F49EA1002213FB /* LYAdSDKAdapterForBD.framework */; };
+		E42355EF26494F9500DEBE0C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E42355EE26494F9500DEBE0C /* LaunchScreen.storyboard */; };
+		E42355F626495C5D00DEBE0C /* LYSplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E42355F526495C5D00DEBE0C /* LYSplashViewController.m */; };
+		E42355FA264985C600DEBE0C /* LYInterstitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E42355F9264985C600DEBE0C /* LYInterstitialViewController.m */; };
+		E42355FE264988D300DEBE0C /* LYRewardVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E42355FD264988D300DEBE0C /* LYRewardVideoViewController.m */; };
+		E423560226498A5A00DEBE0C /* LYBannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E423560126498A5A00DEBE0C /* LYBannerViewController.m */; };
+		E4235608264A1CF300DEBE0C /* LogoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4235607264A1CF300DEBE0C /* LogoViewController.m */; };
+		E4235612264A316600DEBE0C /* LYNativeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4235611264A316600DEBE0C /* LYNativeViewController.m */; };
+		E423568A2652C17700DEBE0C /* LYNativeExpressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E42356892652C17700DEBE0C /* LYNativeExpressViewController.m */; };
+		E42356A72653B0CB00DEBE0C /* LYNoticeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E42356A62653B0CB00DEBE0C /* LYNoticeViewController.m */; };
+		E42356FF2657E5F500DEBE0C /* LYBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E42356FE2657E5F500DEBE0C /* LYBaseViewController.m */; };
+		E423570C2658ABB300DEBE0C /* LYNativeAdImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E423570B2658ABB300DEBE0C /* LYNativeAdImageCell.m */; };
+		E42357102658ABDC00DEBE0C /* LYNativeAdVideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E423570F2658ABDC00DEBE0C /* LYNativeAdVideoCell.m */; };
+		E42357162658AF0A00DEBE0C /* LYNativeAdBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E42357152658AF0A00DEBE0C /* LYNativeAdBaseCell.m */; };
+		E423572B265B3B8600DEBE0C /* ConfigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E423572A265B3B8600DEBE0C /* ConfigViewController.m */; };
+		E42C395526D7255D00D39D46 /* NSBundle+changeBundleId.m in Sources */ = {isa = PBXBuildFile; fileRef = E42C395326D7255D00D39D46 /* NSBundle+changeBundleId.m */; };
+		E42CF81626958E1200A5315C /* LYAdSDKAdapterForCSJ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E42CF7F82695823C00A5315C /* LYAdSDKAdapterForCSJ.framework */; };
+		E42CF81826958E1200A5315C /* LYAdSDKAdapterForGDT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E42CF7FC2695824500A5315C /* LYAdSDKAdapterForGDT.framework */; };
+		E42CF81A26958E1200A5315C /* LYAdSDKAdapterForIQY.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E42CF8082695826100A5315C /* LYAdSDKAdapterForIQY.framework */; };
+		E42CF81C26958E1200A5315C /* LYAdSDKAdapterForJD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E42CF8102695827800A5315C /* LYAdSDKAdapterForJD.framework */; };
+		E42CF81E26958E1200A5315C /* LYAdSDKAdapterForKS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E42CF8002695824C00A5315C /* LYAdSDKAdapterForKS.framework */; };
+		E42CF82026958E1200A5315C /* LYAdSDKAdapterForSIG.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E42CF8042695825800A5315C /* LYAdSDKAdapterForSIG.framework */; };
+		E4424AA42678D4EA0004C9B1 /* LYContentPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4424AA32678D4EA0004C9B1 /* LYContentPageViewController.m */; };
+		E4424AB52679D9910004C9B1 /* LYFullScreenVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4424AB42679D9910004C9B1 /* LYFullScreenVideoViewController.m */; };
+		E4424AE3267AF6DA0004C9B1 /* LYDrawVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4424AE2267AF6DA0004C9B1 /* LYDrawVideoViewController.m */; };
+		E4424AE7267AFD790004C9B1 /* LYDrawVideoAdCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E4424AE6267AFD790004C9B1 /* LYDrawVideoAdCell.m */; };
+		E4424AEA267B261F0004C9B1 /* LYDrawVideoDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4424AE9267B261F0004C9B1 /* LYDrawVideoDemoViewController.m */; };
+		E4424B00267B52BA0004C9B1 /* LYEntryElementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4424AFF267B52BA0004C9B1 /* LYEntryElementViewController.m */; };
+		E4424B03267B900E0004C9B1 /* LYContentPageFullViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4424B02267B900E0004C9B1 /* LYContentPageFullViewController.m */; };
+		E4B21B5C2637ED4D004908D8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E4B21B5B2637ED4D004908D8 /* AppDelegate.m */; };
+		E4B21B622637ED4D004908D8 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4B21B612637ED4D004908D8 /* MainViewController.m */; };
+		E4B21B672637ED4E004908D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4B21B662637ED4E004908D8 /* Assets.xcassets */; };
+		E4B21B6D2637ED4E004908D8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E4B21B6C2637ED4E004908D8 /* main.m */; };
+		E4B21B7D2637F1E8004908D8 /* LYAdSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4B21B7C2637F1E8004908D8 /* LYAdSDK.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		74D1BF9D3466FBC181FAF922 /* Pods-LYAdSDKDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYAdSDKDemo.release.xcconfig"; path = "Target Support Files/Pods-LYAdSDKDemo/Pods-LYAdSDKDemo.release.xcconfig"; sourceTree = "<group>"; };
+		B1C0F15271BF14C2CAE7244E /* libPods-LYAdSDKDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LYAdSDKDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E412367C26EE319F002213FB /* LYUnionTypeTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYUnionTypeTool.h; sourceTree = "<group>"; };
+		E412367D26EE319F002213FB /* LYUnionTypeTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYUnionTypeTool.m; sourceTree = "<group>"; };
+		E412368926F1E959002213FB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E412368B26F1E95C002213FB /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		E412368F26F49EA1002213FB /* LYAdSDKAdapterForBD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LYAdSDKAdapterForBD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E42021FD26648DDE002EB1A5 /* LYAdSDKDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LYAdSDKDemo.entitlements; sourceTree = "<group>"; };
+		E42355EE26494F9500DEBE0C /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E42355F426495C5D00DEBE0C /* LYSplashViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYSplashViewController.h; sourceTree = "<group>"; };
+		E42355F526495C5D00DEBE0C /* LYSplashViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYSplashViewController.m; sourceTree = "<group>"; };
+		E42355F8264985C600DEBE0C /* LYInterstitialViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYInterstitialViewController.h; sourceTree = "<group>"; };
+		E42355F9264985C600DEBE0C /* LYInterstitialViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYInterstitialViewController.m; sourceTree = "<group>"; };
+		E42355FC264988D300DEBE0C /* LYRewardVideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYRewardVideoViewController.h; sourceTree = "<group>"; };
+		E42355FD264988D300DEBE0C /* LYRewardVideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYRewardVideoViewController.m; sourceTree = "<group>"; };
+		E423560026498A5A00DEBE0C /* LYBannerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYBannerViewController.h; sourceTree = "<group>"; };
+		E423560126498A5A00DEBE0C /* LYBannerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYBannerViewController.m; sourceTree = "<group>"; };
+		E4235604264A1AF500DEBE0C /* LYSlotID.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYSlotID.h; sourceTree = "<group>"; };
+		E4235606264A1CF300DEBE0C /* LogoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LogoViewController.h; sourceTree = "<group>"; };
+		E4235607264A1CF300DEBE0C /* LogoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LogoViewController.m; sourceTree = "<group>"; };
+		E4235610264A316600DEBE0C /* LYNativeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYNativeViewController.h; sourceTree = "<group>"; };
+		E4235611264A316600DEBE0C /* LYNativeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYNativeViewController.m; sourceTree = "<group>"; };
+		E42356882652C17700DEBE0C /* LYNativeExpressViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYNativeExpressViewController.h; sourceTree = "<group>"; };
+		E42356892652C17700DEBE0C /* LYNativeExpressViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYNativeExpressViewController.m; sourceTree = "<group>"; };
+		E42356A52653B0CB00DEBE0C /* LYNoticeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYNoticeViewController.h; sourceTree = "<group>"; };
+		E42356A62653B0CB00DEBE0C /* LYNoticeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYNoticeViewController.m; sourceTree = "<group>"; };
+		E42356FD2657E5F500DEBE0C /* LYBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYBaseViewController.h; sourceTree = "<group>"; };
+		E42356FE2657E5F500DEBE0C /* LYBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYBaseViewController.m; sourceTree = "<group>"; };
+		E423570A2658ABB300DEBE0C /* LYNativeAdImageCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYNativeAdImageCell.h; sourceTree = "<group>"; };
+		E423570B2658ABB300DEBE0C /* LYNativeAdImageCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYNativeAdImageCell.m; sourceTree = "<group>"; };
+		E423570E2658ABDC00DEBE0C /* LYNativeAdVideoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYNativeAdVideoCell.h; sourceTree = "<group>"; };
+		E423570F2658ABDC00DEBE0C /* LYNativeAdVideoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYNativeAdVideoCell.m; sourceTree = "<group>"; };
+		E42357142658AF0A00DEBE0C /* LYNativeAdBaseCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYNativeAdBaseCell.h; sourceTree = "<group>"; };
+		E42357152658AF0A00DEBE0C /* LYNativeAdBaseCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYNativeAdBaseCell.m; sourceTree = "<group>"; };
+		E4235729265B3B8600DEBE0C /* ConfigViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConfigViewController.h; sourceTree = "<group>"; };
+		E423572A265B3B8600DEBE0C /* ConfigViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConfigViewController.m; sourceTree = "<group>"; };
+		E42C395326D7255D00D39D46 /* NSBundle+changeBundleId.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+changeBundleId.m"; sourceTree = "<group>"; };
+		E42C395426D7255D00D39D46 /* NSBundle+changeBundleId.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+changeBundleId.h"; sourceTree = "<group>"; };
+		E42CF7F82695823C00A5315C /* LYAdSDKAdapterForCSJ.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LYAdSDKAdapterForCSJ.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E42CF7FC2695824500A5315C /* LYAdSDKAdapterForGDT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LYAdSDKAdapterForGDT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E42CF8002695824C00A5315C /* LYAdSDKAdapterForKS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LYAdSDKAdapterForKS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E42CF8042695825800A5315C /* LYAdSDKAdapterForSIG.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LYAdSDKAdapterForSIG.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E42CF8082695826100A5315C /* LYAdSDKAdapterForIQY.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LYAdSDKAdapterForIQY.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E42CF8102695827800A5315C /* LYAdSDKAdapterForJD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LYAdSDKAdapterForJD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4424AA22678D4EA0004C9B1 /* LYContentPageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYContentPageViewController.h; sourceTree = "<group>"; };
+		E4424AA32678D4EA0004C9B1 /* LYContentPageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYContentPageViewController.m; sourceTree = "<group>"; };
+		E4424AB32679D9910004C9B1 /* LYFullScreenVideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYFullScreenVideoViewController.h; sourceTree = "<group>"; };
+		E4424AB42679D9910004C9B1 /* LYFullScreenVideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYFullScreenVideoViewController.m; sourceTree = "<group>"; };
+		E4424AE1267AF6DA0004C9B1 /* LYDrawVideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYDrawVideoViewController.h; sourceTree = "<group>"; };
+		E4424AE2267AF6DA0004C9B1 /* LYDrawVideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYDrawVideoViewController.m; sourceTree = "<group>"; };
+		E4424AE5267AFD790004C9B1 /* LYDrawVideoAdCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYDrawVideoAdCell.h; sourceTree = "<group>"; };
+		E4424AE6267AFD790004C9B1 /* LYDrawVideoAdCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYDrawVideoAdCell.m; sourceTree = "<group>"; };
+		E4424AE8267B261F0004C9B1 /* LYDrawVideoDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYDrawVideoDemoViewController.h; sourceTree = "<group>"; };
+		E4424AE9267B261F0004C9B1 /* LYDrawVideoDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYDrawVideoDemoViewController.m; sourceTree = "<group>"; };
+		E4424AFE267B52BA0004C9B1 /* LYEntryElementViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYEntryElementViewController.h; sourceTree = "<group>"; };
+		E4424AFF267B52BA0004C9B1 /* LYEntryElementViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYEntryElementViewController.m; sourceTree = "<group>"; };
+		E4424B01267B900E0004C9B1 /* LYContentPageFullViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYContentPageFullViewController.h; sourceTree = "<group>"; };
+		E4424B02267B900E0004C9B1 /* LYContentPageFullViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYContentPageFullViewController.m; sourceTree = "<group>"; };
+		E4B21B572637ED4D004908D8 /* LYAdSDKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LYAdSDKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4B21B5A2637ED4D004908D8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E4B21B5B2637ED4D004908D8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E4B21B602637ED4D004908D8 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		E4B21B612637ED4D004908D8 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		E4B21B662637ED4E004908D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E4B21B6B2637ED4E004908D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4B21B6C2637ED4E004908D8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E4B21B7C2637F1E8004908D8 /* LYAdSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LYAdSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF6ADBCBFA306B7FB3C1BBF7 /* Pods-LYAdSDKDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYAdSDKDemo.debug.xcconfig"; path = "Target Support Files/Pods-LYAdSDKDemo/Pods-LYAdSDKDemo.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E4B21B542637ED4D004908D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E42CF81826958E1200A5315C /* LYAdSDKAdapterForGDT.framework in Frameworks */,
+				E42CF81A26958E1200A5315C /* LYAdSDKAdapterForIQY.framework in Frameworks */,
+				E4B21B7D2637F1E8004908D8 /* LYAdSDK.framework in Frameworks */,
+				E42CF81E26958E1200A5315C /* LYAdSDKAdapterForKS.framework in Frameworks */,
+				E42CF81626958E1200A5315C /* LYAdSDKAdapterForCSJ.framework in Frameworks */,
+				E42CF82026958E1200A5315C /* LYAdSDKAdapterForSIG.framework in Frameworks */,
+				E42CF81C26958E1200A5315C /* LYAdSDKAdapterForJD.framework in Frameworks */,
+				3FB4B88D0661A635A0100249 /* libPods-LYAdSDKDemo.a in Frameworks */,
+				E412369026F49EA1002213FB /* LYAdSDKAdapterForBD.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		17EBC24C48EFFE30157A33BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E412368F26F49EA1002213FB /* LYAdSDKAdapterForBD.framework */,
+				E42CF8102695827800A5315C /* LYAdSDKAdapterForJD.framework */,
+				E42CF8082695826100A5315C /* LYAdSDKAdapterForIQY.framework */,
+				E42CF8042695825800A5315C /* LYAdSDKAdapterForSIG.framework */,
+				E42CF8002695824C00A5315C /* LYAdSDKAdapterForKS.framework */,
+				E42CF7FC2695824500A5315C /* LYAdSDKAdapterForGDT.framework */,
+				E42CF7F82695823C00A5315C /* LYAdSDKAdapterForCSJ.framework */,
+				E4B21B7C2637F1E8004908D8 /* LYAdSDK.framework */,
+				B1C0F15271BF14C2CAE7244E /* libPods-LYAdSDKDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2FFB6F25729B73650EA9BABB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EF6ADBCBFA306B7FB3C1BBF7 /* Pods-LYAdSDKDemo.debug.xcconfig */,
+				74D1BF9D3466FBC181FAF922 /* Pods-LYAdSDKDemo.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../Pods;
+			sourceTree = "<group>";
+		};
+		E4235628264C32A700DEBE0C /* splash */ = {
+			isa = PBXGroup;
+			children = (
+				E42355F426495C5D00DEBE0C /* LYSplashViewController.h */,
+				E42355F526495C5D00DEBE0C /* LYSplashViewController.m */,
+			);
+			path = splash;
+			sourceTree = "<group>";
+		};
+		E4235629264C32BF00DEBE0C /* interstitial */ = {
+			isa = PBXGroup;
+			children = (
+				E42355F8264985C600DEBE0C /* LYInterstitialViewController.h */,
+				E42355F9264985C600DEBE0C /* LYInterstitialViewController.m */,
+			);
+			path = interstitial;
+			sourceTree = "<group>";
+		};
+		E423562A264C32DB00DEBE0C /* rewardvideo */ = {
+			isa = PBXGroup;
+			children = (
+				E42355FC264988D300DEBE0C /* LYRewardVideoViewController.h */,
+				E42355FD264988D300DEBE0C /* LYRewardVideoViewController.m */,
+			);
+			path = rewardvideo;
+			sourceTree = "<group>";
+		};
+		E423562B264C32EC00DEBE0C /* banner */ = {
+			isa = PBXGroup;
+			children = (
+				E423560026498A5A00DEBE0C /* LYBannerViewController.h */,
+				E423560126498A5A00DEBE0C /* LYBannerViewController.m */,
+			);
+			path = banner;
+			sourceTree = "<group>";
+		};
+		E423562C264C32F800DEBE0C /* native */ = {
+			isa = PBXGroup;
+			children = (
+				E4235703265802D500DEBE0C /* cell */,
+				E4235610264A316600DEBE0C /* LYNativeViewController.h */,
+				E4235611264A316600DEBE0C /* LYNativeViewController.m */,
+			);
+			path = native;
+			sourceTree = "<group>";
+		};
+		E42356872652C13E00DEBE0C /* nativexpress */ = {
+			isa = PBXGroup;
+			children = (
+				E42356882652C17700DEBE0C /* LYNativeExpressViewController.h */,
+				E42356892652C17700DEBE0C /* LYNativeExpressViewController.m */,
+			);
+			path = nativexpress;
+			sourceTree = "<group>";
+		};
+		E42356A42653B0AA00DEBE0C /* notice */ = {
+			isa = PBXGroup;
+			children = (
+				E42356A52653B0CB00DEBE0C /* LYNoticeViewController.h */,
+				E42356A62653B0CB00DEBE0C /* LYNoticeViewController.m */,
+			);
+			path = notice;
+			sourceTree = "<group>";
+		};
+		E4235703265802D500DEBE0C /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				E42357142658AF0A00DEBE0C /* LYNativeAdBaseCell.h */,
+				E42357152658AF0A00DEBE0C /* LYNativeAdBaseCell.m */,
+				E423570A2658ABB300DEBE0C /* LYNativeAdImageCell.h */,
+				E423570B2658ABB300DEBE0C /* LYNativeAdImageCell.m */,
+				E423570E2658ABDC00DEBE0C /* LYNativeAdVideoCell.h */,
+				E423570F2658ABDC00DEBE0C /* LYNativeAdVideoCell.m */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		E4424AA12678D4A40004C9B1 /* content */ = {
+			isa = PBXGroup;
+			children = (
+				E4424AA22678D4EA0004C9B1 /* LYContentPageViewController.h */,
+				E4424AA32678D4EA0004C9B1 /* LYContentPageViewController.m */,
+			);
+			path = content;
+			sourceTree = "<group>";
+		};
+		E4424AB22679D9550004C9B1 /* fullscreenvideo */ = {
+			isa = PBXGroup;
+			children = (
+				E4424AB32679D9910004C9B1 /* LYFullScreenVideoViewController.h */,
+				E4424AB42679D9910004C9B1 /* LYFullScreenVideoViewController.m */,
+			);
+			path = fullscreenvideo;
+			sourceTree = "<group>";
+		};
+		E4424AE0267AF5E80004C9B1 /* drawvideo */ = {
+			isa = PBXGroup;
+			children = (
+				E4424AE4267AFD180004C9B1 /* cell */,
+				E4424AE1267AF6DA0004C9B1 /* LYDrawVideoViewController.h */,
+				E4424AE2267AF6DA0004C9B1 /* LYDrawVideoViewController.m */,
+				E4424AE8267B261F0004C9B1 /* LYDrawVideoDemoViewController.h */,
+				E4424AE9267B261F0004C9B1 /* LYDrawVideoDemoViewController.m */,
+			);
+			path = drawvideo;
+			sourceTree = "<group>";
+		};
+		E4424AE4267AFD180004C9B1 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				E4424AE5267AFD790004C9B1 /* LYDrawVideoAdCell.h */,
+				E4424AE6267AFD790004C9B1 /* LYDrawVideoAdCell.m */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		E4424AFD267B525C0004C9B1 /* entry */ = {
+			isa = PBXGroup;
+			children = (
+				E4424AFE267B52BA0004C9B1 /* LYEntryElementViewController.h */,
+				E4424AFF267B52BA0004C9B1 /* LYEntryElementViewController.m */,
+				E4424B01267B900E0004C9B1 /* LYContentPageFullViewController.h */,
+				E4424B02267B900E0004C9B1 /* LYContentPageFullViewController.m */,
+			);
+			path = entry;
+			sourceTree = "<group>";
+		};
+		E4B21B4E2637ED4D004908D8 = {
+			isa = PBXGroup;
+			children = (
+				E4B21B592637ED4D004908D8 /* LYAdSDKDemo */,
+				E4B21B582637ED4D004908D8 /* Products */,
+				2FFB6F25729B73650EA9BABB /* Pods */,
+				17EBC24C48EFFE30157A33BD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E4B21B582637ED4D004908D8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E4B21B572637ED4D004908D8 /* LYAdSDKDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E4B21B592637ED4D004908D8 /* LYAdSDKDemo */ = {
+			isa = PBXGroup;
+			children = (
+				E4424AFD267B525C0004C9B1 /* entry */,
+				E4424AE0267AF5E80004C9B1 /* drawvideo */,
+				E4424AB22679D9550004C9B1 /* fullscreenvideo */,
+				E4424AA12678D4A40004C9B1 /* content */,
+				E42C395426D7255D00D39D46 /* NSBundle+changeBundleId.h */,
+				E42C395326D7255D00D39D46 /* NSBundle+changeBundleId.m */,
+				E42021FD26648DDE002EB1A5 /* LYAdSDKDemo.entitlements */,
+				E42356A42653B0AA00DEBE0C /* notice */,
+				E42356872652C13E00DEBE0C /* nativexpress */,
+				E423562C264C32F800DEBE0C /* native */,
+				E423562B264C32EC00DEBE0C /* banner */,
+				E423562A264C32DB00DEBE0C /* rewardvideo */,
+				E4235629264C32BF00DEBE0C /* interstitial */,
+				E4235628264C32A700DEBE0C /* splash */,
+				E4B21B5A2637ED4D004908D8 /* AppDelegate.h */,
+				E4B21B5B2637ED4D004908D8 /* AppDelegate.m */,
+				E4B21B602637ED4D004908D8 /* MainViewController.h */,
+				E4B21B612637ED4D004908D8 /* MainViewController.m */,
+				E4235729265B3B8600DEBE0C /* ConfigViewController.h */,
+				E423572A265B3B8600DEBE0C /* ConfigViewController.m */,
+				E4235606264A1CF300DEBE0C /* LogoViewController.h */,
+				E4235607264A1CF300DEBE0C /* LogoViewController.m */,
+				E42356FD2657E5F500DEBE0C /* LYBaseViewController.h */,
+				E42356FE2657E5F500DEBE0C /* LYBaseViewController.m */,
+				E412367C26EE319F002213FB /* LYUnionTypeTool.h */,
+				E412367D26EE319F002213FB /* LYUnionTypeTool.m */,
+				E4B21B662637ED4E004908D8 /* Assets.xcassets */,
+				E42355EE26494F9500DEBE0C /* LaunchScreen.storyboard */,
+				E4B21B6B2637ED4E004908D8 /* Info.plist */,
+				E4B21B6C2637ED4E004908D8 /* main.m */,
+				E4235604264A1AF500DEBE0C /* LYSlotID.h */,
+				E412368A26F1E959002213FB /* Localizable.strings */,
+			);
+			path = LYAdSDKDemo;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E4B21B562637ED4D004908D8 /* LYAdSDKDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4B21B702637ED4E004908D8 /* Build configuration list for PBXNativeTarget "LYAdSDKDemo" */;
+			buildPhases = (
+				1424851A2E96AFACCF6BEE12 /* [CP] Check Pods Manifest.lock */,
+				E4B21B532637ED4D004908D8 /* Sources */,
+				E4B21B542637ED4D004908D8 /* Frameworks */,
+				E4B21B552637ED4D004908D8 /* Resources */,
+				1410786EE885AF4743DC2C4F /* [CP] Embed Pods Frameworks */,
+				3BAAE905FAA766F7026DF558 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LYAdSDKDemo;
+			productName = LYAdSDKDemo;
+			productReference = E4B21B572637ED4D004908D8 /* LYAdSDKDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E4B21B4F2637ED4D004908D8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					E4B21B562637ED4D004908D8 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
+			};
+			buildConfigurationList = E4B21B522637ED4D004908D8 /* Build configuration list for PBXProject "LYAdSDKDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = E4B21B4E2637ED4D004908D8;
+			productRefGroup = E4B21B582637ED4D004908D8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E4B21B562637ED4D004908D8 /* LYAdSDKDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E4B21B552637ED4D004908D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4B21B672637ED4E004908D8 /* Assets.xcassets in Resources */,
+				E412368826F1E959002213FB /* Localizable.strings in Resources */,
+				E42355EF26494F9500DEBE0C /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1410786EE885AF4743DC2C4F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LYAdSDKDemo/Pods-LYAdSDKDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LYAdSDKDemo/Pods-LYAdSDKDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LYAdSDKDemo/Pods-LYAdSDKDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1424851A2E96AFACCF6BEE12 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LYAdSDKDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3BAAE905FAA766F7026DF558 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LYAdSDKDemo/Pods-LYAdSDKDemo-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LYAdSDKDemo/Pods-LYAdSDKDemo-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LYAdSDKDemo/Pods-LYAdSDKDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E4B21B532637ED4D004908D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E42355FE264988D300DEBE0C /* LYRewardVideoViewController.m in Sources */,
+				E4B21B622637ED4D004908D8 /* MainViewController.m in Sources */,
+				E4424B03267B900E0004C9B1 /* LYContentPageFullViewController.m in Sources */,
+				E4B21B5C2637ED4D004908D8 /* AppDelegate.m in Sources */,
+				E4424AA42678D4EA0004C9B1 /* LYContentPageViewController.m in Sources */,
+				E42355F626495C5D00DEBE0C /* LYSplashViewController.m in Sources */,
+				E4424B00267B52BA0004C9B1 /* LYEntryElementViewController.m in Sources */,
+				E42C395526D7255D00D39D46 /* NSBundle+changeBundleId.m in Sources */,
+				E423570C2658ABB300DEBE0C /* LYNativeAdImageCell.m in Sources */,
+				E42357102658ABDC00DEBE0C /* LYNativeAdVideoCell.m in Sources */,
+				E423572B265B3B8600DEBE0C /* ConfigViewController.m in Sources */,
+				E4424AB52679D9910004C9B1 /* LYFullScreenVideoViewController.m in Sources */,
+				E423560226498A5A00DEBE0C /* LYBannerViewController.m in Sources */,
+				E42356A72653B0CB00DEBE0C /* LYNoticeViewController.m in Sources */,
+				E412367E26EE319F002213FB /* LYUnionTypeTool.m in Sources */,
+				E4B21B6D2637ED4E004908D8 /* main.m in Sources */,
+				E42355FA264985C600DEBE0C /* LYInterstitialViewController.m in Sources */,
+				E4424AE7267AFD790004C9B1 /* LYDrawVideoAdCell.m in Sources */,
+				E4424AEA267B261F0004C9B1 /* LYDrawVideoDemoViewController.m in Sources */,
+				E42356FF2657E5F500DEBE0C /* LYBaseViewController.m in Sources */,
+				E423568A2652C17700DEBE0C /* LYNativeExpressViewController.m in Sources */,
+				E4235608264A1CF300DEBE0C /* LogoViewController.m in Sources */,
+				E4235612264A316600DEBE0C /* LYNativeViewController.m in Sources */,
+				E42357162658AF0A00DEBE0C /* LYNativeAdBaseCell.m in Sources */,
+				E4424AE3267AF6DA0004C9B1 /* LYDrawVideoViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E412368A26F1E959002213FB /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E412368926F1E959002213FB /* en */,
+				E412368B26F1E95C002213FB /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E4B21B6E2637ED4E004908D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E4B21B6F2637ED4E004908D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E4B21B712637ED4E004908D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF6ADBCBFA306B7FB3C1BBF7 /* Pods-LYAdSDKDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LYAdSDKDemo/LYAdSDKDemo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 10300;
+				DEVELOPMENT_TEAM = YC7Q4N8V6V;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = LYAdSDKDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.3.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.happytour.LYAdSDKDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E4B21B722637ED4E004908D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74D1BF9D3466FBC181FAF922 /* Pods-LYAdSDKDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LYAdSDKDemo/LYAdSDKDemo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 10300;
+				DEVELOPMENT_TEAM = YC7Q4N8V6V;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = LYAdSDKDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.3.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.happytour.LYAdSDKDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E4B21B522637ED4D004908D8 /* Build configuration list for PBXProject "LYAdSDKDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4B21B6E2637ED4E004908D8 /* Debug */,
+				E4B21B6F2637ED4E004908D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4B21B702637ED4E004908D8 /* Build configuration list for PBXNativeTarget "LYAdSDKDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4B21B712637ED4E004908D8 /* Debug */,
+				E4B21B722637ED4E004908D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E4B21B4F2637ED4D004908D8 /* Project object */;
+}
