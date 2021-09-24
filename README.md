@@ -16,32 +16,33 @@
 # Uncomment the next line to define a global platform for your project
 source 'https://github.com/CocoaPods/Specs.git'
 # 添加LYSpecs私库
-source 'https://github.com/happytour/LYSpecs.git'
+source 'https://gitee.com/happytour/LYSpecs.git'
 
 platform :ios, '9.0'
 
 workspace 'LYAdSDKDemo'
-project 'LYAdSDKDemo/LYAdSDKDemo'
+project 'LYAdSDKDemo'
+
 target 'LYAdSDKDemo' do
-  pod 'Ads-CN', '3.6.1.1'
-  pod 'GDTMobSDK', '4.12.71'
-  pod 'SigmobAd-iOS', '3.1.0'
-  pod 'BaiduMobAdSDK', '4.78'
+  pod 'Ads-CN', '3.9.0.3'
+  pod 'GDTMobSDK', '4.13.10'
+  pod 'SigmobAd-iOS', '3.2.4'
+  pod 'BaiduMobAdSDK', '4.81'
   # KSAdSDKFull、QySdk、JADYun，没有提交到官方库，需要引入LYSpecs私库拉取
-  pod 'KSAdSDKFull', '3.3.18'
-  pod 'QySdk', '1.3.2'
-  pod 'JADYun' , '1.2.0'
+  pod 'fork-KSAdSDKFull', '3.3.23'
+  pod 'fork-QySdk', '1.3.2'
+  pod 'fork-JADYun' , '1.2.4'
   pod 'WechatOpenSDK', '1.8.7.1'
-  # 下面是LYAdSDK配置，其中对应Adapter需要配合对应预算SDK使用，只配置需要Adapter即可
-  pod 'LYAdSDK', '2.1.0'
-  pod 'LYAdSDKAdapterForCSJ', '1.0.0'
-  pod 'LYAdSDKAdapterForGDT', '1.0.0'
-  pod 'LYAdSDKAdapterForKS', '1.0.0'
-  pod 'LYAdSDKAdapterForSIG', '1.0.0'
-  pod 'LYAdSDKAdapterForIQY', '1.0.0'
-  pod 'LYAdSDKAdapterForBaidu', '1.0.0'
-  pod 'LYAdSDKAdapterForJD', '1.0.0'
-  project 'LYAdSDKDemo/LYAdSDKDemo'
+
+  pod 'LYAdSDK13', '2.3.0'
+  pod 'LYAdSDKAdapterForCSJ', '2.3.0'
+  pod 'LYAdSDKAdapterForGDT', '2.3.0'
+  pod 'LYAdSDKAdapterForKS', '2.3.0'
+  pod 'LYAdSDKAdapterForSIG', '2.3.0'
+  pod 'LYAdSDKAdapterForIQY', '2.3.0'
+  pod 'LYAdSDKAdapterForBD', '2.3.0'
+  pod 'LYAdSDKAdapterForJD', '2.3.0'
+  project 'LYAdSDKDemo'
 end
 ```
 
