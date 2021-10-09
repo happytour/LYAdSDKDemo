@@ -19,9 +19,9 @@ target 'LYAdSDKDemo' do
   pod 'fork-JADYun' , '1.2.4'
   pod 'WechatOpenSDK', '1.8.7.1'
   
-  pod 'LYAdSDK**', '2.3.0'
+  pod 'LYAdSDK**', '2.3.1'
   pod 'LYAdSDKAdapterForCSJ', '2.3.0'
-  pod 'LYAdSDKAdapterForGDT', '2.3.0'
+  pod 'LYAdSDKAdapterForGDT', '2.3.1'
   pod 'LYAdSDKAdapterForKS', '2.3.0'
   pod 'LYAdSDKAdapterForSIG', '2.3.0'
   pod 'LYAdSDKAdapterForIQY', '2.3.0'
