@@ -18,8 +18,8 @@
     CGFloat width = CGRectGetWidth([UIScreen mainScreen].bounds) - 20;
     CGFloat videoHeigh = 300;
     LYVideoConfig *videoConfig = [[LYVideoConfig alloc] init]; //只对广点通生效，可以缺省
-    videoConfig.videoMuted = NO;
-    videoConfig.userControlEnable = YES;
+    videoConfig.videoMuted = YES;
+    videoConfig.userControlEnable = NO;
     videoConfig.detailPageEnable = YES;
     dataObject.videoConfig = videoConfig;
     [self.adView addSubview:self.adView.mediaView];
