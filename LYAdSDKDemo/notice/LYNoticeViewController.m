@@ -38,6 +38,7 @@
 
 - (void)ly_noticeAdDidLoad:(LYNoticeAd *)noticeAd {
     [self appendLogText:[NSString stringWithFormat:@"ly_noticeAdDidLoad, unionType: %@", [LYUnionTypeTool unionName4unionType:noticeAd.unionType]]];
+    [self.noticeAd showAdInWindow:[UIApplication sharedApplication].keyWindow];
 }
 
 - (void)ly_noticeAdDidFailToLoad:(LYNoticeAd *)noticeAd error:(NSError *)error {
