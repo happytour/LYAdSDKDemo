@@ -39,6 +39,7 @@
 		E4424AEA267B261F0004C9B1 /* LYDrawVideoDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4424AE9267B261F0004C9B1 /* LYDrawVideoDemoViewController.m */; };
 		E4424B00267B52BA0004C9B1 /* LYEntryElementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4424AFF267B52BA0004C9B1 /* LYEntryElementViewController.m */; };
 		E4424B03267B900E0004C9B1 /* LYContentPageFullViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4424B02267B900E0004C9B1 /* LYContentPageFullViewController.m */; };
+		E45C69E127116C7C006271D8 /* LYAdSDKAdapterForKLN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45C69E027116C7C006271D8 /* LYAdSDKAdapterForKLN.framework */; };
 		E4B21B5C2637ED4D004908D8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E4B21B5B2637ED4D004908D8 /* AppDelegate.m */; };
 		E4B21B622637ED4D004908D8 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4B21B612637ED4D004908D8 /* MainViewController.m */; };
 		E4B21B672637ED4E004908D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4B21B662637ED4E004908D8 /* Assets.xcassets */; };
@@ -106,6 +107,7 @@
 		E4424AFF267B52BA0004C9B1 /* LYEntryElementViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYEntryElementViewController.m; sourceTree = "<group>"; };
 		E4424B01267B900E0004C9B1 /* LYContentPageFullViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYContentPageFullViewController.h; sourceTree = "<group>"; };
 		E4424B02267B900E0004C9B1 /* LYContentPageFullViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYContentPageFullViewController.m; sourceTree = "<group>"; };
+		E45C69E027116C7C006271D8 /* LYAdSDKAdapterForKLN.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LYAdSDKAdapterForKLN.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4B21B572637ED4D004908D8 /* LYAdSDKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LYAdSDKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4B21B5A2637ED4D004908D8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E4B21B5B2637ED4D004908D8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 				E4B21B7D2637F1E8004908D8 /* LYAdSDK.framework in Frameworks */,
 				E42CF81E26958E1200A5315C /* LYAdSDKAdapterForKS.framework in Frameworks */,
 				E42CF81626958E1200A5315C /* LYAdSDKAdapterForCSJ.framework in Frameworks */,
+				E45C69E127116C7C006271D8 /* LYAdSDKAdapterForKLN.framework in Frameworks */,
 				E42CF82026958E1200A5315C /* LYAdSDKAdapterForSIG.framework in Frameworks */,
 				E42CF81C26958E1200A5315C /* LYAdSDKAdapterForJD.framework in Frameworks */,
 				3FB4B88D0661A635A0100249 /* libPods-LYAdSDKDemo.a in Frameworks */,
@@ -140,6 +143,7 @@
 		17EBC24C48EFFE30157A33BD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E45C69E027116C7C006271D8 /* LYAdSDKAdapterForKLN.framework */,
 				E412368F26F49EA1002213FB /* LYAdSDKAdapterForBD.framework */,
 				E42CF8102695827800A5315C /* LYAdSDKAdapterForJD.framework */,
 				E42CF8082695826100A5315C /* LYAdSDKAdapterForIQY.framework */,

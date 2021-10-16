@@ -28,6 +28,8 @@
             return @"爱奇艺";
         case LYAdSdkUnionTypeJD:
             return @"京东";
+        case LYAdSdkUnionTypeKLN:
+            return @"游可赢";
         default:
             return @"未知";
     }
