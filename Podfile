@@ -20,7 +20,7 @@ target 'LYAdSDKDemo' do
   pod 'fork-JADYun' , '1.2.4'
   pod 'fork-KlevinAdSDK', '2.1.0.250'
   
-  pod 'LYAdSDK**', '2.3.1'
+  pod 'LYAdSDK**', '2.3.2'
   pod 'LYAdSDKAdapterForCSJ', '2.3.0'
   pod 'LYAdSDKAdapterForGDT', '2.3.1'
   pod 'LYAdSDKAdapterForKS', '2.3.0'
@@ -28,5 +28,6 @@ target 'LYAdSDKDemo' do
   pod 'LYAdSDKAdapterForIQY', '2.3.0'
   pod 'LYAdSDKAdapterForBD', '2.3.0'
   pod 'LYAdSDKAdapterForJD', '2.3.0'
+  pod 'LYAdSDKAdapterForKLN', '2.3.2'
   project 'LYAdSDKDemo'
 end
