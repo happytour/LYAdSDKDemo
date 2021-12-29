@@ -9,8 +9,8 @@ workspace 'LYAdSDKDemo'
 project 'LYAdSDKDemo'
 
 target 'LYAdSDKDemo' do
-  pod 'Ads-CN', '4.0.0.5'
-  pod 'GDTMobSDK', '4.13.10'
+  pod 'Ads-CN', '4.1.0.2'
+  pod 'GDTMobSDK', '4.13.22'
   pod 'SigmobAd-iOS', '3.4.3'
   pod 'BaiduMobAdSDK', '4.81'
   pod 'WechatOpenSDK', '1.8.7.1'
@@ -18,7 +18,7 @@ target 'LYAdSDKDemo' do
   pod 'fork-KSAdSDKFull', '3.3.23'
   pod 'fork-QySdk', '1.3.2'
   pod 'fork-JADYun' , '1.3.4'
-  pod 'fork-KlevinAdSDK', '2.3.0.222'
+  pod 'fork-KlevinAdSDK', '2.4.1.222'
   
   pod 'LYAdSDK', '2.4.1'
   pod 'LYAdSDKAdapterForCSJ', '2.3.4'
