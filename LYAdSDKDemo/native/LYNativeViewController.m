@@ -61,7 +61,11 @@
     if (dataObject.creativeType == LYNativeAdCreativeType_GDT_isVideoAd
             || dataObject.creativeType == LYNativeAdCreativeType_CSJ_VideoImage
             || dataObject.creativeType == LYNativeAdCreativeType_CSJ_VideoPortrait
-            || dataObject.creativeType == LYNativeAdCreativeType_CSJ_SquareVideo) {
+            || dataObject.creativeType == LYNativeAdCreativeType_CSJ_SquareVideo
+            || dataObject.creativeType == LYNativeAdCreativeType_KS_AdMaterialTypeVideo
+            || dataObject.creativeType == LYNativeAdCreativeType_KLN_HorVideo
+            || dataObject.creativeType == LYNativeAdCreativeType_BD_VIDEO
+        ) {
         return [LYNativeAdVideoCell cellHeightWithNativeAdDataObject:dataObject];
     } else {
         return [LYNativeAdImageCell cellHeightWithNativeAdDataObject:dataObject];
@@ -73,7 +77,11 @@
     if (dataObject.creativeType == LYNativeAdCreativeType_GDT_isVideoAd
         || dataObject.creativeType == LYNativeAdCreativeType_CSJ_VideoImage
         || dataObject.creativeType == LYNativeAdCreativeType_CSJ_VideoPortrait
-        || dataObject.creativeType == LYNativeAdCreativeType_CSJ_SquareVideo) {
+        || dataObject.creativeType == LYNativeAdCreativeType_CSJ_SquareVideo
+        || dataObject.creativeType == LYNativeAdCreativeType_KS_AdMaterialTypeVideo
+        || dataObject.creativeType == LYNativeAdCreativeType_KLN_HorVideo
+        || dataObject.creativeType == LYNativeAdCreativeType_BD_VIDEO
+        ) {
         LYNativeAdVideoCell *cell = [tableView dequeueReusableCellWithIdentifier:@"LYNativeAdVideoCell"];
         [cell setupWithNativeAdDataObject:dataObject delegate:self vc:self];
         return cell;
