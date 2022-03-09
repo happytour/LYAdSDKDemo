@@ -28,8 +28,8 @@ project 'LYAdSDKDemo'
 
 target 'LYAdSDKDemo' do
   pod 'Ads-CN', '4.1.0.2' # 穿山甲官方
-  pod 'GDTMobSDK', '4.13.22' # 广点通官方
-  pod 'SigmobAd-iOS', '3.4.3' # sigmob官方
+  pod 'GDTMobSDK', '4.13.26' # 广点通官方
+  pod 'SigmobAd-iOS', '3.5.3' # sigmob官方
   pod 'BaiduMobAdSDK', '4.81' # 百度官方
   pod 'WechatOpenSDK', '1.8.7.1' # 微信官方
   pod 'KSAdSDK', '3.3.22' # 快手AD官方（不能与KSAdSDKFull同时存在）
@@ -39,7 +39,7 @@ target 'LYAdSDKDemo' do
   pod 'fork-JADYun' , '1.3.4' # 京东私库
   pod 'fork-KlevinAdSDK', '2.4.1.222' # 游可赢私库
   
-  pod 'LYAdSDK', '2.4.1'
+  pod 'LYAdSDK', '2.4.3'
   pod 'LYAdSDKAdapterForCSJ', '2.3.4' # 穿山甲支持
   pod 'LYAdSDKAdapterForGDT', '2.3.3' # 广点通支持
   pod 'LYAdSDKAdapterForKS', '2.4.1.1' # 快手AD支持
