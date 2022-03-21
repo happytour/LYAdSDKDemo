@@ -39,7 +39,7 @@ target 'LYAdSDKDemo' do
   pod 'fork-JADYun' , '1.3.4' # 京东私库
   pod 'fork-KlevinAdSDK', '2.4.1.222' # 游可赢私库
 
-  pod 'LYAdSDK', '2.4.3'
+  pod 'LYAdSDK', '2.4.4'
   pod 'LYAdSDKAdapterForCSJ', '2.4.3' # 穿山甲支持
   pod 'LYAdSDKAdapterForGDT', '2.3.3' # 广点通支持
   pod 'LYAdSDKAdapterForKS', '2.4.1.1' # 快手AD支持
@@ -219,6 +219,8 @@ self.adView.delegate = delegate; // adView 广告回调
 self.adView.viewController = vc; // 跳转 VC
 //重要，先调用refreshData，dataObject是LYNativeAdDataObject对象
 [self.adView refreshData:dataObject];
+//在refreshData之后添加view
+[self.adView addSubview:your view];
 ...
 省略 具体渲染逻辑，参见demo
 ...
