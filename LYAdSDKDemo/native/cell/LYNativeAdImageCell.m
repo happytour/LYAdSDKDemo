@@ -20,11 +20,8 @@
 - (instancetype) init {
     if (self = [super init]) {
         self.iconImageView = [[UIImageView alloc] init];
-        [self.adView addSubview:self.iconImageView];
         self.title = [[UILabel alloc] init];
-        [self.adView addSubview:self.title];
         self.desc = [[UILabel alloc] init];
-        [self.adView addSubview:self.desc];
     }
     return self;
 }
@@ -32,11 +29,8 @@
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
         self.iconImageView = [[UIImageView alloc] init];
-        [self.adView addSubview:self.iconImageView];
         self.title = [[UILabel alloc] init];
-        [self.adView addSubview:self.title];
         self.desc = [[UILabel alloc] init];
-        [self.adView addSubview:self.desc];
     }
     return self;
 }
@@ -46,6 +40,10 @@
     self.adView.viewController = vc; // 跳转 VC
     //一定要先refreshData
     [self.adView refreshData:dataObject];
+    //在refreshData之后添加view
+    [self.adView addSubview:self.iconImageView];
+    [self.adView addSubview:self.title];
+    [self.adView addSubview:self.desc];
     
     CGFloat width = CGRectGetWidth([UIScreen mainScreen].bounds) - 20;
     CGFloat bannerHeigh = 52;
