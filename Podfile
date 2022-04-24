@@ -24,11 +24,11 @@ target 'LYAdSDKDemo' do
   pod 'fork-JADYun' , '1.3.4' # 京东私库
   pod 'fork-KlevinAdSDK', '2.4.1.222' # 游可赢私库
   
-  pod 'LYAdSDK', '2.4.5'
+  pod 'LYAdSDK', '2.4.6'
   pod 'LYAdSDKAdapterForCSJ', '2.4.3' # 穿山甲支持
   pod 'LYAdSDKAdapterForGDT', '2.3.3' # 广点通支持
-  pod 'LYAdSDKAdapterForKS', '2.4.3' # 快手AD支持
-  pod 'LYAdSDKAdapterForKSContent', '2.4.1.1' # 快手内容支持
+  pod 'LYAdSDKAdapterForKS', '2.4.4' # 快手AD支持
+  pod 'LYAdSDKAdapterForKSContent', '2.4.4' # 快手内容支持
   pod 'LYAdSDKAdapterForSIG', '2.4.1' # sigmob支持
   pod 'LYAdSDKAdapterForIQY', '2.3.0' # 爱奇艺支持
   pod 'LYAdSDKAdapterForBD', '2.4.1' # 百度支持
