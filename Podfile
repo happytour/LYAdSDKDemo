@@ -12,8 +12,8 @@ workspace 'LYAdSDKDemo'
 project 'LYAdSDKDemo'
 
 target 'LYAdSDKDemo' do
-  pod 'Ads-CN', '4.1.0.2' # 穿山甲官方
-  pod 'GDTMobSDK', '4.13.26' # 广点通官方
+  pod 'Ads-CN', '4.3.0.5' # 穿山甲官方
+  pod 'GDTMobSDK', '4.13.63' # 广点通官方
   pod 'SigmobAd-iOS', '3.5.3' # sigmob官方
   pod 'BaiduMobAdSDK', '4.81' # 百度官方
   pod 'WechatOpenSDK', '1.8.7.1' # 微信官方
