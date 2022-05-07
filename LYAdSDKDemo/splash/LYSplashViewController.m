@@ -38,12 +38,31 @@
     [self.splashAd loadAd];
 }
 
+- (UIWindow*)keyWindow {
+    if ([UIApplication sharedApplication].delegate.window) {
+        return [UIApplication sharedApplication].delegate.window;
+    } else {
+        if (@available(iOS 13.0,*)) {
+            UIWindow *keyWindow = nil;
+            for (UIWindow *window in [UIApplication sharedApplication].windows) {
+                if (window.isKeyWindow) {
+                    keyWindow = window;
+                    break;
+                }
+            }
+            return keyWindow;
+        } else {
+            return [UIApplication sharedApplication].keyWindow;
+        }
+    }
+}
+
 #pragma mark - LYSplashAdDelegate
 
 - (void)ly_splashAdDidLoad:(LYSplashAd *)splashAd {
     [self appendLogText:[NSString stringWithFormat:@"ly_splashAdDidLoad, unionType: %@", [LYUnionTypeTool unionName4unionType:splashAd.unionType]]];
     
-    UIWindow *keyWindow = [UIApplication sharedApplication].windows.firstObject;
+    UIWindow *keyWindow = [self keyWindow];
     CGRect frame = [UIScreen mainScreen].bounds;
     CGRect bottomFrame = CGRectMake(0, frame.size.height - 100, frame.size.width, 100);
 
