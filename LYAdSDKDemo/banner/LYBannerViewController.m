@@ -35,6 +35,7 @@
     if (!self.bannerView) {
         self.bannerView = [[LYBannerAdView alloc] initWithFrame:frame slotId:self.textField.text viewController:self];
         self.bannerView.delegate = self;
+        self.bannerView.autoSwitchInterval = 30;
     }
     [self.bannerView loadAd];
 }
