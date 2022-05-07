@@ -60,7 +60,8 @@
 #pragma mark - LYSplashAdDelegate
 
 - (void)ly_splashAdDidLoad:(LYSplashAd *)splashAd {
-    [self appendLogText:[NSString stringWithFormat:@"ly_splashAdDidLoad, unionType: %@", [LYUnionTypeTool unionName4unionType:splashAd.unionType]]];
+    BOOL valid = [self.splashAd isValid];
+    [self appendLogText:[NSString stringWithFormat:@"ly_splashAdDidLoad, unionType: %@, isValid: %@", [LYUnionTypeTool unionName4unionType:splashAd.unionType], valid ? @"true" : @"false"]];
     
     UIWindow *keyWindow = [self keyWindow];
     CGRect frame = [UIScreen mainScreen].bounds;

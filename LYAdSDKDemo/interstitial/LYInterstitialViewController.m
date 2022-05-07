@@ -40,7 +40,8 @@
 #pragma mark - LYInterstitialAdDelegate
 
 - (void)ly_interstitialAdDidLoad:(LYInterstitialAd *)interstitialAd {
-    [self appendLogText:[NSString stringWithFormat:@"ly_interstitialAdDidLoad, unionType: %@", [LYUnionTypeTool unionName4unionType:interstitialAd.unionType]]];
+    BOOL valid = [self.interstitial isValid];
+    [self appendLogText:[NSString stringWithFormat:@"ly_interstitialAdDidLoad, unionType: %@, isValid: %@", [LYUnionTypeTool unionName4unionType:interstitialAd.unionType], valid ? @"true" : @"false"]];
     [self.interstitial showAdFromRootViewController:self];
 }
 

@@ -45,7 +45,8 @@
 }
 
 - (void)ly_fullScreenVideoAdDidCache:(LYFullScreenVideoAd *)fullScreenVideoAd {
-    [self appendLogText:@"ly_fullScreenVideoAdDidCache"];
+    BOOL valid = [self.fullScreenVideoAd isValid];
+    [self appendLogText:[NSString stringWithFormat:@"ly_fullScreenVideoAdDidCache, isValid: %@", valid ? @"true" : @"false"]];
     [self.fullScreenVideoAd showAdFromRootViewController:self];
 }
 

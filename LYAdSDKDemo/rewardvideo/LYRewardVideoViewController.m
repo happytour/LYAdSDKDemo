@@ -65,7 +65,8 @@
 }
 
 - (void)ly_rewardVideoAdDidCache:(LYRewardVideoAd *)rewardVideoAd {
-    [self appendLogText:@"ly_rewardVideoAdDidCache"];
+    BOOL valid = [self.rewardedAd isValid];
+    [self appendLogText:[NSString stringWithFormat:@"ly_rewardVideoAdDidCache, isValid: %@", valid ? @"true" : @"false"]];
     [self.rewardedAd showAdFromRootViewController:self];
 }
 
