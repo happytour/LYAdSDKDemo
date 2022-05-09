@@ -43,11 +43,21 @@
     self.window.rootViewController = self.logoController;
     [self.window makeKeyAndVisible];
     
+    
+    LYAdSDKPrivacyConfig * privacy = [[LYAdSDKPrivacyConfig alloc] init];
+//    privacy.canUseIDFA = NO;
+//    privacy.canUseLocation = NO;
+//    privacy.customIDFA = @"00000000-0000-0000-0000-000000000000";
+//    LYAdSDKLocation * location = [[LYAdSDKLocation alloc] init];
+//    location.latitude = 20.00;
+//    location.longitude = 10.00;
+//    privacy.location = location;
+    
     NSString *userId = [defaults objectForKey:@"userId"];
     NSString *appId = [defaults objectForKey:@"appId"];
     
     [LYAdSDKConfig setUserId:userId];
-    [LYAdSDKConfig initAppId:appId];
+    [LYAdSDKConfig initAppId:appId privacy:privacy];
     
     CGRect frame = [UIScreen mainScreen].bounds;
     CGRect splashFrame = CGRectMake(0, 0, frame.size.width, frame.size.height);
