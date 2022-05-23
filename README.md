@@ -2,7 +2,7 @@
 
 ## SDK项目部署
 
-### 开发环境
+## 开发环境
 
 - **开发工具**：推荐Xcode 12及以上版本
 
@@ -10,7 +10,7 @@
 
 - **SDK版本**：官网最新版本
 
-### pod方式接入
+## pod方式接入
 
 ```ruby
 # Uncomment the next line to define a global platform for your project
@@ -53,15 +53,15 @@ target 'LYAdSDKDemo' do
 end
 ```
 
-### 手动接入
+## 手动接入
 
 请参考对应平台接入文档依次接入，最后将LYAdSDK.framework及对应Adapter的framework拖放到项目。  
 
 点击主工程 -> Build Settings -> 搜索Other Linker Flags -> 在列表中找到Other Linker Flags -> 添加参数-ObjC
 
-### info.plist配置
+## info.plist配置
 
-#### http限制
+### http限制
 
 在info.plist中添加 App Transport Security Settings 设定，由于苹果默认限制HTTP请求，需手动配置才可正常访问HTTP请求，SDK的API均已使用HTTPS但部分媒体资源需要使用HTTP TIPS：可以右击info.plist文件，选择Open As -> Source Code，然后将下列代码粘贴进去
 
@@ -73,7 +73,7 @@ end
     </dict>
 ```
 
-#### 关于 iOS 14 AppTrackingTransparency
+### 关于 iOS 14 AppTrackingTransparency
 
 在 iOS 14 设备上，建议您在应用启动时调用 apple 提供的 AppTrackingTransparency 方案，获取用户的 IDFA 授权，以便提供更精准的广告投放和收入优化
 
@@ -88,14 +88,14 @@ end
 
 请向相关人员申请测试appId和slotId
 
-### SDK版本号
+## SDK版本号
 
 ```objectivec
 // 例：2.0.0
 NSLog(@"sdkVersion: %@", [LYAdSDKConfig sdkVersion]);
 ```
 
-### 初始化
+## 初始化
 
 ```objectivec
 // userId在任何能获取到的时候都可以设置，最后一次设置会覆盖之前
@@ -117,7 +117,7 @@ if (...需要隐私政策配置...) {
 }
 ```
 
-### 通知广告 LYNoticeAd
+## 通知广告 LYNoticeAd
 
 ```objectivec
 // LYNoticeAd代理
@@ -142,7 +142,7 @@ self.noticeAd.delegate = self;
 [self.noticeAd loadAd];
 ```
 
-### 开屏广告 LYSplashAd
+## 开屏广告 LYSplashAd
 
 ```objectivec
 // LYSplashAd代理
@@ -195,9 +195,9 @@ if (...需要自定义底部logo...) {
 }
 ```
 
-### 信息流广告
+## 信息流广告
 
-#### 自渲染 LYNativeAd
+### 自渲染 LYNativeAd
 
 ```objectivec
 // LYNativeAd代理
@@ -304,7 +304,7 @@ typedef NS_ENUM(NSInteger, LYNativeAdInteractionType) {
 @end
 ```
 
-#### 模板渲染 LYNativeExpressAd
+### 模板渲染 LYNativeExpressAd
 
 ```objectivec
 // LYNativeExpressAd代理
@@ -346,7 +346,7 @@ relatedView.viewController = self;
 UIView *view = [[self.expressAdRelatedViews objectAtIndex:indexPath.row] getAdView];
 ```
 
-### 激励视频广告 LYRewardVideoAd
+## 激励视频广告 LYRewardVideoAd
 
 ```objectivec
 @protocol LYRewardVideoAdDelegate <NSObject>
@@ -388,7 +388,7 @@ self.rewardedAd.delegate = self;
 [self.rewardedAd showAdFromRootViewController:self];
 ```
 
-### 插屏广告 LYInterstitialAd
+## 插屏广告 LYInterstitialAd
 
 ```objectivec
 //LYInterstitialAd代理
@@ -419,7 +419,7 @@ self.interstitial.delegate = self;
 [self.interstitial showAdFromRootViewController:self];
 ```
 
-### Banner广告 LYBannerAdView
+## Banner广告 LYBannerAdView
 
 ```objectivec
 // LYBannerAdView代理
@@ -454,7 +454,7 @@ self.bannerView.delegate = self;
 self.bannerView.autoSwitchInterval = 30;
 ```
 
-### 全屏视频广告 LYFullScreenVideoAd
+## 全屏视频广告 LYFullScreenVideoAd
 
 ```objectivec
 // LYFullScreenVideoAd代理
@@ -491,7 +491,7 @@ self.fullScreenVideoAd.delegate = self;
 [self.fullScreenVideoAd showAdFromRootViewController:self];
 ```
 
-### Draw视频广告 LYDrawVideoAd
+## Draw视频广告 LYDrawVideoAd
 
 ```objectivec
 // LYDrawVideoAd代理
@@ -531,7 +531,7 @@ relatedView.viewController = self;
 [self.relatedView unregisterView];
 ```
 
-### 视频内容 LYContentPage
+## 视频内容 LYContentPage
 
 ```objectivec
 // LYContentPage代理
@@ -591,7 +591,7 @@ typedef NS_ENUM(NSUInteger, LYContentType) {
 @end
 ```
 
-### 入口组件 LYEntryElement
+## 入口组件 LYEntryElement
 
 参考demo
 
