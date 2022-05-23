@@ -29,8 +29,8 @@ project 'LYAdSDKDemo'
 target 'LYAdSDKDemo' do
   pod 'Ads-CN', '4.3.0.5' # 穿山甲官方
   pod 'GDTMobSDK', '4.13.63' # 广点通官方
-  pod 'SigmobAd-iOS', '3.5.3' # sigmob官方
-  pod 'BaiduMobAdSDK', '4.81' # 百度官方
+  pod 'SigmobAd-iOS', '4.1.0' # sigmob官方
+  pod 'BaiduMobAdSDK', '4.861' # 百度官方
   pod 'WechatOpenSDK', '1.8.7.1' # 微信官方
 #  pod 'KSAdSDK', '3.3.22' # 快手AD官方（不能与KSAdSDKFull同时存在）
   # KSAdSDKFull、QySdk、JADYun、KlevinAdSDK，没有提交到官方库，需要引入LYSpecs私库拉取
@@ -39,16 +39,16 @@ target 'LYAdSDKDemo' do
   pod 'fork-JADYun' , '1.3.4' # 京东私库
   pod 'fork-KlevinAdSDK', '2.4.1.222' # 游可赢私库
 
-  pod 'LYAdSDK', '2.4.6'
-  pod 'LYAdSDKAdapterForCSJ', '2.4.3' # 穿山甲支持
-  pod 'LYAdSDKAdapterForGDT', '2.3.3' # 广点通支持
-  pod 'LYAdSDKAdapterForKS', '2.4.4' # 快手AD支持
-  pod 'LYAdSDKAdapterForKSContent', '2.4.4' # 快手内容支持
-  pod 'LYAdSDKAdapterForSIG', '2.4.1' # sigmob支持
-  pod 'LYAdSDKAdapterForIQY', '2.3.0' # 爱奇艺支持
-  pod 'LYAdSDKAdapterForBD', '2.4.1' # 百度支持
-  pod 'LYAdSDKAdapterForJD', '2.3.0' # 京东支持
-  pod 'LYAdSDKAdapterForKLN', '2.4.1' # 游可赢支持
+  pod 'LYAdSDK', '2.5.0'
+  pod 'LYAdSDKAdapterForCSJ', '2.5.0' # 穿山甲支持
+  pod 'LYAdSDKAdapterForGDT', '2.5.0' # 广点通支持
+  pod 'LYAdSDKAdapterForKS', '2.5.0' # 快手AD支持
+  pod 'LYAdSDKAdapterForKSContent', '2.5.0' # 快手内容支持
+  pod 'LYAdSDKAdapterForSIG', '2.5.0' # sigmob支持
+  pod 'LYAdSDKAdapterForIQY', '2.5.0' # 爱奇艺支持
+  pod 'LYAdSDKAdapterForBD', '2.5.0' # 百度支持
+  pod 'LYAdSDKAdapterForJD', '2.5.0' # 京东支持
+  pod 'LYAdSDKAdapterForKLN', '2.5.0' # 游可赢支持
   project 'LYAdSDKDemo'
 end
 ```
@@ -100,7 +100,21 @@ NSLog(@"sdkVersion: %@", [LYAdSDKConfig sdkVersion]);
 ```objectivec
 // userId在任何能获取到的时候都可以设置，最后一次设置会覆盖之前
 [LYAdSDKConfig setUserId:@"媒体用户唯一ID，可以是脱敏后的需保证唯一"];
-[LYAdSDKConfig initAppId:@"你的APPID"];
+if (...需要隐私政策配置...) {
+    LYAdSDKPrivacyConfig * privacy = [[LYAdSDKPrivacyConfig alloc] init];
+    privacy.canUseIDFA = NO;// 根据实际情况填写
+    privacy.canUseLocation = NO;// 根据实际情况填写
+    // 当canUseIDFA为NO时，customIDFA生效，可以为nil
+    privacy.customIDFA = @"00000000-0000-0000-0000-000000000000";// 根据实际情况填写
+    LYAdSDKLocation * location = [[LYAdSDKLocation alloc] init];
+    location.latitude = 20.00;// 根据实际情况填写
+    location.longitude = 10.00;// 根据实际情况填写
+    // 当canUseLocation为NO时，location生效，可以为nil
+    privacy.location = location;
+    [LYAdSDKConfig initAppId:@"你的APPID" privacy:privacy];
+} else {
+    [LYAdSDKConfig initAppId:@"你的APPID"];
+}
 ```
 
 ### 通知广告 LYNoticeAd
@@ -173,8 +187,10 @@ if (...需要自定义底部logo...) {
     UILabel *bottomView = [[UILabel alloc] initWithFrame:bottomFrame];
     [bottomView setText:@"这是一个测试LOGO"];
     bottomView.backgroundColor = [UIColor redColor];
+    // 展示广告，调用此方法前需调用isValid方法判断广告素材是否有效
     [self.splashAd showAdInWindow:keyWindow withBottomView:bottomView];
 } else {
+    // 展示广告，调用此方法前需调用isValid方法判断广告素材是否有效
     [self.splashAd showAdInWindow:keyWindow];
 }
 ```
@@ -266,6 +282,12 @@ typedef NS_ENUM(NSInteger, LYNativeAdCreativeType) {
     LYNativeAdCreativeType_BD_GIF = (6 << 24) | 3 //GIF广告
 };
 
+typedef NS_ENUM(NSInteger, LYNativeAdInteractionType) {
+    LYNativeAdInteractionTypeUnkown = 0,
+    LYNativeAdInteractionTypeBrowser = 1,
+    LYNativeAdInteractionTypeDownload = 2,
+};
+
 @interface LYNativeAdDataObject : NSObject
 @property (nonatomic, copy, readonly) NSString *title;
 @property (nonatomic, copy, readonly) NSString *desc;
@@ -276,6 +298,8 @@ typedef NS_ENUM(NSInteger, LYNativeAdCreativeType) {
 @property (nonatomic, copy, readonly) NSArray *imageUrls;
 // 创意类型，返回LYNativeAdCreativeType中的值
 @property (nonatomic, readonly) LYNativeAdCreativeType creativeType;
+// 交互类型，返回LYNativeAdInteractionType中的值
+@property (nonatomic, readonly) LYNativeAdInteractionType interactionType;
 @property (nonatomic, strong) LYVideoConfig *videoConfig;
 @end
 ```
@@ -360,6 +384,7 @@ self.rewardedAd.delegate = self;
 [self.rewardedAd loadAd];
 ...
 // 激励视频 show，建议在收到ly_rewardVideoAdDidCache回调后调用
+// 展示广告，调用此方法前需调用isValid方法判断广告素材是否有效
 [self.rewardedAd showAdFromRootViewController:self];
 ```
 
@@ -390,6 +415,7 @@ self.interstitial.delegate = self;
 [self.interstitial loadAd];
 ...
 // interstitial show，在收到加载成功回调之后调用show方法
+// 展示广告，调用此方法前需调用isValid方法判断广告素材是否有效
 [self.interstitial showAdFromRootViewController:self];
 ```
 
@@ -420,6 +446,12 @@ self.bannerView.delegate = self;
 ...
 // 在ly_bannerAdViewDidLoad回调之后，将bannerView添加到界面上
 [self.view addSubview:self.bannerView];
+```
+
+如果想自定义Banner的刷新间隔，可以通过autoSwitchInterval来进行设置。所设置值的有效范围是[30,120]。默认为30。设 0 则不刷新。只对广点通、穿山甲有效
+
+```objectivec
+self.bannerView.autoSwitchInterval = 30;
 ```
 
 ### 全屏视频广告 LYFullScreenVideoAd
@@ -455,6 +487,7 @@ self.fullScreenVideoAd.delegate = self;
 [self.fullScreenVideoAd loadAd];
 ...
 // 全屏视频 show，建议在收到ly_fullScreenVideoAdDidCache回调后调用
+// 展示广告，调用此方法前需调用isValid方法判断广告素材是否有效
 [self.fullScreenVideoAd showAdFromRootViewController:self];
 ```
 
