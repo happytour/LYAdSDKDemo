@@ -27,14 +27,14 @@ workspace 'LYAdSDKDemo'
 project 'LYAdSDKDemo'
 
 target 'LYAdSDKDemo' do
-  pod 'Ads-CN', '4.3.0.5' # 穿山甲官方
-  pod 'GDTMobSDK', '4.13.63' # 广点通官方
+  pod 'Ads-CN', '4.4.0.7' # 穿山甲官方
+  pod 'GDTMobSDK', '4.13.66' # 广点通官方
   pod 'SigmobAd-iOS', '4.1.0' # sigmob官方
-  pod 'BaiduMobAdSDK', '4.861' # 百度官方
+  pod 'BaiduMobAdSDK', '4.87' # 百度官方
   pod 'WechatOpenSDK', '1.8.7.1' # 微信官方
-#  pod 'KSAdSDK', '3.3.22' # 快手AD官方（不能与KSAdSDKFull同时存在）
+#  pod 'KSAdSDK', '3.3.23' # 快手AD官方（不能与KSAdSDKFull同时存在）
   # KSAdSDKFull、QySdk、JADYun、KlevinAdSDK，没有提交到官方库，需要引入LYSpecs私库拉取
-  pod 'fork-KSAdSDKFull', '3.3.24.1' # 快手内容私库（不能与KSAdSDK同时存在）
+  pod 'fork-KSAdSDKFull', '3.3.28' # 快手内容私库（不能与KSAdSDK同时存在）
   pod 'fork-QySdk', '1.3.2' # 爱奇艺私库
   pod 'fork-JADYun' , '1.3.4' # 京东私库
   pod 'fork-KlevinAdSDK', '2.4.1.222' # 游可赢私库
