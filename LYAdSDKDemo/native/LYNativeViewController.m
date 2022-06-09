@@ -65,6 +65,8 @@
             || dataObject.creativeType == LYNativeAdCreativeType_KS_AdMaterialTypeVideo
             || dataObject.creativeType == LYNativeAdCreativeType_KLN_HorVideo
             || dataObject.creativeType == LYNativeAdCreativeType_BD_VIDEO
+            || dataObject.creativeType == LYNativeAdCreativeType_GRO_LandscapeVideo
+            || dataObject.creativeType == LYNativeAdCreativeType_GRO_PortraitVideo
         ) {
         return [LYNativeAdVideoCell cellHeightWithNativeAdDataObject:dataObject];
     } else {
@@ -81,6 +83,8 @@
         || dataObject.creativeType == LYNativeAdCreativeType_KS_AdMaterialTypeVideo
         || dataObject.creativeType == LYNativeAdCreativeType_KLN_HorVideo
         || dataObject.creativeType == LYNativeAdCreativeType_BD_VIDEO
+        || dataObject.creativeType == LYNativeAdCreativeType_GRO_LandscapeVideo
+        || dataObject.creativeType == LYNativeAdCreativeType_GRO_PortraitVideo
         ) {
         LYNativeAdVideoCell *cell = [tableView dequeueReusableCellWithIdentifier:@"LYNativeAdVideoCell"];
         [cell setupWithNativeAdDataObject:dataObject delegate:self vc:self];

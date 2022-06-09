@@ -30,6 +30,8 @@
             return @"京东";
         case LYAdSdkUnionTypeKLN:
             return @"游可赢";
+        case LYAdSdkUnionTypeGromore:
+            return @"Gromore";
         default:
             return @"未知";
     }
