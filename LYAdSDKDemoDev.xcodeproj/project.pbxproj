@@ -46,6 +46,7 @@
 		E4B21B672637ED4E004908D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4B21B662637ED4E004908D8 /* Assets.xcassets */; };
 		E4B21B6D2637ED4E004908D8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E4B21B6C2637ED4E004908D8 /* main.m */; };
 		E4B766F127D612C10091AB36 /* LYAdSDKAdapterForKSContent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4B766F027D612C10091AB36 /* LYAdSDKAdapterForKSContent.framework */; };
+		E4DFED4F284F4B70009141AF /* LYAdSDKAdapterForGromore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4DFED4E284F4B70009141AF /* LYAdSDKAdapterForGromore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -119,6 +120,7 @@
 		E4B21B6C2637ED4E004908D8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E4B21B7C2637F1E8004908D8 /* LYAdSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LYAdSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4B766F027D612C10091AB36 /* LYAdSDKAdapterForKSContent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LYAdSDKAdapterForKSContent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4DFED4E284F4B70009141AF /* LYAdSDKAdapterForGromore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LYAdSDKAdapterForGromore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 				E4A4FA6527201E540043C5AB /* LYAdSDK.framework in Frameworks */,
 				E4A4FA7127201ED70043C5AB /* LYAdSDKAdapterForCSJ.framework in Frameworks */,
 				E4A4FA7B27201ED70043C5AB /* LYAdSDKAdapterForKS.framework in Frameworks */,
+				E4DFED4F284F4B70009141AF /* LYAdSDKAdapterForGromore.framework in Frameworks */,
 				3FB4B88D0661A635A0100249 /* libPods-LYAdSDKDemo.a in Frameworks */,
 				E4A4FA7727201ED70043C5AB /* LYAdSDKAdapterForJD.framework in Frameworks */,
 			);
@@ -156,6 +159,7 @@
 		17EBC24C48EFFE30157A33BD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E4DFED4E284F4B70009141AF /* LYAdSDKAdapterForGromore.framework */,
 				E4B766F027D612C10091AB36 /* LYAdSDKAdapterForKSContent.framework */,
 				E4A4FA6727201ED70043C5AB /* LYAdSDKAdapterForBD.framework */,
 				E4A4FA6827201ED70043C5AB /* LYAdSDKAdapterForCSJ.framework */,
