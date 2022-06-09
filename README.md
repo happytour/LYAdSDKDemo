@@ -38,17 +38,20 @@ target 'LYAdSDKDemo' do
   pod 'fork-QySdk', '1.3.2' # 爱奇艺私库
   pod 'fork-JADYun' , '1.3.4' # 京东私库
   pod 'fork-KlevinAdSDK', '2.4.1.222' # 游可赢私库
+  pod 'fork-Ads-Mediation-CN', '3.4.0.4' # GroMore私库
+  pod 'fork-ABUAdCsjAdapter', '4.4.0.0.1' # GroMore Csj支持私库
 
-  pod 'LYAdSDK', '2.5.0'
+  pod 'LYAdSDK', '2.5.1'
   pod 'LYAdSDKAdapterForCSJ', '2.5.0' # 穿山甲支持
   pod 'LYAdSDKAdapterForGDT', '2.5.0' # 广点通支持
   pod 'LYAdSDKAdapterForKS', '2.5.0' # 快手AD支持
   pod 'LYAdSDKAdapterForKSContent', '2.5.0' # 快手内容支持
   pod 'LYAdSDKAdapterForSIG', '2.5.0' # sigmob支持
   pod 'LYAdSDKAdapterForIQY', '2.5.0' # 爱奇艺支持
-  pod 'LYAdSDKAdapterForBD', '2.5.0' # 百度支持
+  pod 'LYAdSDKAdapterForBD', '2.5.1' # 百度支持
   pod 'LYAdSDKAdapterForJD', '2.5.0' # 京东支持
   pod 'LYAdSDKAdapterForKLN', '2.5.0' # 游可赢支持
+  pod 'LYAdSDKAdapterForGromore', '2.5.1' # Gromore支持
   project 'LYAdSDKDemo'
 end
 ```
