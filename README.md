@@ -282,7 +282,15 @@ typedef NS_ENUM(NSInteger, LYNativeAdCreativeType) {
     LYNativeAdCreativeType_BD_NORMAL = (6 << 24) | 0, // 一般图文或图片广告
     LYNativeAdCreativeType_BD_VIDEO = (6 << 24) | 1, // 视频广告，需开发者增加播放器支持
     LYNativeAdCreativeType_BD_HTML = (6 << 24) | 2, // html模版广告
-    LYNativeAdCreativeType_BD_GIF = (6 << 24) | 3 //GIF广告
+    LYNativeAdCreativeType_BD_GIF = (6 << 24) | 3, //GIF广告
+
+    LYNativeAdCreativeType_GRO_Unknown = (7 << 24) | 0,
+    LYNativeAdCreativeType_GRO_SmallImage = (7 << 24) | 2,
+    LYNativeAdCreativeType_GRO_LargeImage = (7 << 24) | 3,
+    LYNativeAdCreativeType_GRO_GroupImage = (7 << 24) | 4,
+    LYNativeAdCreativeType_GRO_LandscapeVideo = (7 << 24) | 5,// video ad || rewarded video ad horizontal screen
+    LYNativeAdCreativeType_GRO_PortraitVideo = (7 << 24) | 15,// rewarded video ad vertical screen
+    LYNativeAdCreativeType_GRO_PortraitImage = (7 << 24) | 16,
 };
 
 typedef NS_ENUM(NSInteger, LYNativeAdInteractionType) {
