@@ -33,7 +33,7 @@ target 'LYAdSDKDemo' do
   pod 'BaiduMobAdSDK', '4.87' # 百度官方
   pod 'WechatOpenSDK', '1.8.7.1' # 微信官方
 #  pod 'KSAdSDK', '3.3.23' # 快手AD官方（不能与KSAdSDKFull同时存在）
-  # KSAdSDKFull、QySdk、JADYun、KlevinAdSDK，没有提交到官方库，需要引入LYSpecs私库拉取
+  # KSAdSDKFull、QySdk、JADYun、KlevinAdSDK、Ads-Mediation-CN、ABUAdCsjAdapter，没有提交到官方库，需要引入LYSpecs私库拉取
   pod 'fork-KSAdSDKFull', '3.3.28' # 快手内容私库（不能与KSAdSDK同时存在）
   pod 'fork-QySdk', '1.3.2' # 爱奇艺私库
   pod 'fork-JADYun' , '1.3.4' # 京东私库
