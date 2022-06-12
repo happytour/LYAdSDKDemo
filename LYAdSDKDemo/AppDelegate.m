@@ -61,7 +61,8 @@
     
     CGRect frame = [UIScreen mainScreen].bounds;
     CGRect splashFrame = CGRectMake(0, 0, frame.size.width, frame.size.height);
-    self.splashAd = [[LYSplashAd alloc] initWithFrame:splashFrame slotId:ly_splash_id viewController:self.rootController];
+    self.splashAd = [[LYSplashAd alloc] initWithFrame:splashFrame slotId:ly_splash_id];
+    self.splashAd.viewController = self.rootController;
     self.splashAd.delegate = self;
     [self.splashAd loadAd];
     

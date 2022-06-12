@@ -31,9 +31,16 @@
     self.textField.enabled = NO;
     CGRect frame = [UIScreen mainScreen].bounds;
     CGRect splashFrame = CGRectMake(0, 0, frame.size.width, frame.size.height - 100);
+    
+    CGRect bottomFrame = CGRectMake(0, frame.size.height - 100, frame.size.width, 100);
+    UILabel *bottomView = [[UILabel alloc] initWithFrame:bottomFrame];
+    [bottomView setText:@"这是一个测试LOGO"];
+    bottomView.backgroundColor = [UIColor redColor];
     if (!self.splashAd) {
-        self.splashAd = [[LYSplashAd alloc] initWithFrame:splashFrame slotId:self.textField.text viewController:self];
+        self.splashAd = [[LYSplashAd alloc] initWithFrame:splashFrame slotId:self.textField.text];
         self.splashAd.delegate = self;
+        self.splashAd.customBottomView = bottomView;
+        self.splashAd.viewController = self;
     }
     [self.splashAd loadAd];
 }
@@ -64,14 +71,7 @@
     [self appendLogText:[NSString stringWithFormat:@"ly_splashAdDidLoad, unionType: %@, isValid: %@", [LYUnionTypeTool unionName4unionType:splashAd.unionType], valid ? @"true" : @"false"]];
     
     UIWindow *keyWindow = [self keyWindow];
-    CGRect frame = [UIScreen mainScreen].bounds;
-    CGRect bottomFrame = CGRectMake(0, frame.size.height - 100, frame.size.width, 100);
-
-    UILabel *bottomView = [[UILabel alloc] initWithFrame:bottomFrame];
-
-    [bottomView setText:@"这是一个测试LOGO"];
-    bottomView.backgroundColor = [UIColor redColor];
-    [self.splashAd showAdInWindow:keyWindow withBottomView:bottomView];
+    [self.splashAd showAdInWindow:keyWindow];
 }
 
 - (void)ly_splashAdDidFailToLoad:(LYSplashAd *)splashAd error:(NSError *)error {
