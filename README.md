@@ -41,7 +41,7 @@ target 'LYAdSDKDemo' do
   pod 'fork-Ads-Mediation-CN', '3.4.0.4' # GroMore私库
   pod 'fork-ABUAdCsjAdapter', '4.4.0.0.1' # GroMore Csj支持私库
 
-  pod 'LYAdSDK', '2.5.1'
+  pod 'LYAdSDK', '2.5.1.1'
   pod 'LYAdSDKAdapterForCSJ', '2.5.0' # 穿山甲支持
   pod 'LYAdSDKAdapterForGDT', '2.5.0' # 广点通支持
   pod 'LYAdSDKAdapterForKS', '2.5.0' # 快手AD支持
@@ -51,7 +51,7 @@ target 'LYAdSDKDemo' do
   pod 'LYAdSDKAdapterForBD', '2.5.1' # 百度支持
   pod 'LYAdSDKAdapterForJD', '2.5.0' # 京东支持
   pod 'LYAdSDKAdapterForKLN', '2.5.0' # 游可赢支持
-  pod 'LYAdSDKAdapterForGromore', '2.5.1' # Gromore支持
+  pod 'LYAdSDKAdapterForGromore', '2.5.1.1' # Gromore支持
   project 'LYAdSDKDemo'
 end
 ```
@@ -174,28 +174,29 @@ self.noticeAd.delegate = self;
 ```objectivec
 // splash load
 CGRect frame = [UIScreen mainScreen].bounds;
-CGRect plashFrame = CGRectMake(0, 0, frame.size.width, frame.size.height);
-if (...包含sigmob或者京东预算...或者穿山甲需要自定义跳转VC...) {
-    // 其中self.rootController需要与showAdInWindow时window.rootViewController一致
-    self.splashAd = [[LYSplashAd alloc] initWithFrame:splashFrame slotId:ly_splash_id viewController:self.rootController];
+if (...需要自定义底部logo...) {
+    CGRect plashFrame = CGRectMake(0, 0, frame.size.width, frame.size.height - 100);
 } else {
-    self.splashAd = [[LYSplashAd alloc] initWithFrame:splashFrame slotId:@"你的广告位ID"];
+    CGRect plashFrame = CGRectMake(0, 0, frame.size.width, frame.size.height);
 }
+self.splashAd = [[LYSplashAd alloc] initWithFrame:splashFrame slotId:@"你的广告位ID"];
+if (...需要自定义底部logo...) {
+    CGRect bottomFrame = CGRectMake(0, frame.size.height - 100, frame.size.width, 100);
+    UILabel *bottomView = [[UILabel alloc] initWithFrame:bottomFrame];
+    [bottomView setText:@"这是一个测试LOGO"];
+    bottomView.backgroundColor = [UIColor redColor];
+    // 需要在调用showAdInWindow之前设置customBottomView
+    self.splashAd.customBottomView = bottomView;
+}
+// 其中self.rootController需要与showAdInWindow时window.rootViewController一致
+self.splashAd.viewController = self.rootController;
 self.splashAd.delegate = self;
 [self.splashAd loadAd];
 ...
 // splash show
 // 在收到ly_splashAdDidLoad回调后调用show逻辑
-if (...需要自定义底部logo...) {
-    UILabel *bottomView = [[UILabel alloc] initWithFrame:bottomFrame];
-    [bottomView setText:@"这是一个测试LOGO"];
-    bottomView.backgroundColor = [UIColor redColor];
-    // 展示广告，调用此方法前需调用isValid方法判断广告素材是否有效
-    [self.splashAd showAdInWindow:keyWindow withBottomView:bottomView];
-} else {
-    // 展示广告，调用此方法前需调用isValid方法判断广告素材是否有效
-    [self.splashAd showAdInWindow:keyWindow];
-}
+// 展示广告，调用此方法前需调用isValid方法判断广告素材是否有效
+[self.splashAd showAdInWindow:keyWindow];
 ```
 
 ## 信息流广告
