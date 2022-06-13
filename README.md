@@ -185,7 +185,7 @@ if (...需要自定义底部logo...) {
     UILabel *bottomView = [[UILabel alloc] initWithFrame:bottomFrame];
     [bottomView setText:@"这是一个测试LOGO"];
     bottomView.backgroundColor = [UIColor redColor];
-    // 需要在调用showAdInWindow之前设置customBottomView
+    // 需要在调用loadAd之前设置customBottomView
     self.splashAd.customBottomView = bottomView;
 }
 // 其中self.rootController需要与showAdInWindow时window.rootViewController一致
