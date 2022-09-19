@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3FB4B88D0661A635A0100249 /* libPods-LYAdSDKDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B1C0F15271BF14C2CAE7244E /* libPods-LYAdSDKDemo.a */; };
+		E40455BD287E4BE800D2D141 /* EmptySwiftFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40455BC287E4BE800D2D141 /* EmptySwiftFile.swift */; };
 		E412367E26EE319F002213FB /* LYUnionTypeTool.m in Sources */ = {isa = PBXBuildFile; fileRef = E412367D26EE319F002213FB /* LYUnionTypeTool.m */; };
 		E412368826F1E959002213FB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E412368A26F1E959002213FB /* Localizable.strings */; };
 		E42355EF26494F9500DEBE0C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E42355EE26494F9500DEBE0C /* LaunchScreen.storyboard */; };
@@ -53,6 +54,7 @@
 		6173AB845FF82D5519B22AFC /* Pods-LYAdSDKDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYAdSDKDemo.release.xcconfig"; path = "Target Support Files/Pods-LYAdSDKDemo/Pods-LYAdSDKDemo.release.xcconfig"; sourceTree = "<group>"; };
 		B1C0F15271BF14C2CAE7244E /* libPods-LYAdSDKDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LYAdSDKDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFA1A743C8CE9A6495A2D5E2 /* Pods-LYAdSDKDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYAdSDKDemo.debug.xcconfig"; path = "Target Support Files/Pods-LYAdSDKDemo/Pods-LYAdSDKDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		E40455BC287E4BE800D2D141 /* EmptySwiftFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptySwiftFile.swift; sourceTree = "<group>"; };
 		E412367C26EE319F002213FB /* LYUnionTypeTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYUnionTypeTool.h; sourceTree = "<group>"; };
 		E412367D26EE319F002213FB /* LYUnionTypeTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYUnionTypeTool.m; sourceTree = "<group>"; };
 		E412368926F1E959002213FB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -355,6 +357,7 @@
 				E4B21B6C2637ED4E004908D8 /* main.m */,
 				E4235604264A1AF500DEBE0C /* LYSlotID.h */,
 				E412368A26F1E959002213FB /* Localizable.strings */,
+				E40455BC287E4BE800D2D141 /* EmptySwiftFile.swift */,
 			);
 			path = LYAdSDKDemo;
 			sourceTree = "<group>";
@@ -392,6 +395,7 @@
 				TargetAttributes = {
 					E4B21B562637ED4D004908D8 = {
 						CreatedOnToolsVersion = 12.3;
+						LastSwiftMigration = 1330;
 					};
 				};
 			};
@@ -514,6 +518,7 @@
 				E423568A2652C17700DEBE0C /* LYNativeExpressViewController.m in Sources */,
 				E4235608264A1CF300DEBE0C /* LogoViewController.m in Sources */,
 				E4235612264A316600DEBE0C /* LYNativeViewController.m in Sources */,
+				E40455BD287E4BE800D2D141 /* EmptySwiftFile.swift in Sources */,
 				E42357162658AF0A00DEBE0C /* LYNativeAdBaseCell.m in Sources */,
 				E4424AE3267AF6DA0004C9B1 /* LYDrawVideoViewController.m in Sources */,
 			);
@@ -652,6 +657,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = LYAdSDKDemo/LYAdSDKDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1000;
@@ -665,6 +671,8 @@
 				MARKETING_VERSION = 1.3.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.happytour.LYAdSDKDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -675,6 +683,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = LYAdSDKDemo/LYAdSDKDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1000;
@@ -688,6 +697,7 @@
 				MARKETING_VERSION = 1.3.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.happytour.LYAdSDKDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
