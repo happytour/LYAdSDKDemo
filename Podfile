@@ -17,9 +17,9 @@ target 'LYAdSDKDemo' do
   pod 'SigmobAd-iOS', '4.2.1' # sigmob官方
   pod 'BaiduMobAdSDK', '4.901' # 百度官方
   pod 'WechatOpenSDK', '1.8.7.1' # 微信官方
-#  pod 'KSAdSDK', '3.3.31' # 快手AD官方（不能与KSAdSDKFull同时存在）
+  pod 'KSAdSDK', '3.3.31' # 快手AD官方（不能与KSAdSDKFull同时存在）
   # KSAdSDKFull、QySdk、JADYun、KlevinAdSDK、Ads-Mediation-CN、ABUAdCsjAdapter，没有提交到官方库，需要引入LYSpecs私库拉取
-  pod 'fork-KSAdSDKFull', '3.3.28' # 快手内容私库（不能与KSAdSDK同时存在）
+#  pod 'fork-KSAdSDKFull', '3.3.28' # 快手内容私库（不能与KSAdSDK同时存在）
   pod 'fork-QySdk', '1.3.2' # 爱奇艺私库
   pod 'fork-JADYun' , '2.1.0' # 京东私库
   pod 'fork-KlevinAdSDK', '2.4.1.222' # 游可赢私库
@@ -30,7 +30,7 @@ target 'LYAdSDKDemo' do
   pod 'LYAdSDKAdapterForCSJ', '2.5.5' # 穿山甲支持
   pod 'LYAdSDKAdapterForGDT', '2.5.5' # 广点通支持
   pod 'LYAdSDKAdapterForKS', '2.5.5' # 快手AD支持
-  pod 'LYAdSDKAdapterForKSContent', '2.5.0' # 快手内容支持
+#  pod 'LYAdSDKAdapterForKSContent', '2.5.0' # 快手内容支持
   pod 'LYAdSDKAdapterForSIG', '2.5.0' # sigmob支持
   pod 'LYAdSDKAdapterForIQY', '2.5.0' # 爱奇艺支持
   pod 'LYAdSDKAdapterForBD', '2.5.5' # 百度支持
