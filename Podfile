@@ -26,7 +26,7 @@ target 'LYAdSDKDemo' do
   pod 'fork-Ads-Mediation-CN', '3.6.0.4' # GroMore私库
   pod 'fork-ABUAdCsjAdapter', '4.7.0.7.0' # GroMore Csj支持私库
   
-  pod 'LYAdSDK', '2.5.6'
+  pod 'LYAdSDK', '2.5.7'
   pod 'LYAdSDKAdapterForCSJ', '2.5.5' # 穿山甲支持
   pod 'LYAdSDKAdapterForGDT', '2.5.5' # 广点通支持
   pod 'LYAdSDKAdapterForKS', '2.5.5' # 快手AD支持
@@ -34,7 +34,7 @@ target 'LYAdSDKDemo' do
   pod 'LYAdSDKAdapterForSIG', '2.5.0' # sigmob支持
   pod 'LYAdSDKAdapterForIQY', '2.5.0' # 爱奇艺支持
   pod 'LYAdSDKAdapterForBD', '2.5.5' # 百度支持
-  pod 'LYAdSDKAdapterForJD', '2.5.5.2' # 京东支持
+  pod 'LYAdSDKAdapterForJD', '2.5.7' # 京东支持
   pod 'LYAdSDKAdapterForKLN', '2.5.5' # 游可赢支持
   pod 'LYAdSDKAdapterForGromore', '2.5.5' # Gromore支持
   project 'LYAdSDKDemo'
