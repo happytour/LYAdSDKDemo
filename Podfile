@@ -21,7 +21,7 @@ target 'LYAdSDKDemo' do
   # KSAdSDKFull、QySdk、JADYun、KlevinAdSDK、Ads-Mediation-CN、ABUAdCsjAdapter，没有提交到官方库，需要引入LYSpecs私库拉取
 #  pod 'fork-KSAdSDKFull', '3.3.28' # 快手内容私库（不能与KSAdSDK同时存在）
   pod 'fork-QySdk', '1.3.2' # 爱奇艺私库
-  pod 'fork-JADYun' , '2.1.0' # 京东私库
+  pod 'fork-JADYun' , '2.0.2' # 京东私库
   pod 'fork-KlevinAdSDK', '2.4.1.222' # 游可赢私库
   pod 'fork-Ads-Mediation-CN', '3.8.0.0' # GroMore私库
   pod 'fork-ABUAdCsjAdapter', '4.8.0.7.0' # GroMore Csj支持私库
