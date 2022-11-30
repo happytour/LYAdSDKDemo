@@ -84,10 +84,10 @@
     NSTimeInterval time = [[NSDate date] timeIntervalSince1970];
     //指定一个最小展示间隔
     if (time - self.lastActiveTime >= 60 && self.didEnterBackground) {
-        self.lastActiveTime = time;
         [self.splashAd loadAd];
         self.window.rootViewController = self.logoController;
     }
+    self.lastActiveTime = time;
     self.didEnterBackground = NO;
 }
 
