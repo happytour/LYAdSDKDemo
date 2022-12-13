@@ -33,9 +33,9 @@ target 'LYAdSDKDemo' do
 #  pod 'LYAdSDKAdapterForKSContent', '2.5.0' # 快手内容支持
   pod 'LYAdSDKAdapterForSIG', '2.5.0' # sigmob支持
   pod 'LYAdSDKAdapterForIQY', '2.5.0' # 爱奇艺支持
-  pod 'LYAdSDKAdapterForBD', '2.5.8' # 百度支持
+  pod 'LYAdSDKAdapterForBD', '2.5.8.1' # 百度支持
   pod 'LYAdSDKAdapterForJD', '2.5.7' # 京东支持
   pod 'LYAdSDKAdapterForKLN', '2.5.5' # 游可赢支持
-  pod 'LYAdSDKAdapterForGromore', '2.5.8' # Gromore支持
+  pod 'LYAdSDKAdapterForGromore', '2.5.8.1' # Gromore支持
   project 'LYAdSDKDemo'
 end
