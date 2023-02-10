@@ -252,16 +252,18 @@ self.adView.viewController = vc; // 跳转 VC
 // LYNativeAdDataObject
 typedef NS_ENUM(NSInteger, LYNativeAdCreativeType) {
     LYNativeAdCreativeTypeUnkown = 0,
-
+    
     LYNativeAdCreativeType_ADX_NONE = (1 << 24) | 0,
     LYNativeAdCreativeType_ADX_TXT = (1 << 24) | 1,//TXT 纯文字
     LYNativeAdCreativeType_ADX_IMG = (1 << 24) | 2,//IMG 纯图片
     LYNativeAdCreativeType_ADX_HYBRID = (1 << 24) | 3,//HYBRID 图文混合
     LYNativeAdCreativeType_ADX_VIDEO = (1 << 24) | 4,//VIDEO 视频广告
 
+    LYNativeAdCreativeType_GDT_isAppAd = (2 << 24) | 1,//isAppAd
     LYNativeAdCreativeType_GDT_isVideoAd = (2 << 24) | 2,//isVideoAd
     LYNativeAdCreativeType_GDT_isThreeImgsAd = (2 << 24) | 3,//isThreeImgsAd
-
+    LYNativeAdCreativeType_GDT_isWechatCanvasAd = (2 << 24) | 4,//isWechatCanvasAd
+    
     LYNativeAdCreativeType_CSJ_SmallImage = (3 << 24) | 2,
     LYNativeAdCreativeType_CSJ_LargeImage = (3 << 24) | 3,
     LYNativeAdCreativeType_CSJ_GroupImage = (3 << 24) | 4,
@@ -271,21 +273,22 @@ typedef NS_ENUM(NSInteger, LYNativeAdCreativeType) {
     LYNativeAdCreativeType_CSJ_SquareImage = (3 << 24) | 33,//SquareImage Currently it exists only in the oversea now. V3200 add
     LYNativeAdCreativeType_CSJ_SquareVideo = (3 << 24) | 50,//SquareVideo Currently it exists only in the oversea now. V3200 add
     LYNativeAdCreativeType_CSJ_UnionSplashVideo = (3 << 24) | 154, // Video splash, V3800 add
-
+    LYNativeAdCreativeType_CSJ_UnionVerticalImage = (3 << 24) | 173, // vertical picture
+    
     LYNativeAdCreativeType_KS_AdMaterialTypeVideo = (4 << 24) | 1,      // video
     LYNativeAdCreativeType_KS_AdMaterialTypeSingle = (4 << 24) | 2,      // single image
     LYNativeAdCreativeType_KS_AdMaterialTypeAtlas = (4 << 24) | 3,      // multiple image
-
+    
     /// 原生自渲染-横版大图16：9
     LYNativeAdCreativeType_KLN_HorBigImage = (5 << 24) | 1001,
     /// 原生自渲染-横版视频16：9
     LYNativeAdCreativeType_KLN_HorVideo = (5 << 24) | 1002,
-
+    
     LYNativeAdCreativeType_BD_NORMAL = (6 << 24) | 0, // 一般图文或图片广告
     LYNativeAdCreativeType_BD_VIDEO = (6 << 24) | 1, // 视频广告，需开发者增加播放器支持
     LYNativeAdCreativeType_BD_HTML = (6 << 24) | 2, // html模版广告
     LYNativeAdCreativeType_BD_GIF = (6 << 24) | 3, //GIF广告
-
+    
     LYNativeAdCreativeType_GRO_Unknown = (7 << 24) | 0,
     LYNativeAdCreativeType_GRO_SmallImage = (7 << 24) | 2,
     LYNativeAdCreativeType_GRO_LargeImage = (7 << 24) | 3,
