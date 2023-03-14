@@ -32,6 +32,7 @@
     if (!self.interstitial) {
         CGSize adSize = CGSizeMake(300, 450);
         self.interstitial = [[LYInterstitialAd alloc] initWithSlotId:self.textField.text adSize:adSize];
+        self.interstitial.videoMuted = YES; // 自动播放时，是否静音。默认 YES。loadAd 前设置。
         self.interstitial.delegate = self;
     }
     [self.interstitial loadAd];
