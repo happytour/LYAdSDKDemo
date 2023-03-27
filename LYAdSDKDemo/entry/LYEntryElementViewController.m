@@ -77,7 +77,7 @@
 #pragma mark - LYEntryElementDelegate
 
 - (void)ly_entryElementAdDidLoad:(LYEntryElement *)entryElement {
-    [self appendLogText:@"ly_entryElementAdDidLoad"];
+    [self appendLogText:[NSString stringWithFormat:@"ly_entryElementAdDidLoad, unionType: %@", [LYUnionTypeTool unionName4unionType:entryElement.unionType]]];
     [self.entryElements addObject:entryElement];
     [self.tableView reloadData];
 }
@@ -87,7 +87,7 @@
 }
 
 - (void)ly_entryElementAdDidExpose:(LYEntryElement *)entryElement {
-    [self appendLogText:[NSString stringWithFormat:@"ly_entryElementAdDidExpose, unionType: %@", [LYUnionTypeTool unionName4unionType:entryElement.unionType]]];
+    [self appendLogText:[NSString stringWithFormat:@"ly_entryElementAdDidExpose, eCPM: %ld", [self.entryElement eCPM]]];
 }
 
 - (void)ly_entryElementAdDidClick:(LYEntryElement *)entryElement contentPage:(LYContentPage *)contentPage {

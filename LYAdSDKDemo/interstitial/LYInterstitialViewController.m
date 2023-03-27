@@ -51,7 +51,7 @@
 }
 
 - (void)ly_interstitialAdDidExpose:(LYInterstitialAd *)interstitialAd {
-    [self appendLogText:@"ly_interstitialAdDidExpose"];
+    [self appendLogText:[NSString stringWithFormat:@"ly_interstitialAdDidExpose, eCPM: %ld", [interstitialAd eCPM]]];
 }
 
 - (void)ly_interstitialAdDidClick:(LYInterstitialAd *)interstitialAd {

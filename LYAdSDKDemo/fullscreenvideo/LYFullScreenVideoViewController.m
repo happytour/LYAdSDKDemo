@@ -51,7 +51,7 @@
 }
 
 - (void)ly_fullScreenVideoAdDidExpose:(LYFullScreenVideoAd *)fullScreenVideoAd {
-    [self appendLogText:@"ly_fullScreenVideoAdDidExpose"];
+    [self appendLogText:[NSString stringWithFormat:@"ly_fullScreenVideoAdDidExpose, eCPM: %ld", [fullScreenVideoAd eCPM]]];
 }
 
 - (void)ly_fullScreenVideoAdDidClick:(LYFullScreenVideoAd *)fullScreenVideoAd {

@@ -52,7 +52,7 @@
 }
 
 - (void)ly_bannerAdViewDidExpose:(LYBannerAdView *)bannerAd {
-    [self appendLogText:@"ly_bannerAdViewDidExpose"];
+    [self appendLogText:[NSString stringWithFormat:@"ly_bannerAdViewDidExpose, eCPM: %ld", [bannerAd eCPM]]];
 }
 
 - (void)ly_bannerAdViewDidClick:(LYBannerAdView *)bannerAd {

@@ -42,6 +42,8 @@
 
 - (void)ly_contentPageDidLoad:(LYContentPage *)entryElement {
     [self appendLogText:[NSString stringWithFormat:@"ly_contentPageDidLoad, unionType: %@", [LYUnionTypeTool unionName4unionType:entryElement.unionType]]];
+
+    [self appendLogText:[NSString stringWithFormat:@"eCPM: %ld", [self.contentPage eCPM]]];
 }
 
 - (void)ly_contentPageDidFailToLoad:(LYContentPage *)entryElement error:(NSError *)error {

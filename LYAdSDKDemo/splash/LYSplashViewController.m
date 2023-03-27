@@ -63,7 +63,7 @@
 }
 
 - (void)ly_splashAdDidExpose:(LYSplashAd *)splashAd {
-    [self appendLogText:@"ly_splashAdDidExpose"];
+    [self appendLogText:[NSString stringWithFormat:@"ly_splashAdDidExpose, eCPM: %ld", [splashAd eCPM]]];
 }
 
 - (void)ly_splashAdDidClick:(LYSplashAd *)splashAd {

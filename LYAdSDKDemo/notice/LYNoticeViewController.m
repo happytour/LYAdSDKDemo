@@ -46,7 +46,7 @@
 }
 
 - (void)ly_noticeAdDidExpose:(LYNoticeAd *)noticeAd {
-    [self appendLogText:@"ly_noticeAdDidExpose"];
+    [self appendLogText:[NSString stringWithFormat:@"ly_noticeAdDidExpose, eCPM: %ld", [noticeAd eCPM]]];
 }
 
 - (void)ly_noticeAdDidClick:(LYNoticeAd *)noticeAd {

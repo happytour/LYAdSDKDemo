@@ -71,7 +71,7 @@
 }
 
 - (void)ly_rewardVideoAdDidExpose:(LYRewardVideoAd *)rewardVideoAd {
-    [self appendLogText:@"ly_rewardVideoAdDidExpose"];
+    [self appendLogText:[NSString stringWithFormat:@"ly_rewardVideoAdDidExpose, eCPM: %ld", [rewardVideoAd eCPM]]];
 }
 
 - (void)ly_rewardVideoAdDidClick:(LYRewardVideoAd *)rewardVideoAd {

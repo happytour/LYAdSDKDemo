@@ -113,7 +113,7 @@
 #pragma mark - LYNativeAdViewDelegate
 
 - (void)ly_nativeAdViewDidExpose:(LYNativeAdView *)nativeAdView {
-    [self appendLogText:@"ly_nativeAdViewDidExpose"];
+    [self appendLogText:[NSString stringWithFormat:@"ly_nativeAdViewDidExpose, eCPM: %ld", [self.nativeAd eCPM]]];
 }
 
 - (void)ly_nativeAdViewDidClick:(LYNativeAdView *)nativeAdView {

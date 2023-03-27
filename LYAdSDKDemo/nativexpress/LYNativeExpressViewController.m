@@ -107,7 +107,7 @@
 }
 
 - (void)ly_nativeExpressAdRelatedViewDidExpose:(LYNativeExpressAdRelatedView *)nativeExpressAdRelatedView {
-    [self appendLogText:@"ly_nativeExpressAdRelatedViewDidExpose"];
+    [self appendLogText:[NSString stringWithFormat:@"ly_nativeExpressAdRelatedViewDidExpose, eCPM: %ld", [self.nativeExpressAd eCPM]]];
 }
 
 - (void)ly_nativeExpressAdRelatedViewDidClick:(LYNativeExpressAdRelatedView *)nativeExpressAdRelatedView {

@@ -109,7 +109,7 @@
 #pragma mark - LYDrawVideoAdRelatedViewDelegate
 
 - (void)ly_drawVideoAdRelatedViewDidExpose:(LYDrawVideoAdRelatedView *)drawVideoAdRelatedView {
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"drawvideolog" object:@"ly_drawVideoAdRelatedViewDidExpose"];
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"drawvideolog" object:[NSString stringWithFormat:@"ly_drawVideoAdRelatedViewDidExpose, eCPM: %ld", [self.drawVideoAd eCPM]]];
 }
 
 - (void)ly_drawVideoAdRelatedViewDidClick:(LYDrawVideoAdRelatedView *)drawVideoAdRelatedView {
