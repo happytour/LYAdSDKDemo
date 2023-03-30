@@ -1,0 +1,13 @@
+/* 
+  InfoPlist.strings
+  LYAdSDKDemoDev
+
+  Created by laole918 on 2023/3/28.
+  
+*/
+"CFBundleDisplayName" = "Leyou Ads";
+"NSLocationWhenInUseUsageDescription" = "Access location while using";
+"NSCameraUsageDescription" = "access camera";
+"NSPhotoLibraryUsageDescription" = "access photo album";
+"NSUserTrackingUsageDescription" = "Obtaining IDFA helps to provide better personalized services and content";
+"NSLocationAlwaysUsageDescription" = "always visit location";

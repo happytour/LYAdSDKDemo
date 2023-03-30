@@ -5,22 +5,36 @@
   Created by laole918 on 2021/9/15.
   
 */
-"Config" = "Config";
-"fakeBundleId" = "fakeBundleId";
-"Save and Exit" = "Save and Exit";
-"Splash" = "Splash";
-"Interstitial" = "Interstitial";
-"RewardVideo" = "RewardVideo";
-"Native" = "Native";
-"NativeExpress" = "NativeExpress";
-"Banner" = "Banner";
-"Notice" = "Notice";
-"FullScreenVideo" = "FullScreenVideo";
-"DrawVideo" = "DrawVideo";
-"Close" = "Close";
-"draw_video_tips" = "The test occupancy slides down is an advertisement";
-"ContentPage" = "ContentPage";
-"EntryElement" = "EntryElement";
+"初始化" = "Init";
+"设置" = "Settings";
+"导出日志" = "Export log";
+"填入模拟包名" = "Fill in the mock package name";
+"保存" = "Save";
+"开屏" = "Splash";
+"插屏" = "Interstitial";
+"激励视频" = "RewardVideo";
+"信息流自渲染" = "Native";
+"信息流模版" = "NativeExpress";
+"BANNER（横幅）" = "Banner";
+"通知" = "Notice";
+"全屏视频" = "FullScreenVideo";
+"Draw视频（模版视频）" = "DrawVideo";
+"关闭" = "Close";
+"测试占位往下滑是广告" = "The test occupancy slides down is an advertisement";
+"内容页（视频内容）" = "ContentPage";
+"入口组件（视频内容）" = "EntryElement";
 
-"loadAd" = "loadAd";
+"点击加载广告" = "Click to load Ads";
+"初始化成功" = "Init Success";
+"appId不能为空" = "appId is null or empty";
+"保存成功" = "Save Success";
+"返回" = "Back";
 
+"启动时初始化" = "Initialize at startup";
+"启动时展示开屏广告" = "Display a splash ad on startup";
+"点击分享" = "Click to share";
+"填入slotId" = "Fill in the slotId";
+"填入extra" = "Fill in the extra";
+"填入appId" = "Fill in the appId";
+"填入userId" = "Fill in the userId";
+"填入开屏slotId" = "Fill in the splash slotId";

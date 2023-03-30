@@ -18,11 +18,10 @@ target 'LYAdSDKDemo' do
   pod 'BaiduMobAdSDK', '4.901' # 百度官方
   pod 'WechatOpenSDK', '1.8.7.1' # 微信官方
   pod 'KSAdSDK', '3.3.40' # 快手AD官方（不能与KSAdSDKFull同时存在）
-  # KSAdSDKFull、QySdk、JADYun、KlevinAdSDK、Ads-Mediation-CN、ABUAdCsjAdapter，没有提交到官方库，需要引入LYSpecs私库拉取
+  # KSAdSDKFull、JADYun、Ads-Mediation-CN、ABUAdCsjAdapter，没有提交到官方库，需要引入LYSpecs私库拉取
 #  pod 'fork-KSAdSDKFull', '3.3.28' # 快手内容私库（不能与KSAdSDK同时存在）
   pod 'fork-QySdk', '1.3.2' # 爱奇艺私库
   pod 'fork-JADYun' , '2.0.2' # 京东私库
-  pod 'fork-KlevinAdSDK', '2.4.1.222' # 游可赢私库
   pod 'fork-Ads-Mediation-CN', '3.9.0.2' # GroMore私库
   pod 'fork-ABUAdCsjAdapter', '4.9.0.6.0' # GroMore Csj支持私库
   
@@ -32,10 +31,13 @@ target 'LYAdSDKDemo' do
   pod 'LYAdSDKAdapterForKS', '2.5.9.1' # 快手AD支持
 #  pod 'LYAdSDKAdapterForKSContent', '2.5.0' # 快手内容支持
   pod 'LYAdSDKAdapterForSIG', '2.5.0' # sigmob支持
-  pod 'LYAdSDKAdapterForIQY', '2.5.0' # 爱奇艺支持
   pod 'LYAdSDKAdapterForBD', '2.5.8.1' # 百度支持
   pod 'LYAdSDKAdapterForJD', '2.5.8.2' # 京东支持
-  pod 'LYAdSDKAdapterForKLN', '2.5.5' # 游可赢支持
   pod 'LYAdSDKAdapterForGromore', '2.5.8.1' # Gromore支持
+  
+  # 以下库仅在Dmeo中使用
+  pod 'Masonry', '~> 1.1.0'
+  pod 'MMKV', '~> 1.2.15'
+  pod 'SVProgressHUD', '~> 2.2.5'
   project 'LYAdSDKDemo'
 end

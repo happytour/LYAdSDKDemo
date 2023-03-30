@@ -8,99 +8,129 @@
 
 /* Begin PBXBuildFile section */
 		3FB4B88D0661A635A0100249 /* libPods-LYAdSDKDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B1C0F15271BF14C2CAE7244E /* libPods-LYAdSDKDemo.a */; };
-		E412367E26EE319F002213FB /* LYUnionTypeTool.m in Sources */ = {isa = PBXBuildFile; fileRef = E412367D26EE319F002213FB /* LYUnionTypeTool.m */; };
+		E40455BD287E4BE800D2D141 /* EmptySwiftFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40455BC287E4BE800D2D141 /* EmptySwiftFile.swift */; };
+		E412367E26EE319F002213FB /* LYDUnionTypeTool.m in Sources */ = {isa = PBXBuildFile; fileRef = E412367D26EE319F002213FB /* LYDUnionTypeTool.m */; };
 		E412368826F1E959002213FB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E412368A26F1E959002213FB /* Localizable.strings */; };
 		E42355EF26494F9500DEBE0C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E42355EE26494F9500DEBE0C /* LaunchScreen.storyboard */; };
-		E42355F626495C5D00DEBE0C /* LYSplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E42355F526495C5D00DEBE0C /* LYSplashViewController.m */; };
-		E42355FA264985C600DEBE0C /* LYInterstitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E42355F9264985C600DEBE0C /* LYInterstitialViewController.m */; };
-		E42355FE264988D300DEBE0C /* LYRewardVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E42355FD264988D300DEBE0C /* LYRewardVideoViewController.m */; };
-		E423560226498A5A00DEBE0C /* LYBannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E423560126498A5A00DEBE0C /* LYBannerViewController.m */; };
-		E4235608264A1CF300DEBE0C /* LogoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4235607264A1CF300DEBE0C /* LogoViewController.m */; };
-		E4235612264A316600DEBE0C /* LYNativeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4235611264A316600DEBE0C /* LYNativeViewController.m */; };
-		E423568A2652C17700DEBE0C /* LYNativeExpressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E42356892652C17700DEBE0C /* LYNativeExpressViewController.m */; };
-		E42356A72653B0CB00DEBE0C /* LYNoticeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E42356A62653B0CB00DEBE0C /* LYNoticeViewController.m */; };
-		E42356FF2657E5F500DEBE0C /* LYBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E42356FE2657E5F500DEBE0C /* LYBaseViewController.m */; };
-		E423570C2658ABB300DEBE0C /* LYNativeAdImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E423570B2658ABB300DEBE0C /* LYNativeAdImageCell.m */; };
-		E42357102658ABDC00DEBE0C /* LYNativeAdVideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E423570F2658ABDC00DEBE0C /* LYNativeAdVideoCell.m */; };
-		E42357162658AF0A00DEBE0C /* LYNativeAdBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E42357152658AF0A00DEBE0C /* LYNativeAdBaseCell.m */; };
-		E423572B265B3B8600DEBE0C /* ConfigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E423572A265B3B8600DEBE0C /* ConfigViewController.m */; };
+		E42355F626495C5D00DEBE0C /* LYDSplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E42355F526495C5D00DEBE0C /* LYDSplashViewController.m */; };
+		E42355FA264985C600DEBE0C /* LYDInterstitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E42355F9264985C600DEBE0C /* LYDInterstitialViewController.m */; };
+		E42355FE264988D300DEBE0C /* LYDRewardVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E42355FD264988D300DEBE0C /* LYDRewardVideoViewController.m */; };
+		E423560226498A5A00DEBE0C /* LYDBannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E423560126498A5A00DEBE0C /* LYDBannerViewController.m */; };
+		E4235612264A316600DEBE0C /* LYDNativeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4235611264A316600DEBE0C /* LYDNativeViewController.m */; };
+		E423568A2652C17700DEBE0C /* LYDNativeExpressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E42356892652C17700DEBE0C /* LYDNativeExpressViewController.m */; };
+		E42356A72653B0CB00DEBE0C /* LYDNoticeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E42356A62653B0CB00DEBE0C /* LYDNoticeViewController.m */; };
+		E42356FF2657E5F500DEBE0C /* LYDBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E42356FE2657E5F500DEBE0C /* LYDBaseViewController.m */; };
+		E423570C2658ABB300DEBE0C /* LYDNativeAdImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E423570B2658ABB300DEBE0C /* LYDNativeAdImageCell.m */; };
+		E42357102658ABDC00DEBE0C /* LYDNativeAdVideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E423570F2658ABDC00DEBE0C /* LYDNativeAdVideoCell.m */; };
+		E42357162658AF0A00DEBE0C /* LYDNativeAdBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E42357152658AF0A00DEBE0C /* LYDNativeAdBaseCell.m */; };
+		E423572B265B3B8600DEBE0C /* LYDConfigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E423572A265B3B8600DEBE0C /* LYDConfigViewController.m */; };
 		E42C395526D7255D00D39D46 /* NSBundle+changeBundleId.m in Sources */ = {isa = PBXBuildFile; fileRef = E42C395326D7255D00D39D46 /* NSBundle+changeBundleId.m */; };
-		E438680C28D9F4AE0087E0EB /* EmptySwiftFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E438680B28D9F4AE0087E0EB /* EmptySwiftFile.swift */; };
-		E4424AA42678D4EA0004C9B1 /* LYContentPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4424AA32678D4EA0004C9B1 /* LYContentPageViewController.m */; };
-		E4424AB52679D9910004C9B1 /* LYFullScreenVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4424AB42679D9910004C9B1 /* LYFullScreenVideoViewController.m */; };
-		E4424AE3267AF6DA0004C9B1 /* LYDrawVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4424AE2267AF6DA0004C9B1 /* LYDrawVideoViewController.m */; };
-		E4424AE7267AFD790004C9B1 /* LYDrawVideoAdCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E4424AE6267AFD790004C9B1 /* LYDrawVideoAdCell.m */; };
-		E4424AEA267B261F0004C9B1 /* LYDrawVideoDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4424AE9267B261F0004C9B1 /* LYDrawVideoDemoViewController.m */; };
-		E4424B00267B52BA0004C9B1 /* LYEntryElementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4424AFF267B52BA0004C9B1 /* LYEntryElementViewController.m */; };
-		E4424B03267B900E0004C9B1 /* LYContentPageFullViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4424B02267B900E0004C9B1 /* LYContentPageFullViewController.m */; };
+		E4424AA42678D4EA0004C9B1 /* LYDContentPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4424AA32678D4EA0004C9B1 /* LYDContentPageViewController.m */; };
+		E4424AB52679D9910004C9B1 /* LYDFullScreenVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4424AB42679D9910004C9B1 /* LYDFullScreenVideoViewController.m */; };
+		E4424AE3267AF6DA0004C9B1 /* LYDDrawVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4424AE2267AF6DA0004C9B1 /* LYDDrawVideoViewController.m */; };
+		E4424AE7267AFD790004C9B1 /* LYDDrawVideoAdCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E4424AE6267AFD790004C9B1 /* LYDDrawVideoAdCell.m */; };
+		E4424AEA267B261F0004C9B1 /* LYDDrawVideoDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4424AE9267B261F0004C9B1 /* LYDDrawVideoDemoViewController.m */; };
+		E4424B00267B52BA0004C9B1 /* LYDEntryElementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4424AFF267B52BA0004C9B1 /* LYDEntryElementViewController.m */; };
+		E4424B03267B900E0004C9B1 /* LYDContentPageFullViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4424B02267B900E0004C9B1 /* LYDContentPageFullViewController.m */; };
 		E4B21B5C2637ED4D004908D8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E4B21B5B2637ED4D004908D8 /* AppDelegate.m */; };
-		E4B21B622637ED4D004908D8 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4B21B612637ED4D004908D8 /* MainViewController.m */; };
+		E4B21B622637ED4D004908D8 /* LYDMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4B21B612637ED4D004908D8 /* LYDMainViewController.m */; };
 		E4B21B672637ED4E004908D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4B21B662637ED4E004908D8 /* Assets.xcassets */; };
 		E4B21B6D2637ED4E004908D8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E4B21B6C2637ED4E004908D8 /* main.m */; };
+		E4B6601F29D1AE8400765A2F /* LYDActionCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = E4B6601E29D1AE8400765A2F /* LYDActionCellView.m */; };
+		E4B6602229D2834E00765A2F /* LYDActionCellDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = E4B6602129D2834E00765A2F /* LYDActionCellDefine.m */; };
+		E4B660C829D2D33100765A2F /* KSBulletScreenModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E4B660C629D2D33100765A2F /* KSBulletScreenModel.m */; };
+		E4B660C929D2D33100765A2F /* KSBulletScreenManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E4B660C729D2D33100765A2F /* KSBulletScreenManager.m */; };
+		E4B6613029D2DD1500765A2F /* DemoLogsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4B6612C29D2DD1500765A2F /* DemoLogsViewController.m */; };
+		E4B6613129D2DD1500765A2F /* DemoLogOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = E4B6612F29D2DD1500765A2F /* DemoLogOperation.m */; };
+		E4B6613829D3248F00765A2F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E4B6613A29D3248F00765A2F /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		33D7C82C02C4361BEC85C3E3 /* Pods-LYAdSDKDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYAdSDKDemo.debug.xcconfig"; path = "Target Support Files/Pods-LYAdSDKDemo/Pods-LYAdSDKDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		7EE06F9789FA886120874319 /* Pods-LYAdSDKDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYAdSDKDemo.release.xcconfig"; path = "Target Support Files/Pods-LYAdSDKDemo/Pods-LYAdSDKDemo.release.xcconfig"; sourceTree = "<group>"; };
+		6173AB845FF82D5519B22AFC /* Pods-LYAdSDKDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYAdSDKDemo.release.xcconfig"; path = "../LYAdSDKDemo/Pods/Target Support Files/Pods-LYAdSDKDemo/Pods-LYAdSDKDemo.release.xcconfig"; sourceTree = "<group>"; };
 		B1C0F15271BF14C2CAE7244E /* libPods-LYAdSDKDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LYAdSDKDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E412367C26EE319F002213FB /* LYUnionTypeTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYUnionTypeTool.h; sourceTree = "<group>"; };
-		E412367D26EE319F002213FB /* LYUnionTypeTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYUnionTypeTool.m; sourceTree = "<group>"; };
+		CFA1A743C8CE9A6495A2D5E2 /* Pods-LYAdSDKDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYAdSDKDemo.debug.xcconfig"; path = "../LYAdSDKDemo/Pods/Target Support Files/Pods-LYAdSDKDemo/Pods-LYAdSDKDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		E40455BC287E4BE800D2D141 /* EmptySwiftFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptySwiftFile.swift; sourceTree = "<group>"; };
+		E412367C26EE319F002213FB /* LYDUnionTypeTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYDUnionTypeTool.h; sourceTree = "<group>"; };
+		E412367D26EE319F002213FB /* LYDUnionTypeTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYDUnionTypeTool.m; sourceTree = "<group>"; };
 		E412368926F1E959002213FB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		E412368B26F1E95C002213FB /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		E42021FD26648DDE002EB1A5 /* LYAdSDKDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LYAdSDKDemo.entitlements; sourceTree = "<group>"; };
 		E42355EE26494F9500DEBE0C /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		E42355F426495C5D00DEBE0C /* LYSplashViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYSplashViewController.h; sourceTree = "<group>"; };
-		E42355F526495C5D00DEBE0C /* LYSplashViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYSplashViewController.m; sourceTree = "<group>"; };
-		E42355F8264985C600DEBE0C /* LYInterstitialViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYInterstitialViewController.h; sourceTree = "<group>"; };
-		E42355F9264985C600DEBE0C /* LYInterstitialViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYInterstitialViewController.m; sourceTree = "<group>"; };
-		E42355FC264988D300DEBE0C /* LYRewardVideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYRewardVideoViewController.h; sourceTree = "<group>"; };
-		E42355FD264988D300DEBE0C /* LYRewardVideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYRewardVideoViewController.m; sourceTree = "<group>"; };
-		E423560026498A5A00DEBE0C /* LYBannerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYBannerViewController.h; sourceTree = "<group>"; };
-		E423560126498A5A00DEBE0C /* LYBannerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYBannerViewController.m; sourceTree = "<group>"; };
+		E42355F426495C5D00DEBE0C /* LYDSplashViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYDSplashViewController.h; sourceTree = "<group>"; };
+		E42355F526495C5D00DEBE0C /* LYDSplashViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYDSplashViewController.m; sourceTree = "<group>"; };
+		E42355F8264985C600DEBE0C /* LYDInterstitialViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYDInterstitialViewController.h; sourceTree = "<group>"; };
+		E42355F9264985C600DEBE0C /* LYDInterstitialViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYDInterstitialViewController.m; sourceTree = "<group>"; };
+		E42355FC264988D300DEBE0C /* LYDRewardVideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYDRewardVideoViewController.h; sourceTree = "<group>"; };
+		E42355FD264988D300DEBE0C /* LYDRewardVideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYDRewardVideoViewController.m; sourceTree = "<group>"; };
+		E423560026498A5A00DEBE0C /* LYDBannerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYDBannerViewController.h; sourceTree = "<group>"; };
+		E423560126498A5A00DEBE0C /* LYDBannerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYDBannerViewController.m; sourceTree = "<group>"; };
 		E4235604264A1AF500DEBE0C /* LYSlotID.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYSlotID.h; sourceTree = "<group>"; };
-		E4235606264A1CF300DEBE0C /* LogoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LogoViewController.h; sourceTree = "<group>"; };
-		E4235607264A1CF300DEBE0C /* LogoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LogoViewController.m; sourceTree = "<group>"; };
-		E4235610264A316600DEBE0C /* LYNativeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYNativeViewController.h; sourceTree = "<group>"; };
-		E4235611264A316600DEBE0C /* LYNativeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYNativeViewController.m; sourceTree = "<group>"; };
-		E42356882652C17700DEBE0C /* LYNativeExpressViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYNativeExpressViewController.h; sourceTree = "<group>"; };
-		E42356892652C17700DEBE0C /* LYNativeExpressViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYNativeExpressViewController.m; sourceTree = "<group>"; };
-		E42356A52653B0CB00DEBE0C /* LYNoticeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYNoticeViewController.h; sourceTree = "<group>"; };
-		E42356A62653B0CB00DEBE0C /* LYNoticeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYNoticeViewController.m; sourceTree = "<group>"; };
-		E42356FD2657E5F500DEBE0C /* LYBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYBaseViewController.h; sourceTree = "<group>"; };
-		E42356FE2657E5F500DEBE0C /* LYBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYBaseViewController.m; sourceTree = "<group>"; };
-		E423570A2658ABB300DEBE0C /* LYNativeAdImageCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYNativeAdImageCell.h; sourceTree = "<group>"; };
-		E423570B2658ABB300DEBE0C /* LYNativeAdImageCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYNativeAdImageCell.m; sourceTree = "<group>"; };
-		E423570E2658ABDC00DEBE0C /* LYNativeAdVideoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYNativeAdVideoCell.h; sourceTree = "<group>"; };
-		E423570F2658ABDC00DEBE0C /* LYNativeAdVideoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYNativeAdVideoCell.m; sourceTree = "<group>"; };
-		E42357142658AF0A00DEBE0C /* LYNativeAdBaseCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYNativeAdBaseCell.h; sourceTree = "<group>"; };
-		E42357152658AF0A00DEBE0C /* LYNativeAdBaseCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYNativeAdBaseCell.m; sourceTree = "<group>"; };
-		E4235729265B3B8600DEBE0C /* ConfigViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConfigViewController.h; sourceTree = "<group>"; };
-		E423572A265B3B8600DEBE0C /* ConfigViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConfigViewController.m; sourceTree = "<group>"; };
+		E4235610264A316600DEBE0C /* LYDNativeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYDNativeViewController.h; sourceTree = "<group>"; };
+		E4235611264A316600DEBE0C /* LYDNativeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYDNativeViewController.m; sourceTree = "<group>"; };
+		E42356882652C17700DEBE0C /* LYDNativeExpressViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYDNativeExpressViewController.h; sourceTree = "<group>"; };
+		E42356892652C17700DEBE0C /* LYDNativeExpressViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYDNativeExpressViewController.m; sourceTree = "<group>"; };
+		E42356A52653B0CB00DEBE0C /* LYDNoticeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYDNoticeViewController.h; sourceTree = "<group>"; };
+		E42356A62653B0CB00DEBE0C /* LYDNoticeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYDNoticeViewController.m; sourceTree = "<group>"; };
+		E42356FD2657E5F500DEBE0C /* LYDBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYDBaseViewController.h; sourceTree = "<group>"; };
+		E42356FE2657E5F500DEBE0C /* LYDBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYDBaseViewController.m; sourceTree = "<group>"; };
+		E423570A2658ABB300DEBE0C /* LYDNativeAdImageCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYDNativeAdImageCell.h; sourceTree = "<group>"; };
+		E423570B2658ABB300DEBE0C /* LYDNativeAdImageCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYDNativeAdImageCell.m; sourceTree = "<group>"; };
+		E423570E2658ABDC00DEBE0C /* LYDNativeAdVideoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYDNativeAdVideoCell.h; sourceTree = "<group>"; };
+		E423570F2658ABDC00DEBE0C /* LYDNativeAdVideoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYDNativeAdVideoCell.m; sourceTree = "<group>"; };
+		E42357142658AF0A00DEBE0C /* LYDNativeAdBaseCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYDNativeAdBaseCell.h; sourceTree = "<group>"; };
+		E42357152658AF0A00DEBE0C /* LYDNativeAdBaseCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYDNativeAdBaseCell.m; sourceTree = "<group>"; };
+		E4235729265B3B8600DEBE0C /* LYDConfigViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYDConfigViewController.h; sourceTree = "<group>"; };
+		E423572A265B3B8600DEBE0C /* LYDConfigViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYDConfigViewController.m; sourceTree = "<group>"; };
 		E42C395326D7255D00D39D46 /* NSBundle+changeBundleId.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+changeBundleId.m"; sourceTree = "<group>"; };
 		E42C395426D7255D00D39D46 /* NSBundle+changeBundleId.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+changeBundleId.h"; sourceTree = "<group>"; };
-		E438680B28D9F4AE0087E0EB /* EmptySwiftFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptySwiftFile.swift; sourceTree = "<group>"; };
-		E4424AA22678D4EA0004C9B1 /* LYContentPageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYContentPageViewController.h; sourceTree = "<group>"; };
-		E4424AA32678D4EA0004C9B1 /* LYContentPageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYContentPageViewController.m; sourceTree = "<group>"; };
-		E4424AB32679D9910004C9B1 /* LYFullScreenVideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYFullScreenVideoViewController.h; sourceTree = "<group>"; };
-		E4424AB42679D9910004C9B1 /* LYFullScreenVideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYFullScreenVideoViewController.m; sourceTree = "<group>"; };
-		E4424AE1267AF6DA0004C9B1 /* LYDrawVideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYDrawVideoViewController.h; sourceTree = "<group>"; };
-		E4424AE2267AF6DA0004C9B1 /* LYDrawVideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYDrawVideoViewController.m; sourceTree = "<group>"; };
-		E4424AE5267AFD790004C9B1 /* LYDrawVideoAdCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYDrawVideoAdCell.h; sourceTree = "<group>"; };
-		E4424AE6267AFD790004C9B1 /* LYDrawVideoAdCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYDrawVideoAdCell.m; sourceTree = "<group>"; };
-		E4424AE8267B261F0004C9B1 /* LYDrawVideoDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYDrawVideoDemoViewController.h; sourceTree = "<group>"; };
-		E4424AE9267B261F0004C9B1 /* LYDrawVideoDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYDrawVideoDemoViewController.m; sourceTree = "<group>"; };
-		E4424AFE267B52BA0004C9B1 /* LYEntryElementViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYEntryElementViewController.h; sourceTree = "<group>"; };
-		E4424AFF267B52BA0004C9B1 /* LYEntryElementViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYEntryElementViewController.m; sourceTree = "<group>"; };
-		E4424B01267B900E0004C9B1 /* LYContentPageFullViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYContentPageFullViewController.h; sourceTree = "<group>"; };
-		E4424B02267B900E0004C9B1 /* LYContentPageFullViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYContentPageFullViewController.m; sourceTree = "<group>"; };
+		E4424AA22678D4EA0004C9B1 /* LYDContentPageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYDContentPageViewController.h; sourceTree = "<group>"; };
+		E4424AA32678D4EA0004C9B1 /* LYDContentPageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYDContentPageViewController.m; sourceTree = "<group>"; };
+		E4424AB32679D9910004C9B1 /* LYDFullScreenVideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYDFullScreenVideoViewController.h; sourceTree = "<group>"; };
+		E4424AB42679D9910004C9B1 /* LYDFullScreenVideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYDFullScreenVideoViewController.m; sourceTree = "<group>"; };
+		E4424AE1267AF6DA0004C9B1 /* LYDDrawVideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYDDrawVideoViewController.h; sourceTree = "<group>"; };
+		E4424AE2267AF6DA0004C9B1 /* LYDDrawVideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYDDrawVideoViewController.m; sourceTree = "<group>"; };
+		E4424AE5267AFD790004C9B1 /* LYDDrawVideoAdCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYDDrawVideoAdCell.h; sourceTree = "<group>"; };
+		E4424AE6267AFD790004C9B1 /* LYDDrawVideoAdCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYDDrawVideoAdCell.m; sourceTree = "<group>"; };
+		E4424AE8267B261F0004C9B1 /* LYDDrawVideoDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYDDrawVideoDemoViewController.h; sourceTree = "<group>"; };
+		E4424AE9267B261F0004C9B1 /* LYDDrawVideoDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYDDrawVideoDemoViewController.m; sourceTree = "<group>"; };
+		E4424AFE267B52BA0004C9B1 /* LYDEntryElementViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYDEntryElementViewController.h; sourceTree = "<group>"; };
+		E4424AFF267B52BA0004C9B1 /* LYDEntryElementViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYDEntryElementViewController.m; sourceTree = "<group>"; };
+		E4424B01267B900E0004C9B1 /* LYDContentPageFullViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYDContentPageFullViewController.h; sourceTree = "<group>"; };
+		E4424B02267B900E0004C9B1 /* LYDContentPageFullViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYDContentPageFullViewController.m; sourceTree = "<group>"; };
+		E4A4FA6727201ED70043C5AB /* LYAdSDKAdapterForBD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LYAdSDKAdapterForBD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4A4FA6827201ED70043C5AB /* LYAdSDKAdapterForCSJ.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LYAdSDKAdapterForCSJ.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4A4FA6927201ED70043C5AB /* LYAdSDKAdapterForGDT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LYAdSDKAdapterForGDT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4A4FA6A27201ED70043C5AB /* LYAdSDKAdapterForIQY.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LYAdSDKAdapterForIQY.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4A4FA6B27201ED70043C5AB /* LYAdSDKAdapterForJD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LYAdSDKAdapterForJD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4A4FA6C27201ED70043C5AB /* LYAdSDKAdapterForKLN.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LYAdSDKAdapterForKLN.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4A4FA6D27201ED70043C5AB /* LYAdSDKAdapterForKS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LYAdSDKAdapterForKS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4A4FA6E27201ED70043C5AB /* LYAdSDKAdapterForSIG.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LYAdSDKAdapterForSIG.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4B21B572637ED4D004908D8 /* LYAdSDKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LYAdSDKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4B21B5A2637ED4D004908D8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E4B21B5B2637ED4D004908D8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E4B21B602637ED4D004908D8 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
-		E4B21B612637ED4D004908D8 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		E4B21B602637ED4D004908D8 /* LYDMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYDMainViewController.h; sourceTree = "<group>"; };
+		E4B21B612637ED4D004908D8 /* LYDMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYDMainViewController.m; sourceTree = "<group>"; };
 		E4B21B662637ED4E004908D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E4B21B6B2637ED4E004908D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E4B21B6C2637ED4E004908D8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E4B21B7C2637F1E8004908D8 /* LYAdSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LYAdSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4B6601D29D1AE8400765A2F /* LYDActionCellView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYDActionCellView.h; sourceTree = "<group>"; };
+		E4B6601E29D1AE8400765A2F /* LYDActionCellView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYDActionCellView.m; sourceTree = "<group>"; };
+		E4B6602029D2834E00765A2F /* LYDActionCellDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYDActionCellDefine.h; sourceTree = "<group>"; };
+		E4B6602129D2834E00765A2F /* LYDActionCellDefine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYDActionCellDefine.m; sourceTree = "<group>"; };
+		E4B660C429D2D33100765A2F /* KSBulletScreenModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSBulletScreenModel.h; sourceTree = "<group>"; };
+		E4B660C529D2D33100765A2F /* KSBulletScreenManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSBulletScreenManager.h; sourceTree = "<group>"; };
+		E4B660C629D2D33100765A2F /* KSBulletScreenModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSBulletScreenModel.m; sourceTree = "<group>"; };
+		E4B660C729D2D33100765A2F /* KSBulletScreenManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSBulletScreenManager.m; sourceTree = "<group>"; };
+		E4B6612C29D2DD1500765A2F /* DemoLogsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoLogsViewController.m; sourceTree = "<group>"; };
+		E4B6612D29D2DD1500765A2F /* DemoLogOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoLogOperation.h; sourceTree = "<group>"; };
+		E4B6612E29D2DD1500765A2F /* DemoLogsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoLogsViewController.h; sourceTree = "<group>"; };
+		E4B6612F29D2DD1500765A2F /* DemoLogOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoLogOperation.m; sourceTree = "<group>"; };
+		E4B6613229D2E54C00765A2F /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		E4B6613929D3248F00765A2F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E4B6613B29D3249100765A2F /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		E4B766F027D612C10091AB36 /* LYAdSDKAdapterForKSContent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LYAdSDKAdapterForKSContent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4DFED4E284F4B70009141AF /* LYAdSDKAdapterForGromore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LYAdSDKAdapterForGromore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,28 +145,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00277EDB3C0BEC5EAAD74489 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CFA1A743C8CE9A6495A2D5E2 /* Pods-LYAdSDKDemo.debug.xcconfig */,
+				6173AB845FF82D5519B22AFC /* Pods-LYAdSDKDemo.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../Pods;
+			sourceTree = "<group>";
+		};
 		17EBC24C48EFFE30157A33BD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E4DFED4E284F4B70009141AF /* LYAdSDKAdapterForGromore.framework */,
+				E4B766F027D612C10091AB36 /* LYAdSDKAdapterForKSContent.framework */,
+				E4A4FA6727201ED70043C5AB /* LYAdSDKAdapterForBD.framework */,
+				E4A4FA6827201ED70043C5AB /* LYAdSDKAdapterForCSJ.framework */,
+				E4A4FA6927201ED70043C5AB /* LYAdSDKAdapterForGDT.framework */,
+				E4A4FA6A27201ED70043C5AB /* LYAdSDKAdapterForIQY.framework */,
+				E4A4FA6B27201ED70043C5AB /* LYAdSDKAdapterForJD.framework */,
+				E4A4FA6C27201ED70043C5AB /* LYAdSDKAdapterForKLN.framework */,
+				E4A4FA6D27201ED70043C5AB /* LYAdSDKAdapterForKS.framework */,
+				E4A4FA6E27201ED70043C5AB /* LYAdSDKAdapterForSIG.framework */,
+				E4B21B7C2637F1E8004908D8 /* LYAdSDK.framework */,
 				B1C0F15271BF14C2CAE7244E /* libPods-LYAdSDKDemo.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D0C454E568D2EF159F84DC46 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				33D7C82C02C4361BEC85C3E3 /* Pods-LYAdSDKDemo.debug.xcconfig */,
-				7EE06F9789FA886120874319 /* Pods-LYAdSDKDemo.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		E4235628264C32A700DEBE0C /* splash */ = {
 			isa = PBXGroup;
 			children = (
-				E42355F426495C5D00DEBE0C /* LYSplashViewController.h */,
-				E42355F526495C5D00DEBE0C /* LYSplashViewController.m */,
+				E42355F426495C5D00DEBE0C /* LYDSplashViewController.h */,
+				E42355F526495C5D00DEBE0C /* LYDSplashViewController.m */,
 			);
 			path = splash;
 			sourceTree = "<group>";
@@ -144,8 +186,8 @@
 		E4235629264C32BF00DEBE0C /* interstitial */ = {
 			isa = PBXGroup;
 			children = (
-				E42355F8264985C600DEBE0C /* LYInterstitialViewController.h */,
-				E42355F9264985C600DEBE0C /* LYInterstitialViewController.m */,
+				E42355F8264985C600DEBE0C /* LYDInterstitialViewController.h */,
+				E42355F9264985C600DEBE0C /* LYDInterstitialViewController.m */,
 			);
 			path = interstitial;
 			sourceTree = "<group>";
@@ -153,8 +195,8 @@
 		E423562A264C32DB00DEBE0C /* rewardvideo */ = {
 			isa = PBXGroup;
 			children = (
-				E42355FC264988D300DEBE0C /* LYRewardVideoViewController.h */,
-				E42355FD264988D300DEBE0C /* LYRewardVideoViewController.m */,
+				E42355FC264988D300DEBE0C /* LYDRewardVideoViewController.h */,
+				E42355FD264988D300DEBE0C /* LYDRewardVideoViewController.m */,
 			);
 			path = rewardvideo;
 			sourceTree = "<group>";
@@ -162,8 +204,8 @@
 		E423562B264C32EC00DEBE0C /* banner */ = {
 			isa = PBXGroup;
 			children = (
-				E423560026498A5A00DEBE0C /* LYBannerViewController.h */,
-				E423560126498A5A00DEBE0C /* LYBannerViewController.m */,
+				E423560026498A5A00DEBE0C /* LYDBannerViewController.h */,
+				E423560126498A5A00DEBE0C /* LYDBannerViewController.m */,
 			);
 			path = banner;
 			sourceTree = "<group>";
@@ -172,8 +214,8 @@
 			isa = PBXGroup;
 			children = (
 				E4235703265802D500DEBE0C /* cell */,
-				E4235610264A316600DEBE0C /* LYNativeViewController.h */,
-				E4235611264A316600DEBE0C /* LYNativeViewController.m */,
+				E4235610264A316600DEBE0C /* LYDNativeViewController.h */,
+				E4235611264A316600DEBE0C /* LYDNativeViewController.m */,
 			);
 			path = native;
 			sourceTree = "<group>";
@@ -181,8 +223,8 @@
 		E42356872652C13E00DEBE0C /* nativexpress */ = {
 			isa = PBXGroup;
 			children = (
-				E42356882652C17700DEBE0C /* LYNativeExpressViewController.h */,
-				E42356892652C17700DEBE0C /* LYNativeExpressViewController.m */,
+				E42356882652C17700DEBE0C /* LYDNativeExpressViewController.h */,
+				E42356892652C17700DEBE0C /* LYDNativeExpressViewController.m */,
 			);
 			path = nativexpress;
 			sourceTree = "<group>";
@@ -190,8 +232,8 @@
 		E42356A42653B0AA00DEBE0C /* notice */ = {
 			isa = PBXGroup;
 			children = (
-				E42356A52653B0CB00DEBE0C /* LYNoticeViewController.h */,
-				E42356A62653B0CB00DEBE0C /* LYNoticeViewController.m */,
+				E42356A52653B0CB00DEBE0C /* LYDNoticeViewController.h */,
+				E42356A62653B0CB00DEBE0C /* LYDNoticeViewController.m */,
 			);
 			path = notice;
 			sourceTree = "<group>";
@@ -199,12 +241,12 @@
 		E4235703265802D500DEBE0C /* cell */ = {
 			isa = PBXGroup;
 			children = (
-				E42357142658AF0A00DEBE0C /* LYNativeAdBaseCell.h */,
-				E42357152658AF0A00DEBE0C /* LYNativeAdBaseCell.m */,
-				E423570A2658ABB300DEBE0C /* LYNativeAdImageCell.h */,
-				E423570B2658ABB300DEBE0C /* LYNativeAdImageCell.m */,
-				E423570E2658ABDC00DEBE0C /* LYNativeAdVideoCell.h */,
-				E423570F2658ABDC00DEBE0C /* LYNativeAdVideoCell.m */,
+				E42357142658AF0A00DEBE0C /* LYDNativeAdBaseCell.h */,
+				E42357152658AF0A00DEBE0C /* LYDNativeAdBaseCell.m */,
+				E423570A2658ABB300DEBE0C /* LYDNativeAdImageCell.h */,
+				E423570B2658ABB300DEBE0C /* LYDNativeAdImageCell.m */,
+				E423570E2658ABDC00DEBE0C /* LYDNativeAdVideoCell.h */,
+				E423570F2658ABDC00DEBE0C /* LYDNativeAdVideoCell.m */,
 			);
 			path = cell;
 			sourceTree = "<group>";
@@ -212,8 +254,8 @@
 		E4424AA12678D4A40004C9B1 /* content */ = {
 			isa = PBXGroup;
 			children = (
-				E4424AA22678D4EA0004C9B1 /* LYContentPageViewController.h */,
-				E4424AA32678D4EA0004C9B1 /* LYContentPageViewController.m */,
+				E4424AA22678D4EA0004C9B1 /* LYDContentPageViewController.h */,
+				E4424AA32678D4EA0004C9B1 /* LYDContentPageViewController.m */,
 			);
 			path = content;
 			sourceTree = "<group>";
@@ -221,8 +263,8 @@
 		E4424AB22679D9550004C9B1 /* fullscreenvideo */ = {
 			isa = PBXGroup;
 			children = (
-				E4424AB32679D9910004C9B1 /* LYFullScreenVideoViewController.h */,
-				E4424AB42679D9910004C9B1 /* LYFullScreenVideoViewController.m */,
+				E4424AB32679D9910004C9B1 /* LYDFullScreenVideoViewController.h */,
+				E4424AB42679D9910004C9B1 /* LYDFullScreenVideoViewController.m */,
 			);
 			path = fullscreenvideo;
 			sourceTree = "<group>";
@@ -231,10 +273,10 @@
 			isa = PBXGroup;
 			children = (
 				E4424AE4267AFD180004C9B1 /* cell */,
-				E4424AE1267AF6DA0004C9B1 /* LYDrawVideoViewController.h */,
-				E4424AE2267AF6DA0004C9B1 /* LYDrawVideoViewController.m */,
-				E4424AE8267B261F0004C9B1 /* LYDrawVideoDemoViewController.h */,
-				E4424AE9267B261F0004C9B1 /* LYDrawVideoDemoViewController.m */,
+				E4424AE1267AF6DA0004C9B1 /* LYDDrawVideoViewController.h */,
+				E4424AE2267AF6DA0004C9B1 /* LYDDrawVideoViewController.m */,
+				E4424AE8267B261F0004C9B1 /* LYDDrawVideoDemoViewController.h */,
+				E4424AE9267B261F0004C9B1 /* LYDDrawVideoDemoViewController.m */,
 			);
 			path = drawvideo;
 			sourceTree = "<group>";
@@ -242,8 +284,8 @@
 		E4424AE4267AFD180004C9B1 /* cell */ = {
 			isa = PBXGroup;
 			children = (
-				E4424AE5267AFD790004C9B1 /* LYDrawVideoAdCell.h */,
-				E4424AE6267AFD790004C9B1 /* LYDrawVideoAdCell.m */,
+				E4424AE5267AFD790004C9B1 /* LYDDrawVideoAdCell.h */,
+				E4424AE6267AFD790004C9B1 /* LYDDrawVideoAdCell.m */,
 			);
 			path = cell;
 			sourceTree = "<group>";
@@ -251,10 +293,10 @@
 		E4424AFD267B525C0004C9B1 /* entry */ = {
 			isa = PBXGroup;
 			children = (
-				E4424AFE267B52BA0004C9B1 /* LYEntryElementViewController.h */,
-				E4424AFF267B52BA0004C9B1 /* LYEntryElementViewController.m */,
-				E4424B01267B900E0004C9B1 /* LYContentPageFullViewController.h */,
-				E4424B02267B900E0004C9B1 /* LYContentPageFullViewController.m */,
+				E4424AFE267B52BA0004C9B1 /* LYDEntryElementViewController.h */,
+				E4424AFF267B52BA0004C9B1 /* LYDEntryElementViewController.m */,
+				E4424B01267B900E0004C9B1 /* LYDContentPageFullViewController.h */,
+				E4424B02267B900E0004C9B1 /* LYDContentPageFullViewController.m */,
 			);
 			path = entry;
 			sourceTree = "<group>";
@@ -265,7 +307,7 @@
 				E4B21B592637ED4D004908D8 /* LYAdSDKDemo */,
 				E4B21B582637ED4D004908D8 /* Products */,
 				17EBC24C48EFFE30157A33BD /* Frameworks */,
-				D0C454E568D2EF159F84DC46 /* Pods */,
+				00277EDB3C0BEC5EAAD74489 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -280,13 +322,54 @@
 		E4B21B592637ED4D004908D8 /* LYAdSDKDemo */ = {
 			isa = PBXGroup;
 			children = (
+				E4B6613429D2EA6F00765A2F /* Common */,
+				E4B6613329D2E66E00765A2F /* Ads */,
+				E4B6613529D2EAA300765A2F /* Menu */,
+				E42021FD26648DDE002EB1A5 /* LYAdSDKDemo.entitlements */,
+				E4B21B5A2637ED4D004908D8 /* AppDelegate.h */,
+				E4B21B5B2637ED4D004908D8 /* AppDelegate.m */,
+				E4B21B662637ED4E004908D8 /* Assets.xcassets */,
+				E42355EE26494F9500DEBE0C /* LaunchScreen.storyboard */,
+				E4B21B6B2637ED4E004908D8 /* Info.plist */,
+				E4B21B6C2637ED4E004908D8 /* main.m */,
+				E4235604264A1AF500DEBE0C /* LYSlotID.h */,
+				E412368A26F1E959002213FB /* Localizable.strings */,
+				E40455BC287E4BE800D2D141 /* EmptySwiftFile.swift */,
+				E4B6613229D2E54C00765A2F /* PrefixHeader.pch */,
+				E4B6613A29D3248F00765A2F /* InfoPlist.strings */,
+			);
+			path = LYAdSDKDemo;
+			sourceTree = "<group>";
+		};
+		E4B660C329D2D33100765A2F /* BulletScreen */ = {
+			isa = PBXGroup;
+			children = (
+				E4B660C529D2D33100765A2F /* KSBulletScreenManager.h */,
+				E4B660C729D2D33100765A2F /* KSBulletScreenManager.m */,
+				E4B660C429D2D33100765A2F /* KSBulletScreenModel.h */,
+				E4B660C629D2D33100765A2F /* KSBulletScreenModel.m */,
+			);
+			path = BulletScreen;
+			sourceTree = "<group>";
+		};
+		E4B6612B29D2DD1500765A2F /* DemoLog */ = {
+			isa = PBXGroup;
+			children = (
+				E4B6612D29D2DD1500765A2F /* DemoLogOperation.h */,
+				E4B6612F29D2DD1500765A2F /* DemoLogOperation.m */,
+				E4B6612E29D2DD1500765A2F /* DemoLogsViewController.h */,
+				E4B6612C29D2DD1500765A2F /* DemoLogsViewController.m */,
+			);
+			path = DemoLog;
+			sourceTree = "<group>";
+		};
+		E4B6613329D2E66E00765A2F /* Ads */ = {
+			isa = PBXGroup;
+			children = (
 				E4424AFD267B525C0004C9B1 /* entry */,
 				E4424AE0267AF5E80004C9B1 /* drawvideo */,
 				E4424AB22679D9550004C9B1 /* fullscreenvideo */,
 				E4424AA12678D4A40004C9B1 /* content */,
-				E42C395426D7255D00D39D46 /* NSBundle+changeBundleId.h */,
-				E42C395326D7255D00D39D46 /* NSBundle+changeBundleId.m */,
-				E42021FD26648DDE002EB1A5 /* LYAdSDKDemo.entitlements */,
 				E42356A42653B0AA00DEBE0C /* notice */,
 				E42356872652C13E00DEBE0C /* nativexpress */,
 				E423562C264C32F800DEBE0C /* native */,
@@ -294,27 +377,38 @@
 				E423562A264C32DB00DEBE0C /* rewardvideo */,
 				E4235629264C32BF00DEBE0C /* interstitial */,
 				E4235628264C32A700DEBE0C /* splash */,
-				E4B21B5A2637ED4D004908D8 /* AppDelegate.h */,
-				E4B21B5B2637ED4D004908D8 /* AppDelegate.m */,
-				E4B21B602637ED4D004908D8 /* MainViewController.h */,
-				E4B21B612637ED4D004908D8 /* MainViewController.m */,
-				E4235729265B3B8600DEBE0C /* ConfigViewController.h */,
-				E423572A265B3B8600DEBE0C /* ConfigViewController.m */,
-				E4235606264A1CF300DEBE0C /* LogoViewController.h */,
-				E4235607264A1CF300DEBE0C /* LogoViewController.m */,
-				E42356FD2657E5F500DEBE0C /* LYBaseViewController.h */,
-				E42356FE2657E5F500DEBE0C /* LYBaseViewController.m */,
-				E412367C26EE319F002213FB /* LYUnionTypeTool.h */,
-				E412367D26EE319F002213FB /* LYUnionTypeTool.m */,
-				E4B21B662637ED4E004908D8 /* Assets.xcassets */,
-				E42355EE26494F9500DEBE0C /* LaunchScreen.storyboard */,
-				E4B21B6B2637ED4E004908D8 /* Info.plist */,
-				E4B21B6C2637ED4E004908D8 /* main.m */,
-				E4235604264A1AF500DEBE0C /* LYSlotID.h */,
-				E412368A26F1E959002213FB /* Localizable.strings */,
-				E438680B28D9F4AE0087E0EB /* EmptySwiftFile.swift */,
 			);
-			path = LYAdSDKDemo;
+			path = Ads;
+			sourceTree = "<group>";
+		};
+		E4B6613429D2EA6F00765A2F /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				E412367C26EE319F002213FB /* LYDUnionTypeTool.h */,
+				E412367D26EE319F002213FB /* LYDUnionTypeTool.m */,
+				E42C395426D7255D00D39D46 /* NSBundle+changeBundleId.h */,
+				E42C395326D7255D00D39D46 /* NSBundle+changeBundleId.m */,
+				E42356FD2657E5F500DEBE0C /* LYDBaseViewController.h */,
+				E42356FE2657E5F500DEBE0C /* LYDBaseViewController.m */,
+				E4B6612B29D2DD1500765A2F /* DemoLog */,
+				E4B660C329D2D33100765A2F /* BulletScreen */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		E4B6613529D2EAA300765A2F /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				E4235729265B3B8600DEBE0C /* LYDConfigViewController.h */,
+				E423572A265B3B8600DEBE0C /* LYDConfigViewController.m */,
+				E4B21B602637ED4D004908D8 /* LYDMainViewController.h */,
+				E4B21B612637ED4D004908D8 /* LYDMainViewController.m */,
+				E4B6602029D2834E00765A2F /* LYDActionCellDefine.h */,
+				E4B6602129D2834E00765A2F /* LYDActionCellDefine.m */,
+				E4B6601D29D1AE8400765A2F /* LYDActionCellView.h */,
+				E4B6601E29D1AE8400765A2F /* LYDActionCellView.m */,
+			);
+			path = Menu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -360,8 +454,8 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
 				"zh-Hans",
+				Base,
 			);
 			mainGroup = E4B21B4E2637ED4D004908D8;
 			productRefGroup = E4B21B582637ED4D004908D8 /* Products */;
@@ -379,6 +473,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4B21B672637ED4E004908D8 /* Assets.xcassets in Resources */,
+				E4B6613829D3248F00765A2F /* InfoPlist.strings in Resources */,
 				E412368826F1E959002213FB /* Localizable.strings in Resources */,
 				E42355EF26494F9500DEBE0C /* LaunchScreen.storyboard in Resources */,
 			);
@@ -450,32 +545,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E42355FE264988D300DEBE0C /* LYRewardVideoViewController.m in Sources */,
-				E4B21B622637ED4D004908D8 /* MainViewController.m in Sources */,
-				E4424B03267B900E0004C9B1 /* LYContentPageFullViewController.m in Sources */,
+				E42355FE264988D300DEBE0C /* LYDRewardVideoViewController.m in Sources */,
+				E4B21B622637ED4D004908D8 /* LYDMainViewController.m in Sources */,
+				E4424B03267B900E0004C9B1 /* LYDContentPageFullViewController.m in Sources */,
 				E4B21B5C2637ED4D004908D8 /* AppDelegate.m in Sources */,
-				E4424AA42678D4EA0004C9B1 /* LYContentPageViewController.m in Sources */,
-				E42355F626495C5D00DEBE0C /* LYSplashViewController.m in Sources */,
-				E4424B00267B52BA0004C9B1 /* LYEntryElementViewController.m in Sources */,
+				E4424AA42678D4EA0004C9B1 /* LYDContentPageViewController.m in Sources */,
+				E4B6613129D2DD1500765A2F /* DemoLogOperation.m in Sources */,
+				E42355F626495C5D00DEBE0C /* LYDSplashViewController.m in Sources */,
+				E4B6601F29D1AE8400765A2F /* LYDActionCellView.m in Sources */,
+				E4424B00267B52BA0004C9B1 /* LYDEntryElementViewController.m in Sources */,
 				E42C395526D7255D00D39D46 /* NSBundle+changeBundleId.m in Sources */,
-				E423570C2658ABB300DEBE0C /* LYNativeAdImageCell.m in Sources */,
-				E42357102658ABDC00DEBE0C /* LYNativeAdVideoCell.m in Sources */,
-				E423572B265B3B8600DEBE0C /* ConfigViewController.m in Sources */,
-				E4424AB52679D9910004C9B1 /* LYFullScreenVideoViewController.m in Sources */,
-				E423560226498A5A00DEBE0C /* LYBannerViewController.m in Sources */,
-				E42356A72653B0CB00DEBE0C /* LYNoticeViewController.m in Sources */,
-				E412367E26EE319F002213FB /* LYUnionTypeTool.m in Sources */,
+				E423570C2658ABB300DEBE0C /* LYDNativeAdImageCell.m in Sources */,
+				E42357102658ABDC00DEBE0C /* LYDNativeAdVideoCell.m in Sources */,
+				E423572B265B3B8600DEBE0C /* LYDConfigViewController.m in Sources */,
+				E4424AB52679D9910004C9B1 /* LYDFullScreenVideoViewController.m in Sources */,
+				E423560226498A5A00DEBE0C /* LYDBannerViewController.m in Sources */,
+				E42356A72653B0CB00DEBE0C /* LYDNoticeViewController.m in Sources */,
+				E412367E26EE319F002213FB /* LYDUnionTypeTool.m in Sources */,
 				E4B21B6D2637ED4E004908D8 /* main.m in Sources */,
-				E42355FA264985C600DEBE0C /* LYInterstitialViewController.m in Sources */,
-				E4424AE7267AFD790004C9B1 /* LYDrawVideoAdCell.m in Sources */,
-				E4424AEA267B261F0004C9B1 /* LYDrawVideoDemoViewController.m in Sources */,
-				E42356FF2657E5F500DEBE0C /* LYBaseViewController.m in Sources */,
-				E423568A2652C17700DEBE0C /* LYNativeExpressViewController.m in Sources */,
-				E4235608264A1CF300DEBE0C /* LogoViewController.m in Sources */,
-				E4235612264A316600DEBE0C /* LYNativeViewController.m in Sources */,
-				E438680C28D9F4AE0087E0EB /* EmptySwiftFile.swift in Sources */,
-				E42357162658AF0A00DEBE0C /* LYNativeAdBaseCell.m in Sources */,
-				E4424AE3267AF6DA0004C9B1 /* LYDrawVideoViewController.m in Sources */,
+				E4B660C829D2D33100765A2F /* KSBulletScreenModel.m in Sources */,
+				E42355FA264985C600DEBE0C /* LYDInterstitialViewController.m in Sources */,
+				E4424AE7267AFD790004C9B1 /* LYDDrawVideoAdCell.m in Sources */,
+				E4424AEA267B261F0004C9B1 /* LYDDrawVideoDemoViewController.m in Sources */,
+				E4B6602229D2834E00765A2F /* LYDActionCellDefine.m in Sources */,
+				E42356FF2657E5F500DEBE0C /* LYDBaseViewController.m in Sources */,
+				E4B660C929D2D33100765A2F /* KSBulletScreenManager.m in Sources */,
+				E423568A2652C17700DEBE0C /* LYDNativeExpressViewController.m in Sources */,
+				E4235612264A316600DEBE0C /* LYDNativeViewController.m in Sources */,
+				E40455BD287E4BE800D2D141 /* EmptySwiftFile.swift in Sources */,
+				E42357162658AF0A00DEBE0C /* LYDNativeAdBaseCell.m in Sources */,
+				E4424AE3267AF6DA0004C9B1 /* LYDDrawVideoViewController.m in Sources */,
+				E4B6613029D2DD1500765A2F /* DemoLogsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -489,6 +589,15 @@
 				E412368B26F1E95C002213FB /* zh-Hans */,
 			);
 			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		E4B6613A29D3248F00765A2F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E4B6613929D3248F00765A2F /* en */,
+				E4B6613B29D3249100765A2F /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -608,22 +717,25 @@
 		};
 		E4B21B712637ED4E004908D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 33D7C82C02C4361BEC85C3E3 /* Pods-LYAdSDKDemo.debug.xcconfig */;
+			baseConfigurationReference = CFA1A743C8CE9A6495A2D5E2 /* Pods-LYAdSDKDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = LYAdSDKDemo/LYAdSDKDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1100;
+				CURRENT_PROJECT_VERSION = 3400;
 				DEVELOPMENT_TEAM = M73D695JDS;
 				ENABLE_BITCODE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/LYAdSDKDemo/PrefixHeader.pch";
+				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = "";
 				INFOPLIST_FILE = LYAdSDKDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.3.4;
+				MARKETING_VERSION = 2.5.10;
 				PRODUCT_BUNDLE_IDENTIFIER = com.happytour.LYAdSDKDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -634,22 +746,25 @@
 		};
 		E4B21B722637ED4E004908D8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7EE06F9789FA886120874319 /* Pods-LYAdSDKDemo.release.xcconfig */;
+			baseConfigurationReference = 6173AB845FF82D5519B22AFC /* Pods-LYAdSDKDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = LYAdSDKDemo/LYAdSDKDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1100;
+				CURRENT_PROJECT_VERSION = 3400;
 				DEVELOPMENT_TEAM = M73D695JDS;
 				ENABLE_BITCODE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/LYAdSDKDemo/PrefixHeader.pch";
+				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = "";
 				INFOPLIST_FILE = LYAdSDKDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.3.4;
+				MARKETING_VERSION = 2.5.10;
 				PRODUCT_BUNDLE_IDENTIFIER = com.happytour.LYAdSDKDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

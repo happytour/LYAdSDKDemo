@@ -1,0 +1,13 @@
+/* 
+  InfoPlist.strings
+  LYAdSDKDemoDev
+
+  Created by laole918 on 2023/3/28.
+  
+*/
+"CFBundleDisplayName" = "乐游广告";
+"NSLocationWhenInUseUsageDescription" = "使用时访问位置";
+"NSCameraUsageDescription" = "访问相机";
+"NSPhotoLibraryUsageDescription" = "访问相册";
+"NSUserTrackingUsageDescription" = "获取IDFA有助于提供更优质的个性化服务及内容";
+"NSLocationAlwaysUsageDescription" = "总是访问位置";
