@@ -60,7 +60,7 @@
 }
 
 - (void)ly_fullScreenVideoAdDidExpose:(LYFullScreenVideoAd *)fullScreenVideoAd {
-    NSString *text = [NSString stringWithFormat:@"fullscreen|%@", NSStringFromSelector(_cmd)];
+    NSString *text = [NSString stringWithFormat:@"fullscreen|%@|%ld", NSStringFromSelector(_cmd), [fullScreenVideoAd eCPM]];
     [[KSBulletScreenManager sharedInstance] showWithText:text];
 }
 

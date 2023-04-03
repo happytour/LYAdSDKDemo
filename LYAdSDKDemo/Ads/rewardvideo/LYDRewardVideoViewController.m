@@ -83,7 +83,7 @@
 }
 
 - (void)ly_rewardVideoAdDidExpose:(LYRewardVideoAd *)rewardVideoAd {
-    NSString *text = [NSString stringWithFormat:@"reward|%@", NSStringFromSelector(_cmd)];
+    NSString *text = [NSString stringWithFormat:@"reward|%@|%ld", NSStringFromSelector(_cmd), [rewardVideoAd eCPM]];
     [[KSBulletScreenManager sharedInstance] showWithText:text];
 }
 

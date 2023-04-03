@@ -117,7 +117,7 @@
 }
 
 - (void)ly_nativeExpressAdRelatedViewDidExpose:(LYNativeExpressAdRelatedView *)nativeExpressAdRelatedView {
-    NSString *text = [NSString stringWithFormat:@"nativeExpress|%@", NSStringFromSelector(_cmd)];
+    NSString *text = [NSString stringWithFormat:@"nativeExpress|%@|%ld", NSStringFromSelector(_cmd), [self.nativeExpressAd eCPM]];
     [[KSBulletScreenManager sharedInstance] showWithText:text];
 }
 

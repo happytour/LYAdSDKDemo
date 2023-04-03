@@ -48,7 +48,7 @@
 #pragma mark - LYContentPageDelegate
 
 - (void)ly_contentPageDidLoad:(LYContentPage *)entryElement {
-    NSString *text = [NSString stringWithFormat:@"content|%@|%@", NSStringFromSelector(_cmd), [LYDUnionTypeTool unionName4unionType:entryElement.unionType]];
+    NSString *text = [NSString stringWithFormat:@"content|%@|%@|%ld", NSStringFromSelector(_cmd), [LYDUnionTypeTool unionName4unionType:entryElement.unionType], [entryElement eCPM]];
     [[KSBulletScreenManager sharedInstance] showWithText:text];
 }
 

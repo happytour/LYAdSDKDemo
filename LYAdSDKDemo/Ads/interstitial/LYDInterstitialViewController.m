@@ -59,7 +59,7 @@
 }
 
 - (void)ly_interstitialAdDidExpose:(LYInterstitialAd *)interstitialAd {
-    NSString *text = [NSString stringWithFormat:@"interstitial|%@", NSStringFromSelector(_cmd)];
+    NSString *text = [NSString stringWithFormat:@"interstitial|%@|%ld", NSStringFromSelector(_cmd), [interstitialAd eCPM]];
     [[KSBulletScreenManager sharedInstance] showWithText:text];
 }
 

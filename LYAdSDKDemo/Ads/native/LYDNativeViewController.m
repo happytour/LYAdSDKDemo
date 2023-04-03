@@ -121,7 +121,7 @@
 #pragma mark - LYNativeAdViewDelegate
 
 - (void)ly_nativeAdViewDidExpose:(LYNativeAdView *)nativeAdView {
-    NSString *text = [NSString stringWithFormat:@"native|%@", NSStringFromSelector(_cmd)];
+    NSString *text = [NSString stringWithFormat:@"native|%@|%ld", NSStringFromSelector(_cmd), [self.nativeAd eCPM]];
     [[KSBulletScreenManager sharedInstance] showWithText:text];
 }
 

@@ -55,7 +55,7 @@
 }
 
 - (void)ly_noticeAdDidExpose:(LYNoticeAd *)noticeAd {
-    NSString *text = [NSString stringWithFormat:@"notice|%@", NSStringFromSelector(_cmd)];
+    NSString *text = [NSString stringWithFormat:@"notice|%@|%ld", NSStringFromSelector(_cmd), [noticeAd eCPM]];
     [[KSBulletScreenManager sharedInstance] showWithText:text];
 }
 

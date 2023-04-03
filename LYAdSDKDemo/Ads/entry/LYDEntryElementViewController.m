@@ -95,7 +95,7 @@
 }
 
 - (void)ly_entryElementAdDidExpose:(LYEntryElement *)entryElement {
-    NSString *text = [NSString stringWithFormat:@"entry|%@", NSStringFromSelector(_cmd)];
+    NSString *text = [NSString stringWithFormat:@"entry|%@|%ld", NSStringFromSelector(_cmd), [entryElement eCPM]];
     [[KSBulletScreenManager sharedInstance] showWithText:text];
 }
 

@@ -71,7 +71,7 @@
 }
 
 - (void)ly_splashAdDidExpose:(LYSplashAd *)splashAd {
-    NSString *text = [NSString stringWithFormat:@"splash|%@", NSStringFromSelector(_cmd)];
+    NSString *text = [NSString stringWithFormat:@"splash|%@|%ld", NSStringFromSelector(_cmd), [splashAd eCPM]];
     [[KSBulletScreenManager sharedInstance] showWithText:text];
 }
 

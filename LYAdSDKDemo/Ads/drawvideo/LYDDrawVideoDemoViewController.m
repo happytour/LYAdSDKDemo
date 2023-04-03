@@ -111,7 +111,7 @@
 #pragma mark - LYDrawVideoAdRelatedViewDelegate
 
 - (void)ly_drawVideoAdRelatedViewDidExpose:(LYDrawVideoAdRelatedView *)drawVideoAdRelatedView {
-    NSString *text = [NSString stringWithFormat:@"draw|%@", NSStringFromSelector(_cmd)];
+    NSString *text = [NSString stringWithFormat:@"draw|%@|%ld", NSStringFromSelector(_cmd), [self.drawVideoAd eCPM]];
     [[KSBulletScreenManager sharedInstance] showWithText:text];
 }
 

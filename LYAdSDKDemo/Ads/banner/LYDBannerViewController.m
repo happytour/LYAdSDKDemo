@@ -61,7 +61,7 @@
 }
 
 - (void)ly_bannerAdViewDidExpose:(LYBannerAdView *)bannerAd {
-    NSString *text = [NSString stringWithFormat:@"banner|%@", NSStringFromSelector(_cmd)];
+    NSString *text = [NSString stringWithFormat:@"banner|%@|%ld", NSStringFromSelector(_cmd), [bannerAd eCPM]];
     [[KSBulletScreenManager sharedInstance] showWithText:text];
 }
 
