@@ -105,7 +105,9 @@
     NSTimeInterval time = [[NSDate date] timeIntervalSince1970];
     //指定一个最小展示间隔
     if (time - self.lastActiveTime >= 60 && self.didEnterBackground) {
-        if (self.splashAd) {
+        MMKV *mmkv = [MMKV defaultMMKV];
+        BOOL splashSwitch = [mmkv getBoolForKey:@"splashSwitch"];
+        if (splashSwitch && self.splashAd) {
             [self.splashAd loadAd];
             self.window.rootViewController = self.logoController;
         }
