@@ -33,25 +33,27 @@ target 'LYAdSDKDemo' do
   pod 'BaiduMobAdSDK', '4.901' # 百度官方
   pod 'WechatOpenSDK', '1.8.7.1' # 微信官方
   pod 'KSAdSDK', '3.3.40' # 快手AD官方（不能与KSAdSDKFull同时存在）
-  # KSAdSDKFull、QySdk、JADYun、KlevinAdSDK、Ads-Mediation-CN、ABUAdCsjAdapter，没有提交到官方库，需要引入LYSpecs私库拉取
+  # KSAdSDKFull、JADYun、Ads-Mediation-CN、ABUAdCsjAdapter，没有提交到官方库，需要引入LYSpecs私库拉取
 #  pod 'fork-KSAdSDKFull', '3.3.28' # 快手内容私库（不能与KSAdSDK同时存在）
   pod 'fork-QySdk', '1.3.2' # 爱奇艺私库
   pod 'fork-JADYun' , '2.0.2' # 京东私库
-  pod 'fork-KlevinAdSDK', '2.4.1.222' # 游可赢私库
   pod 'fork-Ads-Mediation-CN', '3.9.0.2' # GroMore私库
   pod 'fork-ABUAdCsjAdapter', '4.9.0.6.0' # GroMore Csj支持私库
   
-  pod 'LYAdSDK', '2.5.9.1'
+  pod 'LYAdSDK', '2.5.16'
   pod 'LYAdSDKAdapterForCSJ', '2.5.9' # 穿山甲支持
-  pod 'LYAdSDKAdapterForGDT', '2.5.9.1' # 广点通支持
-  pod 'LYAdSDKAdapterForKS', '2.5.9.1' # 快手AD支持
+  pod 'LYAdSDKAdapterForGDT', '2.5.16' # 广点通支持
+  pod 'LYAdSDKAdapterForKS', '2.5.16' # 快手AD支持
 #  pod 'LYAdSDKAdapterForKSContent', '2.5.0' # 快手内容支持
   pod 'LYAdSDKAdapterForSIG', '2.5.0' # sigmob支持
-  pod 'LYAdSDKAdapterForIQY', '2.5.0' # 爱奇艺支持
-  pod 'LYAdSDKAdapterForBD', '2.5.8.1' # 百度支持
+  pod 'LYAdSDKAdapterForBD', '2.5.16' # 百度支持
   pod 'LYAdSDKAdapterForJD', '2.5.8.2' # 京东支持
-  pod 'LYAdSDKAdapterForKLN', '2.5.5' # 游可赢支持
   pod 'LYAdSDKAdapterForGromore', '2.5.8.1' # Gromore支持
+  
+  # 以下库仅在Dmeo中使用
+  pod 'Masonry', '~> 1.1.0'
+  pod 'MMKV', '~> 1.2.15'
+  pod 'SVProgressHUD', '~> 2.2.5'
   project 'LYAdSDKDemo'
 end
 
@@ -611,6 +613,71 @@ typedef NS_ENUM(NSUInteger, LYContentType) {
 ## 入口组件 LYEntryElement
 
 参考demo
+
+## 实时竞价
+### 支持场景
+* 开屏广告
+* 模板渲染广告
+* 自渲染广告
+* 插屏半屏/全屏广告
+* 激励视频广告
+* banner 广告
+### 接入方式
+#### 能力调用
+乐游广告竞胜之后调用 sendWinNotificationWithInfo: 接口
+乐游广告竞败之后或未参竞调用 sendLossNotificationWithInfo: 接口
+#### 协议接口
+```objectivec
+/**
+ * 竞价失败原因
+ */
+typedef NS_ENUM(NSInteger, LYAdBiddingLossReason) {
+    LYAdBiddingLossReasonOther                   = 10001,    // 其他
+    LYAdBiddingLossReasonLowPrice                = 1,        // 竞争力不足
+    LYAdBiddingLossReasonLoadTimeout             = 2,        // 返回超时
+    LYAdBiddingLossReasonNoAd                    = 3,        // 无广告回包
+    LYAdBiddingLossReasonAdDataError             = 4,        // 回包不合法
+    LYAdBiddingLossReasonAdSuccNoBid             = 5,        // 有回包但未竞价
+    LYAdBiddingLossReasonMediaBasePriceFilter    = 6,        // 媒体侧底价过滤
+    LYAdBiddingLossReasonCacheInvalid            = 7,        // 缓存失效
+    LYAdBiddingLossReasonExposurePriorityReduce  = 8,        // 曝光优先级降低
+};
+/**
+ * AdnType
+ */
+typedef NS_ENUM(NSUInteger, LYAdAdnType) {
+    LYAdAdnTypeSelfSale         = -1,    // 输给自售广告主
+    LYAdAdnTypeOther            = 0,
+    LYAdAdnTypeGDT              = 2,
+    LYAdAdnTypeBaidu            = 8,
+    LYAdAdnTypeKS               = 10,
+};
+/**
+ *  竞胜之后调用, 需要在调用广告 show 之前调用
+ *
+ *  @param winInfo 竞胜信息，字典类型，必填，支持的key为以下内容。注：key是个宏，在LYAdSDKConfig.h中有定义
+ *  LY_M_W_E_COST_PRICE：竞胜价格 (单位: 分)，必填。值类型为NSNumber *
+ *  LY_M_W_H_LOSS_PRICE：最高失败出价，必填。值类型为NSNumber *
+ *
+ */
+ - (void)sendWinNotificationWithInfo:(NSDictionary *)winInfo;    
+/**
+*  竞败之后或未参竞调用
+ *
+ *  @pararm lossInfo 竞败信息，字典类型，必填，支持的key为以下内容。注：key是个宏，在LYAdSDKConfig.h中有定义
+ *  LY_M_L_WIN_PRICE ：竞胜价格 (单位: 分)，必填。值类型为NSNumber *
+ *  LY_M_L_LOSS_REASON ：优量汇广告竞败原因，必填。竞败原因参考枚举LYAdBiddingLossReason中的定义，值类型为NSNumber *
+ *  LY_M_ADN_IS_BID ：参与竞价的是否是竞价，必填。值类型为NSNumber *，@(YES)或者@(NO)
+ *  LY_M_ADN_TYPE ：竞胜方渠道类型，必填。值类型为NSNumber *，@(LYAdAdnType)
+ *         LYAdAdnTypeSelfSale - 输给自售广告主，当自售广告源报价为本次竞价的最高报价时，可上报此值，仅对有自售广告源的开发者使用；
+ *         LYAdAdnTypeOther - 输给第三方ADN，当其它ADN报价为本次竞价的最高报价时，可上报此值；
+ *         LYAdAdnTypeGDT - 输给优量汇其他广告位，当优量汇其他广告位报价为本次竞价的最高报价时，可上报此值；
+ *         LYAdAdnTypeBaidu - 输给百度其他广告位，当百度其他广告位报价为本次竞价的最高报价时，可上报此值；
+ *         LYAdAdnTypeKS - 输给快手其他广告位，当快手其他广告位报价为本次竞价的最高报价时，可上报此值；
+ * LY_M_ADN_NAME ：当LY_M_ADN_TYPE为LYAdAdnTypeOther时，必填。值类型为NSString *
+ */
+- (void)sendLossNotificationWithInfo:(NSDictionary *)lossInfo; 
+```
 
 ## 注意
 
