@@ -39,7 +39,7 @@ target 'LYAdSDKDemo' do
   pod 'fork-Ads-Mediation-CN', '3.9.0.2' # GroMore私库
   pod 'fork-ABUAdCsjAdapter', '4.9.0.6.0' # GroMore Csj支持私库
   
-  pod 'LYAdSDK', '2.5.16'
+  pod 'LYAdSDK', '2.5.18'
   pod 'LYAdSDKAdapterForCSJ', '2.5.9' # 穿山甲支持
   pod 'LYAdSDKAdapterForGDT', '2.5.16' # 广点通支持
   pod 'LYAdSDKAdapterForKS', '2.5.16' # 快手AD支持
@@ -259,6 +259,7 @@ typedef NS_ENUM(NSInteger, LYNativeAdCreativeType) {
     LYNativeAdCreativeType_ADX_IMG = (1 << 24) | 2,//IMG 纯图片
     LYNativeAdCreativeType_ADX_HYBRID = (1 << 24) | 3,//HYBRID 图文混合
     LYNativeAdCreativeType_ADX_VIDEO = (1 << 24) | 4,//VIDEO 视频广告
+    LYNativeAdCreativeType_ADX_IMGS = (1 << 24) | 5,//多图
 
     LYNativeAdCreativeType_GDT_isAppAd = (2 << 24) | 1,//isAppAd
     LYNativeAdCreativeType_GDT_isVideoAd = (2 << 24) | 2,//isVideoAd
