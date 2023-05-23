@@ -6,14 +6,14 @@ source 'https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git'
 # 添加LYSpecs私库
 source 'https://gitee.com/happytour/LYSpecs.git'
 
-platform :ios, '9.0'
+platform :ios, '11.0'
 
 workspace 'LYAdSDKDemo'
 project 'LYAdSDKDemo'
 
 target 'LYAdSDKDemo' do
-  pod 'Ads-CN', '5.0.0.5' # 穿山甲官方
   pod 'GDTMobSDK', '4.14.12' # 广点通官方
+  pod 'Ads-CN', '5.3.0.3' # 穿山甲官方
   pod 'SigmobAd-iOS', '4.2.1' # sigmob官方
   pod 'BaiduMobAdSDK', '4.901' # 百度官方
   pod 'WechatOpenSDK', '1.8.7.1' # 微信官方
@@ -25,7 +25,7 @@ target 'LYAdSDKDemo' do
   pod 'fork-ABUAdCsjAdapter', '4.9.0.6.0' # GroMore Csj支持私库
   
   pod 'LYAdSDK', '2.5.18'
-  pod 'LYAdSDKAdapterForCSJ', '2.5.9' # 穿山甲支持
+  pod 'LYAdSDKAdapterForCSJ', '2.5.18' # 穿山甲支持
   pod 'LYAdSDKAdapterForGDT', '2.5.16' # 广点通支持
   pod 'LYAdSDKAdapterForKS', '2.5.16' # 快手AD支持
 #  pod 'LYAdSDKAdapterForKSContent', '2.5.0' # 快手内容支持
