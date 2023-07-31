@@ -27,7 +27,7 @@ target 'LYAdSDKDemo' do
   pod 'LYAdSDK', '2.5.18'
   pod 'LYAdSDKAdapterForCSJ', '2.5.18' # 穿山甲支持
   pod 'LYAdSDKAdapterForGDT', '2.5.16' # 广点通支持
-  pod 'LYAdSDKAdapterForKS', '2.5.16' # 快手AD支持
+  pod 'LYAdSDKAdapterForKS', '2.5.18' # 快手AD支持
 #  pod 'LYAdSDKAdapterForKSContent', '2.5.0' # 快手内容支持
   pod 'LYAdSDKAdapterForSIG', '2.5.0' # sigmob支持
   pod 'LYAdSDKAdapterForBD', '2.5.16' # 百度支持
