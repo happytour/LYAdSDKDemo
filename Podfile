@@ -24,15 +24,15 @@ target 'LYAdSDKDemo' do
   pod 'fork-Ads-Mediation-CN', '4.3.0.2' # GroMore私库
   pod 'fork-ABUAdCsjAdapter', '5.4.0.5.0' # GroMore Csj支持私库
   
-  pod 'LYAdSDK', '2.5.20'
-  pod 'LYAdSDKAdapterForCSJ', '2.5.20' # 穿山甲支持
-  pod 'LYAdSDKAdapterForGDT', '2.5.20' # 广点通支持
-  pod 'LYAdSDKAdapterForKS', '2.5.20' # 快手AD支持
+  pod 'LYAdSDK', '2.5.30'
+  pod 'LYAdSDKAdapterForCSJ', '2.5.30' # 穿山甲支持
+  pod 'LYAdSDKAdapterForGDT', '2.5.30' # 广点通支持
+  pod 'LYAdSDKAdapterForKS', '2.5.30' # 快手AD支持
 #  pod 'LYAdSDKAdapterForKSContent', '2.5.0' # 快手内容支持
   pod 'LYAdSDKAdapterForSIG', '2.5.20' # sigmob支持
-  pod 'LYAdSDKAdapterForBD', '2.5.20' # 百度支持
-  pod 'LYAdSDKAdapterForJD', '2.5.20' # 京东支持
-  pod 'LYAdSDKAdapterForGromore', '2.5.20' # Gromore支持
+  pod 'LYAdSDKAdapterForBD', '2.5.30' # 百度支持
+  pod 'LYAdSDKAdapterForJD', '2.5.30' # 京东支持
+  pod 'LYAdSDKAdapterForGromore', '2.5.30' # Gromore支持
   
   # 以下库仅在Dmeo中使用
   pod 'Masonry', '~> 1.1.0'
