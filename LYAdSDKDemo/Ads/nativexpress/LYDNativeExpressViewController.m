@@ -86,7 +86,17 @@
         NSString *text = [NSString stringWithFormat:@"nativeExpress|%@|%@", NSStringFromSelector(_cmd), [error debugDescription]];
         [[KSBulletScreenManager sharedInstance] showWithText:text];
     } else {
-        NSString *text = [NSString stringWithFormat:@"nativeExpress|%@|%@", NSStringFromSelector(_cmd), [LYDUnionTypeTool unionName4unionType:self.nativeExpressAd.unionType]];
+        NSString * unionType = @"";
+        if (nativeExpressAdRelatedViews.count) {
+            for (int i = 0; i < nativeExpressAdRelatedViews.count; i++) {
+                LYNativeExpressAdRelatedView * nativeExpressAdRelatedView = nativeExpressAdRelatedViews[i];
+                unionType = [unionType stringByAppendingString:[LYDUnionTypeTool unionName4unionType:nativeExpressAdRelatedView.unionType]];
+                if (i + 1 < nativeExpressAdRelatedViews.count) {
+                    unionType = [unionType stringByAppendingString:@"|"];
+                }
+            }
+        }
+        NSString *text = [NSString stringWithFormat:@"nativeExpress|%@|%@", NSStringFromSelector(_cmd), unionType];
         [[KSBulletScreenManager sharedInstance] showWithText:text];
         [self.expressAdRelatedViews addObjectsFromArray:nativeExpressAdRelatedViews];
         if (nativeExpressAdRelatedViews.count) {
@@ -117,7 +127,7 @@
 }
 
 - (void)ly_nativeExpressAdRelatedViewDidExpose:(LYNativeExpressAdRelatedView *)nativeExpressAdRelatedView {
-    NSString *text = [NSString stringWithFormat:@"nativeExpress|%@|%ld", NSStringFromSelector(_cmd), [self.nativeExpressAd eCPM]];
+    NSString *text = [NSString stringWithFormat:@"nativeExpress|%@|%ld", NSStringFromSelector(_cmd), [nativeExpressAdRelatedView eCPM]];
     [[KSBulletScreenManager sharedInstance] showWithText:text];
 }
 

@@ -94,7 +94,17 @@
         NSString *text = [NSString stringWithFormat:@"draw|%@|%@", NSStringFromSelector(_cmd), [error debugDescription]];
         [[KSBulletScreenManager sharedInstance] showWithText:text];
     } else {
-        NSString *text = [NSString stringWithFormat:@"draw|%@|%@", NSStringFromSelector(_cmd), [LYDUnionTypeTool unionName4unionType:self.drawVideoAd.unionType]];
+        NSString * unionType = @"";
+        if (drawVideoAdRelatedViews.count) {
+            for (int i = 0; i < drawVideoAdRelatedViews.count; i++) {
+                LYDrawVideoAdRelatedView * drawVideoAdRelatedView = drawVideoAdRelatedViews[i];
+                unionType = [unionType stringByAppendingString:[LYDUnionTypeTool unionName4unionType:drawVideoAdRelatedView.unionType]];
+                if (i + 1 < drawVideoAdRelatedViews.count) {
+                    unionType = [unionType stringByAppendingString:@"|"];
+                }
+            }
+        }
+        NSString *text = [NSString stringWithFormat:@"draw|%@|%@", NSStringFromSelector(_cmd), unionType];
         [[KSBulletScreenManager sharedInstance] showWithText:text];
         [self.drawVideoAdRelatedViews addObjectsFromArray:drawVideoAdRelatedViews];
         if (drawVideoAdRelatedViews.count) {
@@ -111,7 +121,7 @@
 #pragma mark - LYDrawVideoAdRelatedViewDelegate
 
 - (void)ly_drawVideoAdRelatedViewDidExpose:(LYDrawVideoAdRelatedView *)drawVideoAdRelatedView {
-    NSString *text = [NSString stringWithFormat:@"draw|%@|%ld", NSStringFromSelector(_cmd), [self.drawVideoAd eCPM]];
+    NSString *text = [NSString stringWithFormat:@"draw|%@|%ld", NSStringFromSelector(_cmd), [drawVideoAdRelatedView eCPM]];
     [[KSBulletScreenManager sharedInstance] showWithText:text];
 }
 

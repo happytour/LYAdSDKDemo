@@ -65,6 +65,7 @@
         NSString *userId = [mmkv getStringForKey:@"userId"];
         NSString *splashId = [mmkv getStringForKey:@"splashId"];
         
+//        [LYAdSDKConfig enableDefaultAudioSessionSetting:NO];
         [LYAdSDKConfig setUserId:userId];
         [LYAdSDKConfig initAppId:appId privacy:privacy];
         

@@ -111,7 +111,17 @@
         NSString *text = [NSString stringWithFormat:@"native|%@|%@", NSStringFromSelector(_cmd), [error debugDescription]];
         [[KSBulletScreenManager sharedInstance] showWithText:text];
     } else {
-        NSString *text = [NSString stringWithFormat:@"native|%@|%@", NSStringFromSelector(_cmd), [LYDUnionTypeTool unionName4unionType:self.nativeAd.unionType]];
+        NSString * unionType = @"";
+        if (nativeAdDataObjects.count) {
+            for (int i = 0; i < nativeAdDataObjects.count; i++) {
+                LYNativeAdDataObject * nativeAdDataObject = nativeAdDataObjects[i];
+                unionType = [unionType stringByAppendingString:[LYDUnionTypeTool unionName4unionType:nativeAdDataObject.unionType]];
+                if (i + 1 < nativeAdDataObjects.count) {
+                    unionType = [unionType stringByAppendingString:@"|"];
+                }
+            }
+        }
+        NSString *text = [NSString stringWithFormat:@"native|%@|%@", NSStringFromSelector(_cmd), unionType];
         [[KSBulletScreenManager sharedInstance] showWithText:text];
         if (nativeAdDataObjects.count > 0) {
             [self.adDataArray addObjectsFromArray:nativeAdDataObjects];
@@ -123,7 +133,7 @@
 #pragma mark - LYNativeAdViewDelegate
 
 - (void)ly_nativeAdViewDidExpose:(LYNativeAdView *)nativeAdView {
-    NSString *text = [NSString stringWithFormat:@"native|%@|%ld", NSStringFromSelector(_cmd), [self.nativeAd eCPM]];
+    NSString *text = [NSString stringWithFormat:@"native|%@|%ld", NSStringFromSelector(_cmd), [nativeAdView eCPM]];
     [[KSBulletScreenManager sharedInstance] showWithText:text];
 }
 
