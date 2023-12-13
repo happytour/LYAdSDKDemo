@@ -724,7 +724,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = LYAdSDKDemo/LYAdSDKDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 6100;
+				CURRENT_PROJECT_VERSION = 6200;
 				DEVELOPMENT_TEAM = M73D695JDS;
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -735,7 +735,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.6.1;
+				MARKETING_VERSION = 2.6.2;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ld64",
@@ -757,7 +757,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = LYAdSDKDemo/LYAdSDKDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 6100;
+				CURRENT_PROJECT_VERSION = 6200;
 				DEVELOPMENT_TEAM = M73D695JDS;
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -768,7 +768,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.6.1;
+				MARKETING_VERSION = 2.6.2;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ld64",
