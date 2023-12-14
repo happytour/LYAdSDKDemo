@@ -2,7 +2,7 @@
 
 ## SDK项目部署
 
-## 开发环境
+### 开发环境
 
 - **开发工具**：推荐Xcode 12及以上版本
 
@@ -10,7 +10,7 @@
 
 - **SDK版本**：官网最新版本
 
-## pod方式接入
+### pod方式接入
 
 ```ruby
 # Uncomment the next line to define a global platform for your project
@@ -54,7 +54,7 @@ end
 
 ```
 
-## 手动接入
+### 手动接入
 
 请参考对应平台接入文档依次接入，最后将LYAdSDK.framework及对应Adapter的framework拖放到项目。  
 
@@ -85,19 +85,9 @@ end
 
 权限请求窗口调用方法：`requestTrackingAuthorization(completionHandler:)`
 
-## 接入代码
-
-请向相关人员申请测试appId和slotId
-
-## SDK版本号
-
-```objectivec
-// 例：2.0.0
-NSLog(@"sdkVersion: %@", [LYAdSDKConfig sdkVersion]);
-```
-
 ## 初始化
 
+请向相关人员申请测试appId和slotId
 ```objectivec
 // userId在任何能获取到的时候都可以设置，最后一次设置会覆盖之前
 [LYAdSDKConfig setUserId:@"媒体用户唯一ID，可以是脱敏后的需保证唯一"];
@@ -117,8 +107,14 @@ if (...需要隐私政策配置...) {
     [LYAdSDKConfig initAppId:@"你的APPID"];
 }
 ```
+### SDK版本号
 
-## 通知广告 LYNoticeAd
+```objectivec
+// 例：2.0.0
+NSLog(@"sdkVersion: %@", [LYAdSDKConfig sdkVersion]);
+```
+
+## 通知广告
 
 ```objectivec
 // LYNoticeAd代理
@@ -143,7 +139,7 @@ self.noticeAd.delegate = self;
 [self.noticeAd loadAd];
 ```
 
-## 开屏广告 LYSplashAd
+## 开屏广告
 
 ```objectivec
 // LYSplashAd代理
@@ -199,7 +195,7 @@ self.splashAd.delegate = self;
 
 ## 信息流广告
 
-### 自渲染 LYNativeAd
+### 自渲染
 
 ```objectivec
 // LYNativeAd代理
@@ -318,7 +314,7 @@ typedef NS_ENUM(NSInteger, LYNativeAdInteractionType) {
 @end
 ```
 
-### 模板渲染 LYNativeExpressAd
+### 模板渲染
 
 ```objectivec
 // LYNativeExpressAd代理
@@ -360,7 +356,7 @@ relatedView.viewController = self;
 UIView *view = [[self.expressAdRelatedViews objectAtIndex:indexPath.row] getAdView];
 ```
 
-## 激励视频广告 LYRewardVideoAd
+## 激励视频广告
 
 ```objectivec
 @protocol LYRewardVideoAdDelegate <NSObject>
@@ -402,7 +398,7 @@ self.rewardedAd.delegate = self;
 [self.rewardedAd showAdFromRootViewController:self];
 ```
 
-## 插屏广告 LYInterstitialAd
+## 插屏广告
 
 ```objectivec
 //LYInterstitialAd代理
@@ -434,7 +430,7 @@ self.interstitial.delegate = self;
 [self.interstitial showAdFromRootViewController:self];
 ```
 
-## Banner广告 LYBannerAdView
+## Banner广告
 
 ```objectivec
 // LYBannerAdView代理
@@ -469,7 +465,7 @@ self.bannerView.delegate = self;
 self.bannerView.autoSwitchInterval = 30;
 ```
 
-## 全屏视频广告 LYFullScreenVideoAd
+## 全屏视频广告
 
 ```objectivec
 // LYFullScreenVideoAd代理
@@ -506,7 +502,7 @@ self.fullScreenVideoAd.delegate = self;
 [self.fullScreenVideoAd showAdFromRootViewController:self];
 ```
 
-## Draw视频广告 LYDrawVideoAd
+## Draw视频广告
 
 ```objectivec
 // LYDrawVideoAd代理
@@ -546,7 +542,7 @@ relatedView.viewController = self;
 [self.relatedView unregisterView];
 ```
 
-## 视频内容 LYContentPage
+## 视频内容
 
 ```objectivec
 // LYContentPage代理
@@ -606,7 +602,7 @@ typedef NS_ENUM(NSUInteger, LYContentType) {
 @end
 ```
 
-## 入口组件 LYEntryElement
+## 入口组件
 
 参考demo
 
