@@ -66,6 +66,7 @@
         NSString *splashId = [mmkv getStringForKey:@"splashId"];
         
 //        [LYAdSDKConfig enableDefaultAudioSessionSetting:NO];
+//        [LYAdSDKConfig disableSplashAdShake:YES];///是否屏蔽摇⼀摇，false或者不赋值，不屏蔽，true屏蔽
         [LYAdSDKConfig setUserId:userId];
         [LYAdSDKConfig initAppId:appId privacy:privacy];
         

@@ -36,10 +36,10 @@ target 'LYAdSDKDemo' do
 #  pod 'fork-KSAdSDKFull', '3.3.32'
   pod 'fork-JADYun' , '2.5.4'
   
-  pod 'LYAdSDK', '2.6.2'
+  pod 'LYAdSDK', '2.6.3'
   pod 'LYAdSDKAdapterForCSJ', '2.6.1' # 穿山甲支持
-  pod 'LYAdSDKAdapterForGDT', '2.6.0' # 广点通支持
-  pod 'LYAdSDKAdapterForKS', '2.6.1' # 快手AD支持
+  pod 'LYAdSDKAdapterForGDT', '2.6.3' # 广点通支持
+  pod 'LYAdSDKAdapterForKS', '2.6.3' # 快手AD支持
 #  pod 'LYAdSDKAdapterForKSContent', '2.5.0' # 快手内容支持
   pod 'LYAdSDKAdapterForBD', '2.6.1' # 百度支持
   pod 'LYAdSDKAdapterForJD', '2.6.1' # 京东支持
@@ -112,6 +112,11 @@ if (...需要隐私政策配置...) {
 ```objectivec
 // 例：2.0.0
 NSLog(@"sdkVersion: %@", [LYAdSDKConfig sdkVersion]);
+```
+### 禁用开屏摇一摇
+需要在initAppId之前调用
+```objectivec
+[LYAdSDKConfig disableSplashAdShake:YES];//是否屏蔽摇⼀摇，false或者不赋值，不屏蔽，true屏蔽
 ```
 
 ## 通知广告
