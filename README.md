@@ -27,14 +27,14 @@ workspace 'LYAdSDKDemo'
 project 'LYAdSDKDemo'
 
 target 'LYAdSDKDemo' do
-#  pod 'Ads-CN-Beta', '5.8.0.4'
-  pod 'Ads-Fusion-CN-Beta','5.8.0.5', :subspecs => ['BUAdSDK', 'CSJMediation']
+#  pod 'Ads-CN-Beta', '5.8.0.8'
+  pod 'Ads-Fusion-CN-Beta','5.8.0.8', :subspecs => ['BUAdSDK', 'CSJMediation']
   pod 'GDTMobSDK', '4.14.50'
   pod 'BaiduMobAdSDK', '5.322'
   pod 'KSAdSDK', '3.3.55'
   # KSAdSDKFull、JADYun，没有提交到官方库，需要引入LYSpecs私库拉取
 #  pod 'fork-KSAdSDKFull', '3.3.32'
-  pod 'fork-JADYun' , '2.4.4'
+  pod 'fork-JADYun' , '2.5.4'
   
   pod 'LYAdSDK', '2.6.2'
   pod 'LYAdSDKAdapterForCSJ', '2.6.1' # 穿山甲支持
