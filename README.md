@@ -28,10 +28,10 @@ project 'LYAdSDKDemo'
 
 target 'LYAdSDKDemo' do
 #  pod 'Ads-CN-Beta', '5.8.0.8'
-  pod 'Ads-Fusion-CN-Beta','5.8.0.8', :subspecs => ['BUAdSDK', 'CSJMediation']
-  pod 'GDTMobSDK', '4.14.50'
-  pod 'BaiduMobAdSDK', '5.322'
-  pod 'KSAdSDK', '3.3.55'
+  pod 'Ads-Fusion-CN-Beta','5.9.0.1', :subspecs => ['BUAdSDK', 'CSJMediation']
+  pod 'GDTMobSDK', '4.14.60'
+  pod 'BaiduMobAdSDK', '5.332'
+  pod 'KSAdSDK', '3.3.57'
   # KSAdSDKFull、JADYun，没有提交到官方库，需要引入LYSpecs私库拉取
 #  pod 'fork-KSAdSDKFull', '3.3.32'
   pod 'fork-JADYun' , '2.5.4'
@@ -41,7 +41,7 @@ target 'LYAdSDKDemo' do
   pod 'LYAdSDKAdapterForGDT', '2.6.3' # 广点通支持
   pod 'LYAdSDKAdapterForKS', '2.6.3' # 快手AD支持
 #  pod 'LYAdSDKAdapterForKSContent', '2.5.0' # 快手内容支持
-  pod 'LYAdSDKAdapterForBD', '2.6.1' # 百度支持
+  pod 'LYAdSDKAdapterForBD', '2.6.3' # 百度支持
   pod 'LYAdSDKAdapterForJD', '2.6.1' # 京东支持
   pod 'LYAdSDKAdapterForGromore', '2.6.1' # Gromore支持
   
