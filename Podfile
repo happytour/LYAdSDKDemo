@@ -28,7 +28,7 @@ target 'LYAdSDKDemo' do
 #  pod 'LYAdSDKAdapterForKSContent', '2.5.0' # 快手内容支持
   pod 'LYAdSDKAdapterForBD', '2.6.3' # 百度支持
   pod 'LYAdSDKAdapterForJD', '2.6.1' # 京东支持
-  pod 'LYAdSDKAdapterForGromore', '2.6.1' # Gromore支持
+  pod 'LYAdSDKAdapterForGromore', '2.6.3' # Gromore支持
   
   # 以下库仅在Dmeo中使用
   pod 'Masonry', '~> 1.1.0'
