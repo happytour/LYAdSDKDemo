@@ -28,15 +28,15 @@ project 'LYAdSDKDemo'
 
 target 'LYAdSDKDemo' do
 #  pod 'Ads-CN-Beta', '5.8.0.8'
-  pod 'Ads-Fusion-CN-Beta','5.9.1.2', :subspecs => ['BUAdSDK', 'CSJMediation']
-  pod 'GDTMobSDK', '4.14.63'
+  pod 'Ads-Fusion-CN-Beta','6.0.0.5', :subspecs => ['BUAdSDK', 'CSJMediation']
+  pod 'GDTMobSDK', '4.14.70'
   pod 'BaiduMobAdSDK', '5.332'
   pod 'KSAdSDK', '3.3.61'
   # KSAdSDKFull、JADYun，没有提交到官方库，需要引入LYSpecs私库拉取
 #  pod 'fork-KSAdSDKFull', '3.3.32'
   pod 'fork-JADYun' , '2.5.6'
   
-  pod 'LYAdSDK', '2.6.4'
+  pod 'LYAdSDK', '2.6.5'
   pod 'LYAdSDKAdapterForCSJ', '2.6.1' # 穿山甲支持
   pod 'LYAdSDKAdapterForGDT', '2.6.4' # 广点通支持
   pod 'LYAdSDKAdapterForKS', '2.6.4' # 快手AD支持
@@ -186,6 +186,7 @@ if (...需要自定义底部logo...) {
     bottomView.backgroundColor = [UIColor redColor];
     // 需要在调用loadAd之前设置customBottomView
     self.splashAd.customBottomView = bottomView;
+    self.splashAd.tolerateTimeout = 5;//超时时间
 }
 // 其中self.rootController需要与showAdInWindow时window.rootViewController一致
 self.splashAd.viewController = self.rootController;
