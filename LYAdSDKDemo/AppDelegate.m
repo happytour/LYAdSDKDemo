@@ -79,6 +79,7 @@
             CGRect frame = [UIScreen mainScreen].bounds;
             CGRect splashFrame = CGRectMake(0, 0, frame.size.width, frame.size.height);
             self.splashAd = [[LYSplashAd alloc] initWithFrame:splashFrame slotId:splashId];
+            self.splashAd.tolerateTimeout = 5;
             self.splashAd.viewController = self.rootController;
             self.splashAd.delegate = self;
             [self.splashAd loadAd];

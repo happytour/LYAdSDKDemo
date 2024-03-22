@@ -48,6 +48,7 @@
         self.splashAd.delegate = self;
         self.splashAd.customBottomView = bottomView;
         self.splashAd.viewController = self;
+        self.splashAd.tolerateTimeout = 5;
     }
     [self.splashAd loadAd];
 }
