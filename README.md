@@ -42,7 +42,7 @@ target 'LYAdSDKDemo' do
   pod 'LYAdSDKAdapterForKS', '2.6.4' # 快手AD支持
 #  pod 'LYAdSDKAdapterForKSContent', '2.5.0' # 快手内容支持
   pod 'LYAdSDKAdapterForBD', '2.6.3' # 百度支持
-  pod 'LYAdSDKAdapterForJD', '2.6.1' # 京东支持
+  pod 'LYAdSDKAdapterForJD', '2.6.5' # 京东支持
   pod 'LYAdSDKAdapterForGromore', '2.6.3' # Gromore支持
   
   # 以下库仅在Dmeo中使用
