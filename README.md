@@ -27,7 +27,7 @@ workspace 'LYAdSDKDemo'
 project 'LYAdSDKDemo'
 
 target 'LYAdSDKDemo' do
-#  pod 'Ads-CN-Beta', '6.1.0.2'
+#  pod 'Ads-CN-Beta', '5.8.0.8'
 #  pod 'Ads-Fusion-CN-Beta','6.0.0.5', :subspecs => ['BUAdSDK', 'CSJMediation']
   pod 'Ads-Fusion-CN-Beta', :path => '../ThirdPartySDK/Ads-Fusion-CN-Beta/6.1.0.3/', :subspecs => ['BUAdSDK', 'CSJMediation']
   pod 'GDTMobSDK', '4.14.71'
