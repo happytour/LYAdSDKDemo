@@ -56,7 +56,7 @@ end
 
 ### 手动接入
 
-请参考对应平台接入文档依次接入，最后将LYAdSDK.framework及对应Adapter的framework拖放到项目。  
+请参考对应平台接入文档依次接入，最后将LYAdSDK.xcframework及对应Adapter的framework拖放到项目。  
 
 点击主工程 -> Build Settings -> 搜索Other Linker Flags -> 在列表中找到Other Linker Flags -> 添加参数-ObjC
 
@@ -72,6 +72,82 @@ end
          <key>NSAllowsArbitraryLoads</key>
          <true/>
     </dict>
+```
+### iOS17隐私策略的适配说明
+* 在2.6.5.1及以上的版本，我们已新增 PrivacyInfo.xcprivacy 文件，位于静态库产物的LYAdSDK.xcframework中。
+* 您可以用cocoapods集成，手动集成，无论使用哪种方式，都可以在xcode项目的LYAdSDK.xcframework->ios-arm64->LYAdSDK.framework->PrivacyInfo.xcprivacy找到，请注意将PrivacyInfo.xcprivacy 拷贝进您的代码工程里。
+* 如果您的App本身包含PrivacyInfo.xcprivacy文件，请将LYAdSDK的PrivacyInfo.xcprivacy
+的PrivacyInfo.xcprivacy中的条款补全到自身的PrivacyInfo.xcprivacy中，具体补全方式如下：
+  * 使用source code方式添加：
+    * Xcode 中使用 Source Code方式打开 app 项目下的 PrivacyInfo.xcprivacy。复制LYAdSDK的PrivacyInfo.xcprivacy
+的 PrivacyInfo.xcprivacy中的条目，注意不要重复添加或错行。
+  * 使用 Property List 的方式添加：
+    * 在 Xcode 中双击打开 PrivacyInfo.xcprivacy 文件，在其中点击+，Xcode会提示可选的条款和可设置项，按照需求进行增补即可。
+* 如果您的项目同时集成了多个包含PrivacyInfo.xcprivacy的SDK，建议您将所有SDK的条款补充到您自身App的PrivacyInfo.xcprivacy中。在补充时，对于同一个API的声明和原因解释，无需重复添加。
+
+LYAdSDK的PrivacyInfo.xcprivacy
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NSPrivacyCollectedDataTypes</key>
+	<array>
+		<dict>
+			<key>NSPrivacyCollectedDataType</key>
+			<string>NSPrivacyCollectedDataTypeDeviceID</string>
+			<key>NSPrivacyCollectedDataTypeLinked</key>
+			<false/>
+			<key>NSPrivacyCollectedDataTypeTracking</key>
+			<false/>
+			<key>NSPrivacyCollectedDataTypePurposes</key>
+			<array>
+				<string>NSPrivacyCollectedDataTypePurposeThirdPartyAdvertising</string>
+			</array>
+		</dict>
+	</array>
+	<key>NSPrivacyAccessedAPITypes</key>
+	<array>
+		<dict>
+			<key>NSPrivacyAccessedAPITypeReasons</key>
+			<array>
+				<string>3B52.1</string>
+			</array>
+			<key>NSPrivacyAccessedAPIType</key>
+			<string>NSPrivacyAccessedAPICategoryFileTimestamp</string>
+		</dict>
+		<dict>
+			<key>NSPrivacyAccessedAPITypeReasons</key>
+			<array>
+				<string>35F9.1</string>
+			</array>
+			<key>NSPrivacyAccessedAPIType</key>
+			<string>NSPrivacyAccessedAPICategorySystemBootTime</string>
+		</dict>
+		<dict>
+			<key>NSPrivacyAccessedAPITypeReasons</key>
+			<array>
+				<string>E174.1</string>
+			</array>
+			<key>NSPrivacyAccessedAPIType</key>
+			<string>NSPrivacyAccessedAPICategoryDiskSpace</string>
+		</dict>
+		<dict>
+			<key>NSPrivacyAccessedAPITypeReasons</key>
+			<array>
+				<string>CA92.1</string>
+			</array>
+			<key>NSPrivacyAccessedAPIType</key>
+			<string>NSPrivacyAccessedAPICategoryUserDefaults</string>
+		</dict>
+	</array>
+	<key>NSPrivacyTrackingDomains</key>
+	<array/>
+	<key>NSPrivacyTracking</key>
+	<false/>
+</dict>
+</plist>
+
 ```
 
 ### 关于 iOS 14 AppTrackingTransparency
