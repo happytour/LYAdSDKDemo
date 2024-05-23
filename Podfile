@@ -12,17 +12,16 @@ workspace 'LYAdSDKDemo'
 project 'LYAdSDKDemo'
 
 target 'LYAdSDKDemo' do
-#  pod 'Ads-CN-Beta', '5.8.0.8'
-#  pod 'Ads-Fusion-CN-Beta','6.0.1.3', :subspecs => ['BUAdSDK', 'CSJMediation']
-  pod 'Ads-Fusion-CN-Beta', :path => '../ThirdPartySDK/Ads-Fusion-CN-Beta/6.1.0.3/', :subspecs => ['BUAdSDK', 'CSJMediation']
+#  pod 'Ads-CN-Beta', '6.1.0.2'
+  pod 'Ads-Fusion-CN-Beta','6.1.1.0', :subspecs => ['BUAdSDK', 'CSJMediation']
   pod 'GDTMobSDK', '4.14.76'
   pod 'BaiduMobAdSDK', '5.35'
   pod 'KSAdSDK', '3.3.64.4'
   # KSAdSDKFull、JADYun，没有提交到官方库，需要引入LYSpecs私库拉取
 #  pod 'fork-KSAdSDKFull', '3.3.32'
-  pod 'fork-JADYun' , '2.5.8'
+  pod 'fork-JADYun' , '2.5.12'
   
-  pod 'LYAdSDK', '2.6.5.1'
+  pod 'LYAdSDK', '2.6.6'
   pod 'LYAdSDKAdapterForCSJ', '2.6.1' # 穿山甲支持
   pod 'LYAdSDKAdapterForGDT', '2.6.4' # 广点通支持
   pod 'LYAdSDKAdapterForKS', '2.6.4' # 快手AD支持
