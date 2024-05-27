@@ -37,7 +37,7 @@ target 'LYAdSDKDemo' do
   pod 'fork-JADYun' , '2.5.12'
   
   pod 'LYAdSDK', '2.6.6'
-  pod 'LYAdSDKAdapterForCSJ', '2.6.1' # 穿山甲支持
+  pod 'LYAdSDKAdapterForCSJ', '2.6.5' # 穿山甲支持
   pod 'LYAdSDKAdapterForGDT', '2.6.4' # 广点通支持
   pod 'LYAdSDKAdapterForKS', '2.6.4' # 快手AD支持
 #  pod 'LYAdSDKAdapterForKSContent', '2.5.0' # 快手内容支持
