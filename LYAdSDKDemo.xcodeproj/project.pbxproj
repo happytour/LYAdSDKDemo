@@ -32,6 +32,7 @@
 		E4424AEA267B261F0004C9B1 /* LYDDrawVideoDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4424AE9267B261F0004C9B1 /* LYDDrawVideoDemoViewController.m */; };
 		E4424B00267B52BA0004C9B1 /* LYDEntryElementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4424AFF267B52BA0004C9B1 /* LYDEntryElementViewController.m */; };
 		E4424B03267B900E0004C9B1 /* LYDContentPageFullViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4424B02267B900E0004C9B1 /* LYDContentPageFullViewController.m */; };
+		E4A3AAEE2BFF374900B52722 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = E4A3AAED2BFF374900B52722 /* PrivacyInfo.xcprivacy */; };
 		E4B21B5C2637ED4D004908D8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E4B21B5B2637ED4D004908D8 /* AppDelegate.m */; };
 		E4B21B622637ED4D004908D8 /* LYDMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4B21B612637ED4D004908D8 /* LYDMainViewController.m */; };
 		E4B21B672637ED4E004908D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4B21B662637ED4E004908D8 /* Assets.xcassets */; };
@@ -97,6 +98,7 @@
 		E4424AFF267B52BA0004C9B1 /* LYDEntryElementViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYDEntryElementViewController.m; sourceTree = "<group>"; };
 		E4424B01267B900E0004C9B1 /* LYDContentPageFullViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYDContentPageFullViewController.h; sourceTree = "<group>"; };
 		E4424B02267B900E0004C9B1 /* LYDContentPageFullViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYDContentPageFullViewController.m; sourceTree = "<group>"; };
+		E4A3AAED2BFF374900B52722 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		E4A4FA6727201ED70043C5AB /* LYAdSDKAdapterForBD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LYAdSDKAdapterForBD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4A4FA6827201ED70043C5AB /* LYAdSDKAdapterForCSJ.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LYAdSDKAdapterForCSJ.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4A4FA6927201ED70043C5AB /* LYAdSDKAdapterForGDT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LYAdSDKAdapterForGDT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -336,6 +338,7 @@
 				E412368A26F1E959002213FB /* Localizable.strings */,
 				E40455BC287E4BE800D2D141 /* EmptySwiftFile.swift */,
 				E4B6613229D2E54C00765A2F /* PrefixHeader.pch */,
+				E4A3AAED2BFF374900B52722 /* PrivacyInfo.xcprivacy */,
 				E4B6613A29D3248F00765A2F /* InfoPlist.strings */,
 			);
 			path = LYAdSDKDemo;
@@ -475,6 +478,7 @@
 				E4B21B672637ED4E004908D8 /* Assets.xcassets in Resources */,
 				E4B6613829D3248F00765A2F /* InfoPlist.strings in Resources */,
 				E412368826F1E959002213FB /* Localizable.strings in Resources */,
+				E4A3AAEE2BFF374900B52722 /* PrivacyInfo.xcprivacy in Resources */,
 				E42355EF26494F9500DEBE0C /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
