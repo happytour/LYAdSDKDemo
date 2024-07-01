@@ -44,8 +44,8 @@
             method_exchangeImplementations(m1, m2);
         }
         {
-            Method m1 = class_getInstanceMethod([self class], NSSelectorFromString(@"objectForInfoDictionaryKey"));
-            Method m2 = class_getInstanceMethod([self class], NSSelectorFromString(@"_changeC"));
+            Method m1 = class_getInstanceMethod([self class], NSSelectorFromString(@"objectForInfoDictionaryKey:"));
+            Method m2 = class_getInstanceMethod([self class], NSSelectorFromString(@"_changeC:"));
             method_exchangeImplementations(m1, m2);
         }
         {
