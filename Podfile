@@ -12,8 +12,8 @@ workspace 'LYAdSDKDemo'
 project 'LYAdSDKDemo'
 
 target 'LYAdSDKDemo' do
-#  pod 'Ads-CN-Beta', '6.1.0.2'
-  pod 'Ads-Fusion-CN-Beta','6.1.2.8', :subspecs => ['BUAdSDK', 'CSJMediation']
+#  pod 'Ads-CN-Beta', '6.1.0.2' #不与Ads-Fusion-CN-Beta同时存在
+  pod 'Ads-Fusion-CN-Beta','6.1.2.8', :subspecs => ['BUAdSDK', 'CSJMediation'] #不与Ads-CN-Beta同时存在
   pod 'GDTMobSDK', '4.14.80'
   pod 'BaiduMobAdSDK', '5.35'
   pod 'KSAdSDK', '3.3.65'
@@ -22,13 +22,13 @@ target 'LYAdSDKDemo' do
   pod 'fork-JADYun' , '2.5.12'
   
   pod 'LYAdSDK', '2.7.0'
-  pod 'LYAdSDKAdapterForCSJ', '2.6.5' # 穿山甲支持
+#  pod 'LYAdSDKAdapterForCSJ', '2.6.5' # 穿山甲支持，当接入穿山甲SDK跑穿山甲或者接入穿山甲融合SDK只跑穿山甲时使用，不与LYAdSDKAdapterForGromore同时存在。
   pod 'LYAdSDKAdapterForGDT', '2.6.4' # 广点通支持
   pod 'LYAdSDKAdapterForKS', '2.6.4' # 快手AD支持
 #  pod 'LYAdSDKAdapterForKSContent', '2.5.0' # 快手内容支持
   pod 'LYAdSDKAdapterForBD', '2.6.3' # 百度支持
   pod 'LYAdSDKAdapterForJD', '2.6.5' # 京东支持
-  pod 'LYAdSDKAdapterForGromore', '2.6.3' # Gromore支持
+  pod 'LYAdSDKAdapterForGromore', '2.6.3' # 穿山甲融合支持，当接入穿山甲融合SDK时使用，不与LYAdSDKAdapterForCSJ同时存在。
   
   # 以下库仅在Dmeo中使用
   pod 'Masonry', '~> 1.1.0'
